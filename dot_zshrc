@@ -40,6 +40,9 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
 
+# stop zsh from auto updating which will trigger chezmoi
+DISABLE_AUTO_UPDATE="true"
+
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
 
@@ -71,25 +74,26 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  git
   pass
   pj
   tmux
   kubectl
+  zsh-autosuggestions
 )
-
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
  
 # pj config
 PROJECT_PATHS=(~/code/gitlab.com/RioKierkels)
 
-
 # tmux config
 ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOSTART_ONCE=true
 ZSH_TMUX_AUTOCONNECT=false
 ZSH_TMUX_FIXTERM=true
+
+source $ZSH/oh-my-zsh.sh
 
 # edit PATH
 export PATH=$HOME/.local/bin:$PATH
@@ -123,3 +127,6 @@ source <(starship init zsh --print-full-init)
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="exa -bghl --git"
+
+# syntax highlighting needs to be at the end because of reasons
+source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
