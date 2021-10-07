@@ -128,5 +128,8 @@ source <(starship init zsh --print-full-init)
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="exa -bghl --git"
 
+# enable usage of .envrc files
+eval "$(direnv hook zsh)"
+
 # syntax highlighting needs to be at the end because of reasons
 source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -18,6 +18,9 @@
       - tmux
       - tmux-powerline
       - exa
+      - wireguard-tools
+      - direnv
+      - git-lfs
 
 - name: set shell
   hosts: localhost
