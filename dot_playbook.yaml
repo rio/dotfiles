@@ -2,6 +2,15 @@
   hosts: localhost
   become_user: root
   tasks:
+  - name: add vscode repo
+    yum_repository:
+      name: vscode
+      description: Visual Studio Code
+      baseurl: https://packages.microsoft.com/yumrepos/vscode
+      enabled: true
+      gpgcheck: true
+      gpgkey: https://packages.microsoft.com/keys/microsoft.asc
+
   - name: install packages using dnf
     dnf:
       name: 
@@ -21,6 +30,7 @@
       - wireguard-tools
       - direnv
       - git-lfs
+      - code
 
 - name: set shell
   hosts: localhost
