@@ -1,0 +1,7 @@
+{
+    "workbench.colorTheme": "Monokai",
+    "keyboard.dispatch": "keyCode",
+    "editor.rulers": [
+        {"column": 80}
+    ]
+}
