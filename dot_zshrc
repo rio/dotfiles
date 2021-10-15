@@ -76,6 +76,7 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(
   git
   pass
+  fzf
   pj
   tmux
   kubectl

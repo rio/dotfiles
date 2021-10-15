@@ -31,6 +31,7 @@
       - direnv
       - git-lfs
       - code
+      - fzf
 
 - name: set shell
   hosts: localhost
