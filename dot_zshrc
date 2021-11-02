@@ -86,7 +86,7 @@ plugins=(
 # User configuration
  
 # pj config
-PROJECT_PATHS=(~/code/gitlab.com/RioKierkels)
+PROJECT_PATHS=(~/code/gitlab.com/RioKierkels ~/code/github.com/rio)
 
 # tmux config
 ZSH_TMUX_AUTOSTART=true
@@ -128,6 +128,7 @@ source <(starship init zsh --print-full-init)
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="exa -bghl --git"
+alias ps="procs"
 
 # enable usage of .envrc files
 eval "$(direnv hook zsh)"

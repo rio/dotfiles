@@ -3,5 +3,6 @@
     "keyboard.dispatch": "keyCode",
     "editor.rulers": [
         {"column": 80}
-    ]
+    ],
+    "redhat.telemetry.enabled": false
 }
