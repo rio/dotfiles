@@ -4,5 +4,7 @@
     "editor.rulers": [
         {"column": 80}
     ],
-    "redhat.telemetry.enabled": false
+    "redhat.telemetry.enabled": false,
+    "hediet.vscode-drawio.theme": "sketch",
+    "workbench.startupEditor": "none"
 }
