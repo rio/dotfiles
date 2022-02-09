@@ -1,0 +1,17 @@
+#!/bin/bash
+
+{{ if (and (eq .chezmoi.osRelease.id "ubuntu") (eq .chezmoi.hostname "reykjavik")) -}}
+sudo apt install -y \
+	ripgrep \
+	bat \
+	fd-find \
+	zsh \
+	tmux \
+	exa \
+	wireguard-tools \
+	powerline \
+	direnv \
+	git-lfs \
+	fzf
+
+{{- end }}

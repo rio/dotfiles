@@ -89,7 +89,7 @@ plugins=(
 PROJECT_PATHS=(~/code/gitlab.com/RioKierkels ~/code/github.com/rio)
 
 # tmux config
-ZSH_TMUX_AUTOSTART=true
+{{if (eq .chezmoi.hostname "reykjavik") -}} ZSH_TMUX_AUTOSTART=false {{- else -}} ZSH_TMUX_AUTOSTART=true {{- end}}
 ZSH_TMUX_AUTOSTART_ONCE=true
 ZSH_TMUX_AUTOCONNECT=false
 ZSH_TMUX_FIXTERM=true
@@ -99,11 +99,13 @@ source $ZSH/oh-my-zsh.sh
 # edit PATH
 export PATH=$HOME/.local/bin:$PATH
 
+{{if (not (eq .chezmoi.hostname "reykjavik")) -}}
 # setup gpg-agent ssh
 unset SSH_AGENT_PID
 if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
         export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 fi
+{{- end}}
 
 # completions
 source <(kubectl completion zsh)

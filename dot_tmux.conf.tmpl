@@ -4,4 +4,10 @@ bind-key -r -T prefix j select-pane -D
 bind-key -r -T prefix h select-pane -L
 bind-key -r -T prefix l select-pane -R
 
+{{ if (eq .chezmoi.osRelease.id "ubuntu") -}}
+source /usr/share/powerline/bindings/tmux/powerline.conf
+
+{{- else if (eq .chezmoi.osRelease.id "fedora") -}}
 source /usr/share/tmux/powerline.conf
+
+{{- end }}
