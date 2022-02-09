@@ -105,7 +105,7 @@ unset SSH_AGENT_PID
 if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
         export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 fi
-{{- end}}
+{{- end -}}
 
 # completions
 source <(kubectl completion zsh)
@@ -129,7 +129,7 @@ source <(starship init zsh --print-full-init)
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ll="exa -bghl --git"
+{{if (eq .chezmoi.osRelease.id "ubuntu") -}} alias ll="exa -bghl" {{- else -}} alias ll="exa -bghl --git" {{- end}}
 alias ps="procs"
 
 # enable usage of .envrc files
