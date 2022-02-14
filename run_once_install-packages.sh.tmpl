@@ -1,6 +1,6 @@
 #!/bin/bash
 
-{{ if (and (eq .chezmoi.osRelease.id "ubuntu") (eq .chezmoi.hostname "reykjavik")) -}}
+{{ if (and (eq .chezmoi.osRelease.id "ubuntu") (.remote)) -}}
 sudo apt install -y \
 	ripgrep \
 	bat \

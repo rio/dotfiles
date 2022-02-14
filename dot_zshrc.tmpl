@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/rio/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -89,7 +89,7 @@ plugins=(
 PROJECT_PATHS=(~/code/gitlab.com/RioKierkels ~/code/github.com/rio)
 
 # tmux config
-{{if (eq .chezmoi.hostname "reykjavik") -}} ZSH_TMUX_AUTOSTART=false {{- else -}} ZSH_TMUX_AUTOSTART=true {{- end}}
+{{if (.remote) -}} ZSH_TMUX_AUTOSTART=false {{- else -}} ZSH_TMUX_AUTOSTART=true {{- end}}
 ZSH_TMUX_AUTOSTART_ONCE=true
 ZSH_TMUX_AUTOCONNECT=false
 ZSH_TMUX_FIXTERM=true
@@ -99,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # edit PATH
 export PATH=$HOME/.local/bin:$PATH
 
-{{if (not (eq .chezmoi.hostname "reykjavik")) -}}
+{{if (not .remote) -}}
 # setup gpg-agent ssh
 unset SSH_AGENT_PID
 if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then

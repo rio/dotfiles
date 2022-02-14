@@ -1,0 +1,3 @@
+[data]
+
+remote = {{ or (env "SSH_CONNECTION" | not | not) (env "KUBERNETES_SERVICE_HOST" | not | not) }}
