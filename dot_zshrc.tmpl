@@ -86,7 +86,7 @@ plugins=(
 # User configuration
  
 # pj config
-PROJECT_PATHS=(~/code/gitlab.com/RioKierkels ~/code/github.com/rio)
+PROJECT_PATHS=(~/code/gitlab.com/RioKierkels ~/code/github.com/rio ~/code/gitlab.com/fullstaq-projects/soleras)
 
 # tmux config
 {{if (.remote) -}} ZSH_TMUX_AUTOSTART=false {{- else -}} ZSH_TMUX_AUTOSTART=true {{- end}}
@@ -134,6 +134,9 @@ alias ps="procs"
 
 # enable usage of .envrc files
 eval "$(direnv hook zsh)"
+
+# enable layer 8 error correction
+eval $(thefuck --alias)
 
 # syntax highlighting needs to be at the end because of reasons
 source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
