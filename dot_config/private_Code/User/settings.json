@@ -5,6 +5,7 @@
         {"column": 80}
     ],
     "redhat.telemetry.enabled": false,
-    "hediet.vscode-drawio.theme": "sketch",
-    "workbench.startupEditor": "none"
+    "hediet.vscode-drawio.theme": "automatic",
+    "workbench.startupEditor": "none",
+    "git.ignoreMissingGitWarning": true
 }
