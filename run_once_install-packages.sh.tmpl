@@ -2,16 +2,30 @@
 
 {{ if (and (eq .chezmoi.osRelease.id "ubuntu") (.remote)) -}}
 sudo apt install -y \
-	ripgrep \
-	bat \
-	fd-find \
-	zsh \
-	tmux \
-	exa \
-	wireguard-tools \
-	powerline \
-	direnv \
-	git-lfs \
-	fzf
+  ripgrep \
+  bat \
+  fd-find \
+  zsh \
+  tmux \
+  exa \
+  wireguard-tools \
+  powerline \
+  direnv \
+  git-lfs \
+  fzf
+
+{{ else if (and (eq .chezmoi.osRelease.id "fedora") (eq .chezmoi.osRelease.variantID "workstation")) -}}
+sudo dnf install -y \
+  ripgrep \
+  bat \
+  fd-find \
+  zsh \
+  tmux \
+  exa \
+  wireguard-tools \
+  powerline \
+  direnv \
+  git-lfs \
+  fzf
 
 {{- end }}
