@@ -27,12 +27,6 @@
 
 [".local/bin/kubectl"]
     type = "file"
-    url = "https://dl.k8s.io/release/v1.23.0/bin/linux/amd64/kubectl"
+    url = "https://dl.k8s.io/release/v1.24.3/bin/linux/amd64/kubectl"
     executable = true
     refreshPeriod = "168h"
-
-[".local/bin"]
-    type = "archive"
-    url = "https://github.com/starship/starship/releases/download/v1.3.0/starship-x86_64-unknown-linux-gnu.tar.gz"
-    refreshPeriod = "168h"
-
