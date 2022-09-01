@@ -1,6 +1,6 @@
 #!/bin/bash
 
-{{ if (and (eq .chezmoi.osRelease.id "ubuntu") (.remote)) -}}
+{{ if and .chezmoi.osRelease (and (eq .chezmoi.osRelease.id "ubuntu") (.remote)) -}}
 sudo apt install -y \
   ripgrep \
   bat \
@@ -15,7 +15,7 @@ sudo apt install -y \
   git-lfs \
   fzf
 
-{{ else if (and (eq .chezmoi.osRelease.id "fedora") (eq .chezmoi.osRelease.variantID "workstation")) -}}
+{{ else if and .chezmoi.osRelease (and (eq .chezmoi.osRelease.id "fedora") (eq .chezmoi.osRelease.variantID "workstation")) -}}
 sudo dnf install -y \
   ripgrep \
   bat \
@@ -34,5 +34,17 @@ sudo dnf install -y \
   thefuck \
   git-lfs \
   fzf
+
+{{ else if (eq .chezmoi.os "darwin") -}}
+
+brew install --cask alacritty
+brew install \
+  starship \
+  fzf \
+  direnv \
+  thefuck \
+  exa \
+  tmux
+
 
 {{- end }}

@@ -19,6 +19,7 @@
     stripComponents = 1
     refreshPeriod = "168h"
 
+{{ if (and .chezmoi.osRelease (eq .chezmoi.osRelease.id "fedora")) -}}
 [".fonts"]
     type = "archive"
     url = "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip"
@@ -30,3 +31,4 @@
     url = "https://dl.k8s.io/release/v1.24.3/bin/linux/amd64/kubectl"
     executable = true
     refreshPeriod = "168h"
+{{- end }}

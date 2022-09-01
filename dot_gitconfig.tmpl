@@ -1,7 +1,12 @@
+{{ if (eq .chezmoi.hostname "C02Y543JJHD2") -}}
+[user]
+	name = Rio Kierkels
+	email = rio.kierkels@justeattakeaway.com
+{{ else -}}
 [user]
 	name = Rio Kierkels
 	email = riokierkels@gmail.com
-
+{{- end}}
 [init]
 	defaultBranch = main
 [pull]
