@@ -37,14 +37,22 @@ sudo dnf install -y \
 
 {{ else if (eq .chezmoi.os "darwin") -}}
 
-brew install --cask alacritty
+brew install --cask \
+  alacritty \
+  homebrew/cask-fonts/font-fira-code-nerd-font
+
 brew install \
   starship \
   fzf \
   direnv \
   thefuck \
   exa \
+  bat \
+  lima \
+  kind \
+  kubectl \
+  k9s \
+  docker \
   tmux
-
 
 {{- end }}
