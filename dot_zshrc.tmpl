@@ -97,7 +97,13 @@ ZSH_TMUX_FIXTERM=true
 source $ZSH/oh-my-zsh.sh
 
 # edit PATH
+{{ if eq .chezmoi.os "linux" -}}
 export PATH=$HOME/.cargo/bin:$HOME/.local/bin:$PATH
+
+{{ else if eq .chezmoi.os "darwin" -}}
+export PATH=$HOME/Library/Python/3.10/bin:$PATH
+
+{{- end}}
 
 {{if (not .remote) -}}
 # setup gpg-agent ssh

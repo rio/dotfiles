@@ -10,4 +10,8 @@ source /usr/share/powerline/bindings/tmux/powerline.conf
 {{- else if and .chezmoi.osRelease (eq .chezmoi.osRelease.id "fedora") -}}
 source /usr/share/tmux/powerline.conf
 
+{{- else if eq .chezmoi.os "darwin" -}}
+run-shell "/Users/{{ .chezmoi.username }}/Library/Python/3.10/bin/powerline-daemon -q"
+run-shell "/Users/{{ .chezmoi.username }}/Library/Python/3.10/bin/powerline-config tmux setup"
+
 {{- end }}
