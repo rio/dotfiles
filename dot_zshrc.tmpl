@@ -86,7 +86,11 @@ plugins=(
 # User configuration
  
 # pj config
-PROJECT_PATHS=(~/code/gitlab.com/RioKierkels ~/code/github.com/rio ~/code/gitlab.com/fullstaq-projects/soleras)
+{{if eq .chezmoi.hostname "megatron" -}}
+PROJECT_PATHS=(~/code/gitlab.com/RioKierkels ~/code/github.com/rio)
+{{else if eq .chezmio.hostname "C02Y543JJHD2"}}
+PROJECT_PATHS=(~/code/git.takeaway.com/rio.kierkels)
+{{- end}
 
 # tmux config
 {{if (.remote) -}} ZSH_TMUX_AUTOSTART=false {{- else -}} ZSH_TMUX_AUTOSTART=true {{- end}}
