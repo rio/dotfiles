@@ -106,8 +106,8 @@ source $ZSH/oh-my-zsh.sh
 {{ if eq .chezmoi.os "linux" -}}
 export PATH=$HOME/.cargo/bin:$HOME/.local/bin:$PATH
 
-{{ else if eq .chezmoi.os "darwin" -}}
-export PATH=$HOME/Library/Python/3.10/bin:$PATH
+{{- else if eq .chezmoi.hostname "C02Y543JJHD2" -}}
+export PATH=$HOME/Library/Python/3.10/bin:$HOME/.rd/bin:$PATH
 
 {{- end}}
 
