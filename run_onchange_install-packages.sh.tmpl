@@ -1,41 +1,29 @@
+{{- $commonPackages := list "tmux" "ripgrep" "entr" "bat" "zsh" "vim" "exa" "pass" "direnv" "git-lfs" "thefuck" "fzf" "wireguard-tools" -}}
+
+{{- $linuxPackages  := list "fd-find" "powerline" -}}
+
+{{- $debianPackages := list "shellcheck" -}}
+{{- $fedoraPackages := list "ShellCheck" "starship" "procs" "tmux-powerline" -}}
+
+{{- $brewPackages   := list "fd" "starship" "shellcheck" "kind" "k3d" "k9s" "python" "procs" "bottom" -}}
+{{- $caskPackages   := list "alacritty" "homebrew/cask-fonts/font-fira-code-nerd-font" -}}
+
 #!/bin/bash
 {{ if eq .chezmoi.os "linux" -}}
 
-{{- if or (eq .chezmoi.osRelease.id "ubuntu") (eq .chezmoi.osRelease.id "debian") -}}
-sudo apt install -y \
-{{- else if and (eq .chezmoi.osRelease.id "fedora") (eq .chezmoi.osRelease.variantID "workstation") -}}
-sudo dnf install -y \
+{{- if or (eq .chezmoi.osRelease.id "ubuntu" "debian") -}}
+sudo apt install -y {{ concat $commonPackages $linuxPackages $debianPackages | join " " }}
+
+{{- else if eq .chezmoi.osRelease.id "fedora" -}}
+sudo dnf install -y {{ concat $commonPackages $linuxPackages $fedoraPackages | join " "}}
+
+{{- if eq .chezmoi.osRelease.variantID "workstation" -}}
+sudo dnf install -y alacritty
 {{- end -}}
-  {{- if not .remote }}
-  tmux \
-  powerline \
-  wireguard-tools \
-  {{- if eq .chezmoi.osRelease.id "fedora" }}
-  tmux-powerline \
-  {{ end -}}
-  {{ end }}
-  {{- if eq .chezmoi.osRelease.id "fedora" -}}
-  alacritty \
-  starship \
-  {{ end -}}
-  ripgrep \
-  entr \
-  bat \
-  fd-find \
-  zsh \
-  vim \
-  exa \
-  pass \
-  direnv \
-  git-lfs \
-  thefuck \
-  fzf
+
+{{- end -}}
 
 {{- else if (eq .chezmoi.os "darwin") -}}
-
-brew install --cask \
-  alacritty \
-  homebrew/cask-fonts/font-fira-code-nerd-font
 
 # note you should use rancher desktop for now. Lima didn't really work for me.
 # rancher desktop provides:
@@ -46,25 +34,8 @@ brew install --cask \
 # - helm
 # - nerdctl
 
-brew install \
-  starship \
-  fzf \
-  direnv \
-  thefuck \
-  exa \
-  bat \
-  kind \
-  k3d \
-  kubectl \
-  k9s \
-  python \
-  fd \
-  procs \
-  entr \
-  shellcheck \
-  bottom \
-  tmux
-
+brew install --cask {{ $caskPackages | join " "}}
+brew install {{ concat $commonPackages $brewPackages | join " "}}
 pip3 install --user powerline-status
 
 {{- end }}
