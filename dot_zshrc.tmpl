@@ -1,3 +1,5 @@
+{{- $remote := env "REMOTE_CONTAINERS" | not | not -}}
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -98,7 +100,7 @@ PROJECT_PATHS=(~/code/git.takeaway.com/rio.kierkels)
 {{- end}}
 
 # tmux config
-{{if (.remote) -}} ZSH_TMUX_AUTOSTART=false {{- else -}} ZSH_TMUX_AUTOSTART=true {{- end}}
+{{if $remote -}} ZSH_TMUX_AUTOSTART=false {{- else -}} ZSH_TMUX_AUTOSTART=true {{- end}}
 ZSH_TMUX_AUTOSTART_ONCE=true
 ZSH_TMUX_AUTOCONNECT=false
 ZSH_TMUX_FIXTERM=true
@@ -114,7 +116,7 @@ export PATH=$HOME/Library/Python/3.10/bin:$HOME/.rd/bin:$PATH
 
 {{- end}}
 
-{{if (not .remote) -}}
+{{if not $remote -}}
 # setup gpg-agent ssh
 unset SSH_AGENT_PID
 if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
