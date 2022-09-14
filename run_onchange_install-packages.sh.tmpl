@@ -1,46 +1,38 @@
 #!/bin/bash
-
 {{ if eq .chezmoi.os "linux" -}}
 
-  {{- if or (eq .chezmoi.osRelease.id "ubuntu") (eq .chezmoi.osRelease.id "debian") -}}
+{{- if or (eq .chezmoi.osRelease.id "ubuntu") (eq .chezmoi.osRelease.id "debian") -}}
 sudo apt install -y \
-  {{- if not .remote }}
-  tmux \
-  powerline \
-  wireguard-tools \
-  {{ end }}
-  ripgrep \
-  bat \
-  fd-find \
-  zsh \
-  vim \
-  exa \
-  direnv \
-  git-lfs \
-  fzf
-
 {{- else if and (eq .chezmoi.osRelease.id "fedora") (eq .chezmoi.osRelease.variantID "workstation") -}}
 sudo dnf install -y \
+{{- end -}}
+
   {{- if not .remote }}
   tmux \
   powerline \
-  tmux-powerline \
   wireguard-tools \
+  {{- if eq .chezmoi.osRelease.id "fedora" }}
+  tmux-powerline \
   {{ end }}
+  {{ end }}
+
+  {{- if eq .chezmoi.osRelease.id "fedora" }}
+  alacritty \
+  starship \
+  {{ end }}
+
   ripgrep \
   bat \
   fd-find \
-  pass \
   zsh \
   vim \
   exa \
+  pass \
   direnv \
-  alacritty \
-  starship \
-  thefuck \
   git-lfs \
+  thefuck \
   fzf
-{{- end -}}
+
 
 {{ else if (eq .chezmoi.os "darwin") -}}
 
