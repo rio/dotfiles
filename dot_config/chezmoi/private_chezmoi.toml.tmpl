@@ -1,0 +1,10 @@
+{{- $remotecontainers := env "REMOTE_CONTAINERS" | not | not -}}
+
+[data]
+
+remote = {{ $remotecontainers }}
+
+[git]
+
+autoCommit = true
+autoPush = true
