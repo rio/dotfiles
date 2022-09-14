@@ -6,7 +6,6 @@ sudo apt install -y \
 {{- else if and (eq .chezmoi.osRelease.id "fedora") (eq .chezmoi.osRelease.variantID "workstation") -}}
 sudo dnf install -y \
 {{- end -}}
-
   {{- if not .remote }}
   tmux \
   powerline \
@@ -15,13 +14,12 @@ sudo dnf install -y \
   tmux-powerline \
   {{ end }}
   {{ end }}
-
   {{- if eq .chezmoi.osRelease.id "fedora" }}
   alacritty \
   starship \
   {{ end }}
-
   ripgrep \
+  entr \
   bat \
   fd-find \
   zsh \
