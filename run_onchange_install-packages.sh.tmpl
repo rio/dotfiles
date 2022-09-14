@@ -12,12 +12,12 @@ sudo dnf install -y \
   wireguard-tools \
   {{- if eq .chezmoi.osRelease.id "fedora" }}
   tmux-powerline \
+  {{ end -}}
   {{ end }}
-  {{ end }}
-  {{- if eq .chezmoi.osRelease.id "fedora" }}
+  {{- if eq .chezmoi.osRelease.id "fedora" -}}
   alacritty \
   starship \
-  {{ end }}
+  {{ end -}}
   ripgrep \
   entr \
   bat \
@@ -31,8 +31,7 @@ sudo dnf install -y \
   thefuck \
   fzf
 
-
-{{ else if (eq .chezmoi.os "darwin") -}}
+{{- else if (eq .chezmoi.os "darwin") -}}
 
 brew install --cask \
   alacritty \
