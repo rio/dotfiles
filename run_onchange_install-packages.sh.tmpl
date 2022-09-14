@@ -1,16 +1,14 @@
 #!/bin/bash
 
-{{- if eq .chezmoi.os "linux" -}}
+{{ if eq .chezmoi.os "linux" -}}
 
   {{- if or (eq .chezmoi.osRelease.id "ubuntu") (eq .chezmoi.osRelease.id "debian") -}}
 sudo apt install -y \
-
-  {{- if not .remote -}}
+  {{- if not .remote }}
   tmux \
   powerline \
   wireguard-tools \
-  {{- end -}}
-
+  {{ end }}
   ripgrep \
   bat \
   fd-find \
@@ -23,14 +21,12 @@ sudo apt install -y \
 
 {{- else if and (eq .chezmoi.osRelease.id "fedora") (eq .chezmoi.osRelease.variantID "workstation") -}}
 sudo dnf install -y \
-
-  {{- if not .remote -}}
+  {{- if not .remote }}
   tmux \
   powerline \
   tmux-powerline \
   wireguard-tools \
-  {{- end -}}
-
+  {{ end }}
   ripgrep \
   bat \
   fd-find \
