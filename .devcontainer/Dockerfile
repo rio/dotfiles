@@ -1,0 +1,1 @@
+FROM ghcr.io/rio/toolbox:latest
