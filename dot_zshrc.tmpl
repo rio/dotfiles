@@ -133,8 +133,10 @@ source <(kubectl completion zsh)
 # I need vim
 export EDITOR='vim'
 
+{{- if or (eq .chezmoi.os "darwin") (eq .chezmoi.osRelease.id "fedora")}}
 # enable starship
 source <(starship init zsh --print-full-init)
+{{ end }}
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
