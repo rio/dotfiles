@@ -12,6 +12,7 @@
 {{ if eq .chezmoi.os "linux" -}}
 
 {{- if or (eq .chezmoi.osRelease.id "ubuntu" "debian") -}}
+sudo apt update
 sudo apt install --no-install-recommends -y {{ concat $commonPackages $linuxPackages $debianPackages | join " " }}
 
 {{- else if eq .chezmoi.osRelease.id "fedora" -}}
