@@ -7,9 +7,10 @@
     "hediet.vscode-drawio.theme": "Kennedy",
     "workbench.startupEditor": "none",
     "git.ignoreMissingGitWarning": true,
-    "editor.renderWhitespace": "none",
+    "editor.renderWhitespace": "trailing",
     "remote.autoForwardPorts": true,
     "cSpell.userWords": [
         "kubernetes"
     ],
+    "workbench.colorTheme": "Monokai Dimmed",
 }
