@@ -94,9 +94,6 @@ PROJECT_PATHS=(~/code/gitlab.com/RioKierkels ~/code/github.com/rio)
 {{else if eq .chezmoi.hostname "soundwave" -}}
 PROJECT_PATHS=(~/code/gitlab.com/fullstaq-projects ~/code/github.com/rio)
 
-{{- else if eq .chezmoi.hostname "C02Y543JJHD2" -}}
-PROJECT_PATHS=(~/code/git.takeaway.com/rio.kierkels)
-
 {{- end}}
 
 # tmux config
@@ -111,7 +108,7 @@ source $ZSH/oh-my-zsh.sh
 {{ if eq .chezmoi.os "linux" -}}
 export PATH=$HOME/.cargo/bin:$HOME/.local/bin:$PATH
 
-{{- else if eq .chezmoi.hostname "C02Y543JJHD2" -}}
+{{- else if eq .chezmoi.hostname "FVFFM0E5Q05Q" -}}
 export PATH=$HOME/Library/Python/3.10/bin:$HOME/.rd/bin:$PATH
 
 {{- end}}
