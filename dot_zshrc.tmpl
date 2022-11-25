@@ -122,9 +122,7 @@ fi
 {{- end}}
 
 # completions
-if command -v kubectl; then
- . source <(kubectl completion zsh)
-fi
+source <(kubectl completion zsh)
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
