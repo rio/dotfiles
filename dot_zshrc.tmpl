@@ -128,16 +128,6 @@ if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
 fi
 {{- end}}
 
-# completions
-if command -v kubectl > /dev/null; then
-  source <(kubectl completion zsh)
-fi
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
 # I need vim
 export EDITOR='vim'
 
