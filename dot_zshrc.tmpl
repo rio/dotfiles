@@ -140,7 +140,6 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 {{if and .chezmoi.osRelease (eq .chezmoi.osRelease.id "ubuntu") -}} alias ll="exa -bghl" {{- else -}} alias ll="exa -bghl --git" {{- end}}
-alias ps="procs"
 
 # enable usage of .envrc files
 eval "$(direnv hook zsh)"
