@@ -1,2 +1,2 @@
 .oh-my-zsh/cache/*
-*.zwc
+**/*.zwc
