@@ -142,10 +142,14 @@ export EDITOR='vim'
 {{if and .chezmoi.osRelease (eq .chezmoi.osRelease.id "ubuntu") -}} alias ll="exa -bghl" {{- else -}} alias ll="exa -bghl --git" {{- end}}
 
 # enable usage of .envrc files
-eval "$(direnv hook zsh)"
+if command -v direnv; then
+  eval "$(direnv hook zsh)"
+fi
 
 # enable layer 8 error correction
-eval $(thefuck --alias slap)
+if command -v thefuck; then
+  eval $(thefuck --alias slap)
+fi
 
 # syntax highlighting needs to be at the end because of reasons
 source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
