@@ -37,8 +37,6 @@ ZSH_TMUX_AUTOSTART_ONCE=true
 ZSH_TMUX_AUTOCONNECT=false
 ZSH_TMUX_FIXTERM=true
 
-source $ZSH/oh-my-zsh.sh
-
 # edit PATH
 {{ if eq .chezmoi.os "linux" -}}
 export PATH=$HOME/.cargo/bin:$HOME/.local/bin:$PATH
@@ -47,6 +45,8 @@ export PATH=$HOME/.cargo/bin:$HOME/.local/bin:$PATH
 export PATH=$HOME/Library/Python/3.10/bin:$HOME/.rd/bin:$PATH
 
 {{- end}}
+
+source $ZSH/oh-my-zsh.sh
 
 {{if not $remote -}}
 # setup gpg-agent ssh
