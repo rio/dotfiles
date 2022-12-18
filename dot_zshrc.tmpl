@@ -62,12 +62,12 @@ export EDITOR='vim'
 {{if and .chezmoi.osRelease (eq .chezmoi.osRelease.id "ubuntu") -}} alias ll="exa -bghl" {{- else -}} alias ll="exa -bghl --git" {{- end}}
 
 # enable usage of .envrc files
-if command -v direnv; then
+if command -v direnv > /dev/null ; then
   eval "$(direnv hook zsh)"
 fi
 
 # enable layer 8 error correction
-if command -v thefuck; then
+if command -v thefuck > /dev/null ; then
   eval $(thefuck --alias slap)
 fi
 
