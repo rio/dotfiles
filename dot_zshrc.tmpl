@@ -57,8 +57,9 @@ if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
 fi
 {{- end}}
 
-# I need vim
-export EDITOR='vim'
+# I need (neo)vim
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 {{if and .chezmoi.osRelease (eq .chezmoi.osRelease.id "ubuntu") -}} alias ll="exa -bghl" {{- else -}} alias ll="exa -bghl --git" {{- end}}
 
