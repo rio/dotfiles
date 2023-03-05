@@ -33,3 +33,17 @@
     exact = true
     refreshPeriod = "168h"
 {{- end }}
+
+{{ if eq .chezmoi.arch "amd64" -}}
+[".local/bin"]
+    type = "archive"
+    url = "https://github.com/neovim/neovim/releases/download/v0.8.3/nvim-linux64.tar.gz"
+    include = ["nvim-linux64/bin/nvim"]
+    checksum.sha256 = "58ac03b345e8675e13322f8c7135906ce26a1ca7a87d041344d64b207be7bedf"
+    stripComponents = 3
+{{- end }}
+
+[".config/nvim"]
+    type = "archive"
+    url = "https://github.com/AstroNvim/AstroNvim/archive/refs/tags/v2.11.8.zip"
+    exact = true
