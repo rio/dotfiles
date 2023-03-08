@@ -29,10 +29,10 @@
 {{ if eq .chezmoi.os "linux" -}}
 [".local/bin/starship"]
     type = "archive"
-    {{ if eq .chezmoi.arch "arm64" -}}
+    {{- if eq .chezmoi.arch "arm64" -}}
     url = "https://github.com/starship/starship/releases/latest/download/starship-aarch64-unknown-linux-musl.tar.gz"
     {{ else }}
     url = "https://github.com/starship/starship/releases/latest/download/starship-x86_64-unknown-linux-gnu.tar.gz"
-    {{- end -}}
+    {{- end }}
     executable = true
 {{- end }}
