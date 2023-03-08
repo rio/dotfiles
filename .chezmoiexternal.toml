@@ -27,7 +27,7 @@
     stripComponents = 1
 
 {{ if eq .chezmoi.os "linux" -}}
-[".local/bin/starship"]
+[".local/bin"]
     type = "archive"
     {{- if eq .chezmoi.arch "arm64" -}}
     url = "https://github.com/starship/starship/releases/latest/download/starship-aarch64-unknown-linux-musl.tar.gz"
