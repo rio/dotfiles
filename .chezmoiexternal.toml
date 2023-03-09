@@ -36,3 +36,23 @@
     {{- end }}
     executable = true
 {{- end }}
+
+[".local/bin"]
+    type = "archive"
+    executable = true
+    include = ["task"]
+    {{- if and (eq .chezmoi.arch "arm64") (eq .chezmoi.os "darwin")  }}
+    url = "https://github.com/go-task/task/releases/latest/download/task_darwin_arm64.tar.gz"
+    {{ else }}
+    url = "https://github.com/go-task/task/releases/latest/download/task_linux_amd64.tar.gz"
+    {{- end }}
+
+[".local/share/zsh/site-functions"]
+    type = "archive"
+    include = ["completion/zsh/_task"]
+    stripComponents = 2
+    {{- if and (eq .chezmoi.arch "arm64") (eq .chezmoi.os "darwin") }}
+    url = "https://github.com/go-task/task/releases/latest/download/task_darwin_arm64.tar.gz"
+    {{ else }}
+    url = "https://github.com/go-task/task/releases/latest/download/task_linux_amd64.tar.gz"
+    {{- end }}
