@@ -23,6 +23,8 @@ export VISUAL='nvim'
 
 {{if and .chezmoi.osRelease (eq .chezmoi.osRelease.id "ubuntu") -}} alias ll="exa -bghl" {{- else -}} alias ll="exa -bghl --git" {{- end}}
 
+fpath=($HOME/.local/share/zsh/site-functions $fpath)
+
 # enable usage of .envrc files
 if command -v direnv > /dev/null ; then
   eval "$(direnv hook zsh)"
@@ -69,4 +71,8 @@ fi
 if [[ -d .zsh/zsh-syntax-highlighting ]] ; then
   source .zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
+
+# enable autoloading of 
+## autoload -U compinit
+## compinit -i
 
