@@ -52,7 +52,7 @@ fi
 # enable fzf autocompletion and key-bindings if found
 if command -v fzf > /dev/null ; then
 
-fzf_shell_script_location='/usr/share/fzf/shell'
+fzf_shell_script_location={{if and .chezmoi.osRelease (eq .chezmoi.osRelease.id "ubuntu" "debian") -}} '/usr/share/doc/fzf/examples' {{- else -}} '/usr/share/fzf/shell' {{- end}}
 
 {{if eq .chezmoi.os "darwin"}}
 
