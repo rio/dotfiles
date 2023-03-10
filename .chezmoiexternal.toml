@@ -27,14 +27,16 @@
     stripComponents = 1
 
 {{ if eq .chezmoi.os "linux" -}}
-[".local/bin"]
-    type = "archive"
+[".local/bin/starship"]
+    type = "file"
+    executable = true
+    filter.command = "tar"
+    filter.args = ["--gzip", "--to-stdout", "--extract", "--file=-", "starship"]
     {{ if eq .chezmoi.arch "arm64" -}}
     url = "https://github.com/starship/starship/releases/latest/download/starship-aarch64-unknown-linux-musl.tar.gz"
     {{- else }}
     url = "https://github.com/starship/starship/releases/latest/download/starship-x86_64-unknown-linux-gnu.tar.gz"
     {{- end }}
-    executable = true
 
 [".local/bin/bob"]
     type = "file"
@@ -43,15 +45,16 @@
     filter.args = ["-d"]
     {{if eq .chezmoi.arch "arm64" -}}
     url = "https://github.com/MordechaiHadad/bob/releases/latest/download/bob-linux-aarch64.zip"
-    {{- else}}
+    {{- else -}}
     url = "https://github.com/MordechaiHadad/bob/releases/latest/download/bob-linux-x86_64.zip"
-    {{- end}}
+    {{- end }}
 
     {{- if eq .chezmoi.arch "amd64"}}
-[".local/bin"]
-    type = "archive"
+[".local/bin/task"]
+    type = "file"
     executable = true
-    include = ["task"]
+    filter.command = "tar"
+    filter.args = ["--gzip", "--to-stdout", "--extract", "--file=-", "task"]
     url = "https://github.com/go-task/task/releases/latest/download/task_linux_amd64.tar.gz"
-    {{- end }}
-{{- end }}
+    {{- end}}
+{{- end}}
