@@ -17,6 +17,8 @@ if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
 fi
 {{- end}}
 
+autoload -Uz compinit && compinit
+
 # I need (neo)vim
 export EDITOR='nvim'
 export VISUAL='nvim'
@@ -63,8 +65,6 @@ fi
 if command -v kubectl > /dev/null ; then
   source <(kubectl completion zsh)
 fi
-
-autoload -Uz compinit && compinit
 
 if [[ -d .zsh/zsh-autosuggestions ]] ; then
   source .zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
