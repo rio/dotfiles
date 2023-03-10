@@ -12,13 +12,13 @@
     stripComponents = 1
     refreshPeriod = "168h"
 
-{{- if (and .chezmoi.osRelease (eq .chezmoi.osRelease.id "fedora")) -}}
+{{if (and .chezmoi.osRelease (eq .chezmoi.osRelease.id "fedora")) -}}
 [".fonts"]
     type = "archive"
     url = "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip"
     exact = true
     refreshPeriod = "168h"
-{{- end }}
+{{- end}}
 
 [".config/nvim"]
     type = "archive"
