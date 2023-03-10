@@ -60,6 +60,10 @@ source $fzf_shell_script_location/key-bindings.zsh
 
 fi
 
+if command -v kubectl > /dev/null ; then
+  source <(kubectl completion zsh)
+fi
+
 autoload -Uz compinit && compinit
 
 if [[ -d .zsh/zsh-autosuggestions ]] ; then
