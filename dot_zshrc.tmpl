@@ -52,9 +52,12 @@ fi
 # enable fzf autocompletion and key-bindings if found
 if command -v fzf > /dev/null ; then
 
+{{if }}
 fzf_shell_script_location='/usr/share/doc/fzf/examples'
 
-{{ if eq .chezmoi.os "darwin"}}
+{{- end}}
+
+{{if eq .chezmoi.os "darwin"}}
 
 if [[ -d /opt/homebrew/Cellar/fzf ]] ; then
   fzf_shell_script_location="/opt/homebrew/Cellar/fzf/$(fzf --version | cut -d ' ' -f 1)/shell"
@@ -62,7 +65,6 @@ fi
 
 {{- end}}
 
-source $fzf_shell_script_location/completion.zsh
 source $fzf_shell_script_location/key-bindings.zsh
 
 fi
