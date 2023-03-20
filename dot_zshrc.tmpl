@@ -1,8 +1,12 @@
 {{- $remote := env "REMOTE_CONTAINERS" | not | not -}}
 
+if [[ -d $HOME/.local/bin ]] ; then 
+  export PATH=$$HOME/.local/bin:$PATH
+fi 
+
 # edit PATH
 {{ if eq .chezmoi.os "linux" -}}
-export PATH=$HOME/.cargo/bin:$HOME/.local/bin:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
 
 {{- else if eq .chezmoi.hostname "FVFFM0E5Q05Q" -}}
 export PATH=$HOME/Library/Python/3.10/bin:$HOME/.rd/bin:$PATH
@@ -70,7 +74,7 @@ if command -v kubectl > /dev/null ; then
   source <(kubectl completion zsh)
 fi
 
-if command -v zellij ; then
+if command -v zellij > /dev/null ; then
   eval "$(zellij setup --generate-auto-start bash)"
 fi
 
