@@ -70,6 +70,10 @@ if command -v kubectl > /dev/null ; then
   source <(kubectl completion zsh)
 fi
 
+if command -v zellij ; then
+  eval "$(zellij setup --generate-auto-start bash)"
+fi
+
 if [[ -d .zsh/zsh-autosuggestions ]] ; then
   source .zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
