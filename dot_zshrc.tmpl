@@ -1,7 +1,7 @@
 {{- $remote := env "REMOTE_CONTAINERS" | not | not -}}
 
 if [[ -d $HOME/.local/bin ]] ; then 
-  export PATH=$$HOME/.local/bin:$PATH
+  export PATH=$HOME/.local/bin:$PATH
 fi 
 
 # edit PATH
