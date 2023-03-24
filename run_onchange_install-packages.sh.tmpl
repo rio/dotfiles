@@ -23,7 +23,7 @@ sudo apt install --no-install-recommends -y {{ concat $commonPackages $linuxPack
 {{- else if eq .chezmoi.osRelease.id "fedora" -}}
 sudo dnf install -y {{ concat $commonPackages $linuxPackages $fedoraPackages | join " "}}
 
-{{ if eq .chezmoi.osRelease.variantID "workstation" -}}
+{{ if eq .chezmoi.osRelease.variantID "workstation" "KDE Plasma" -}}
 sudo dnf install -y alacritty
 {{- end -}}
 
