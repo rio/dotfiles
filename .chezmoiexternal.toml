@@ -44,6 +44,11 @@
     filter.command = "tar"
     filter.args = ["--gzip", "--to-stdout", "--extract", "--file=-", "task"]
     url = "https://github.com/go-task/task/releases/latest/download/task_linux_amd64.tar.gz"
+
+[".local/bin"]
+    type = "archive"
+    url = "https://github.com/zellij-org/zellij/releases/download/v0.35.2/zellij-x86_64-unknown-linux-musl.tar.gz"
+    checksum.sha256 = "7ac07c68f67b5ae485c7dc699d66fcdf64f65120b0aea8bd1fb78e66f51f0d3d"
 {{- end}}
 
 {{if eq .chezmoi.os "darwin"}}
