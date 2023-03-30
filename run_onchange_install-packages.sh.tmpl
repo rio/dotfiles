@@ -3,7 +3,7 @@
 {{- $linuxPackages  := list "fd-find" "powerline" -}}
 
 {{- $debianPackages := list "shellcheck" -}}
-{{- $fedoraPackages := list "ShellCheck" "procs" "tmux-powerline" "neovim" "starship" -}}
+{{- $fedoraPackages := list "ShellCheck" "procs" "tmux-powerline" "neovim" -}}
 
 {{- $brewPackages   := list "fd" "shellcheck" "kind" "k3d" "k9s" "python" "procs" "bottom" "neovim" "starship" "go-task/tap/go-task" -}}
 {{- $caskPackages   := list "alacritty" "homebrew/cask-fonts/font-fira-code-nerd-font" -}}
@@ -23,7 +23,7 @@ sudo apt install --no-install-recommends -y {{ concat $commonPackages $linuxPack
 {{- else if eq .chezmoi.osRelease.id "fedora" -}}
 sudo dnf install -y {{ concat $commonPackages $linuxPackages $fedoraPackages | join " "}}
 
-{{ if eq .chezmoi.osRelease.variantID "workstation" -}}
+{{ if eq .chezmoi.osRelease.variantID "workstation" "kde" -}}
 sudo dnf install -y alacritty
 {{- end -}}
 
