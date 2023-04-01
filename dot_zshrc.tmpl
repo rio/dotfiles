@@ -1,5 +1,3 @@
-{{- $remote := env "REMOTE_CONTAINERS" | not | not -}}
-
 if [[ -d $HOME/.local/bin ]] ; then 
   export PATH=$HOME/.local/bin:$PATH
 fi 
@@ -13,7 +11,7 @@ export PATH=$HOME/Library/Python/3.10/bin:$HOME/.rd/bin:$PATH
 
 {{- end}}
 
-{{if not $remote -}}
+{{if not .chezmoi.data.remote -}}
 # setup gpg-agent ssh
 unset SSH_AGENT_PID
 if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
