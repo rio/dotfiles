@@ -22,7 +22,7 @@
 
 [".config/nvim"]
     type = "archive"
-    url = "https://github.com/AstroNvim/AstroNvim/archive/refs/tags/v2.11.8.zip"
+    url = "https://github.com/AstroNvim/AstroNvim/archive/refs/tags/v3.6.1.zip"
     exact = true
     stripComponents = 1
 
