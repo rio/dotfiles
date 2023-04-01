@@ -15,7 +15,7 @@
 {{if (and .chezmoi.osRelease (eq .chezmoi.osRelease.id "fedora")) -}}
 [".fonts"]
     type = "archive"
-    url = "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip"
+    url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip"
     exact = true
     refreshPeriod = "168h"
 {{- end}}
