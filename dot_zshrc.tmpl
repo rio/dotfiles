@@ -12,6 +12,7 @@ fi
 # edit PATH
 {{ if eq .chezmoi.os "linux" -}}
 export PATH=$HOME/.cargo/bin:$PATH
+{{- end}}
 
 {{if not $remote -}}
 # setup gpg-agent ssh
