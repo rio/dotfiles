@@ -1,5 +1,10 @@
 {{- $remote := or (env "SSH_CONNECTION" | not | not) (env "KUBERNETES_SERVICE_HOST" | not | not) (env "container" | not | not) (env "REMOTE_CONTAINERS" | not | not) -}}
 
+# enable zsh history
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=1000
+SIZEFILE=1000
+
 if [[ -d $HOME/.local/bin ]] ; then 
   export PATH=$HOME/.local/bin:$PATH
 fi 
@@ -7,11 +12,6 @@ fi
 # edit PATH
 {{ if eq .chezmoi.os "linux" -}}
 export PATH=$HOME/.cargo/bin:$PATH
-
-{{- else if eq .chezmoi.hostname "FVFFM0E5Q05Q" -}}
-export PATH=$HOME/Library/Python/3.10/bin:$HOME/.rd/bin:$PATH
-
-{{- end}}
 
 {{if not $remote -}}
 # setup gpg-agent ssh
