@@ -1,9 +1,9 @@
 {{- $remote := or (env "SSH_CONNECTION" | not | not) (env "KUBERNETES_SERVICE_HOST" | not | not) (env "container" | not | not) (env "REMOTE_CONTAINERS" | not | not) -}}
 
 # enable zsh history
-HISTFILE=$HOME/.zsh_history
-HISTSIZE=1000
-SIZEFILE=1000
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=60000
+SAVEHIST=50000
 
 if [[ -d $HOME/.local/bin ]] ; then 
   export PATH=$HOME/.local/bin:$PATH
