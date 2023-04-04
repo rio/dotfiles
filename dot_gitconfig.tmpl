@@ -1,17 +1,22 @@
-{{ if (eq .chezmoi.hostname "FVFFM0E5Q05Q") -}}
-[user]
-	name = Rio Kierkels
-	email = rio.kierkels@justeattakeaway.com
-{{ else -}}
 [user]
 	name = Rio Kierkels
 	email = riokierkels@gmail.com
-{{- end}}
+
 [init]
 	defaultBranch = main
+
 [pull]
 	rebase = false
+
 [push]
 	autoSetupRemote = true
+
 [branch]
 	autoSetupMerge = true
+
+│[filter "lfs"]                                                                                                                                                                                   │
+  required = true                                                                                                                                                                          │
+  clean = git-lfs clean -- %f                                                                                                                                                              │
+  smudge = git-lfs smudge -- %f                                                                                                                                                            │
+  process = git-lfs filter-process                                                                                                                                                         │
+
