@@ -13,4 +13,5 @@
         "kubernetes"
     ],
     "workbench.colorTheme": "Monokai Dimmed",
+    "editor.inlineSuggest.enabled": true,
 }
