@@ -22,8 +22,7 @@
 
 [".config/nvim"]
     type = "archive"
-    url = "https://github.com/NvChad/NvChad/archive/refs/tags/v2.0.zip"
-    exact = true
+    url = "https://github.com/NvChad/NvChad/archive/refs/heads/v2.0.zip"
     stripComponents = 1
 
 {{ if eq .chezmoi.os "linux" -}}
