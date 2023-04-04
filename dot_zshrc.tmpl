@@ -80,9 +80,11 @@ if command -v kubectl > /dev/null ; then
   source <(kubectl completion zsh)
 fi
 
+{{if not $remote -}}
 if command -v zellij > /dev/null ; then
   eval "$(zellij setup --generate-auto-start bash)"
 fi
+{{- end}}
 
 if [[ -d .zsh/zsh-autosuggestions ]] ; then
   source .zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
