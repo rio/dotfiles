@@ -41,6 +41,7 @@
     type = "archive"
     url = "https://github.com/neovim/neovim/releases/download/v0.8.3/nvim-linux64.tar.gz"
     stripComponents = 1
+    checksum.sha256 = "58ac03b345e8675e13322f8c7135906ce26a1ca7a87d041344d64b207be7bedf"
 
 [".local/bin/task"]
     type = "file"
