@@ -9,6 +9,11 @@ if [[ -d $HOME/.local/bin ]] ; then
   export PATH=$HOME/.local/bin:$PATH
 fi 
 
+# add the manually downloaded neovim distribution to the path
+if [[ -d $HOME/.local/bin/nvim-bin/bin ]] ; then 
+  export PATH=$HOME/.local/nvim-bin/bin:$PATH
+fi 
+
 # edit PATH
 {{ if eq .chezmoi.os "linux" -}}
 export PATH=$HOME/.cargo/bin:$PATH
