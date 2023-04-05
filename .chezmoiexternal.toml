@@ -25,11 +25,6 @@
     url = "https://github.com/AstroNvim/AstroNvim/archive/refs/tags/v3.7.2.zip"
     stripComponents = 1
 
-[".local/bin/nvim-bin"]
-    type = "archive"
-    url = "https://github.com/neovim/neovim/releases/download/v0.8.3/nvim-linux64.tar.gz"
-    stripComponents = 1
-
 {{ if eq .chezmoi.os "linux" -}}
 [".local/bin/starship"]
     type = "file"
