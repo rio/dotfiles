@@ -62,6 +62,12 @@
     filter.command = "tar"
     filter.args = ["--gzip", "--to-stdout", "--extract", "--file=-", "zellij"]
     url = "https://github.com/zellij-org/zellij/releases/download/v0.35.2/zellij-x86_64-unknown-linux-musl.tar.gz"
+
+[".local/bin/node-bin"]
+    type = "archive"
+    url = "https://nodejs.org/download/release/v16.20.0/node-v16.20.0-linux-x64.tar.gz"
+    stripComponents = 1
+    checksum.sha256 = "7abc0e558fa3b3c4cc0fd3c7fa5dbe61500ba7213f5e87ed560c65a733c6a5c4"
 {{- end}}
 
 {{if eq .chezmoi.os "darwin"}}

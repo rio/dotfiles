@@ -14,6 +14,11 @@ if [[ -d $HOME/.local/bin/nvim-bin/bin ]] ; then
   export PATH=$HOME/.local/bin/nvim-bin/bin:$PATH
 fi 
 
+# add the manually downloaded node 16 lts distribution to the path
+if [[ -d $HOME/.local/bin/node-bin/bin ]] ; then 
+  export PATH=$HOME/.local/bin/node-bin/bin:$PATH
+fi 
+
 # edit PATH
 {{ if eq .chezmoi.os "linux" -}}
 export PATH=$HOME/.cargo/bin:$PATH
