@@ -19,6 +19,11 @@ fi
 export PATH=$HOME/.cargo/bin:$PATH
 {{- end}}
 
+# setting up NVM for node version management
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 {{if not $remote -}}
 # setup gpg-agent ssh
 unset SSH_AGENT_PID
@@ -75,11 +80,6 @@ fi
 source $fzf_shell_script_location/key-bindings.zsh
 
 fi
-
-# setting up NVM for node version management
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 if command -v kubectl > /dev/null ; then
   source <(kubectl completion zsh)
