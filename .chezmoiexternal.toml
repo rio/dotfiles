@@ -12,12 +12,6 @@
     stripComponents = 1
     refreshPeriod = "168h"
 
-[".config/astronvim/lua/user"]
-    type = "archive"
-    url = "https://github.com/AstroNvim/user_example/archive/refs/heads/main.tar.gz"
-    stripComponents = 1
-    refreshPeriod = "168h"
-
 {{if (and .chezmoi.osRelease (eq .chezmoi.osRelease.id "fedora")) -}}
 [".fonts"]
     type = "archive"
