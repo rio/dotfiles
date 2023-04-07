@@ -4,7 +4,7 @@ return {
     lazy = false,
     opts = {
       colorcolumn = "100",
-      disabled_filesystems = { "help" },
+      disabled_filetypes = { "help" },
     }
   },
 }
