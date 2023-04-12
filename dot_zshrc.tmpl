@@ -89,10 +89,6 @@ fi
 if command -v zellij > /dev/null ; then
   eval "$(zellij setup --generate-auto-start zsh)"
 fi
-
-if [[ -f .zsh/zellij-completion.zsh ]] > /dev/null ; then
-  source .zsh/zellij-completion.zsh
-fi
 {{- end}}
 
 # some nice functions and aliases
