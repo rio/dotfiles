@@ -92,6 +92,11 @@ if command -v zellij > /dev/null ; then
 fi
 {{- end}}
 
+# some nice functions and aliases
+
+## open neovim notes layout
+alias notes="zellij action new-tab --layout notes"
+
 if [[ -d .zsh/zsh-autosuggestions ]] ; then
   source .zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
