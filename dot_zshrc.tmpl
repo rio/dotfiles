@@ -88,7 +88,10 @@ fi
 {{if not $remote -}}
 if command -v zellij > /dev/null ; then
   eval "$(zellij setup --generate-auto-start zsh)"
-  source <(zellij setup --generate-completion zsh)
+fi
+
+if [[ -f .zsh/zellij-completion.zsh ]] > /dev/null ; then
+  source .zsh/zellij-completion.zsh
 fi
 {{- end}}
 
