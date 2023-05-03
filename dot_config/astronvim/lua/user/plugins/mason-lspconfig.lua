@@ -6,8 +6,8 @@ return {
         "lua_ls",
         "marksman",
         "yamlls",
+        "jsonls"
       }
     }
   }
-}
 }
