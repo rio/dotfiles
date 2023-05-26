@@ -96,6 +96,11 @@ fi
 ## open neovim notes layout
 alias notes="zellij action new-tab --layout notes"
 
+## bat on debian based systems is batcat. Fix that.
+if [[ command -v batcat ]]; then
+  alias bat="batcat"
+fi
+
 if [[ -d .zsh/zsh-autosuggestions ]] ; then
   source .zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
