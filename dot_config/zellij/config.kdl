@@ -8,7 +8,7 @@ keybinds {
     unbind "Ctrl o"
     shared_except "session" "locked" {
         // do not use Ctrl o because
-        bind "Ctrl S" { SwitchToMode "Session"; }
+        bind "Alt a" { SwitchToMode "Session"; }
     }
 }
 
