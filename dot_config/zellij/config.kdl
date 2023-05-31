@@ -4,6 +4,12 @@ keybinds {
         // do not use Ctrl h because
         bind "Ctrl f" { SwitchToMode "Move"; }
     }
+
+    unbind "Ctrl o"
+    shared_except "session" "locked" {
+        // do not use Ctrl o because
+        bind "Ctrl S" { SwitchToMode "Session"; }
+    }
 }
 
 pane_frames false
