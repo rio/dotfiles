@@ -26,4 +26,4 @@ themes {
 
 theme "dracula"
 
-/* default_layout "compact" */
+default_layout "compact"
