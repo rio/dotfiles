@@ -92,6 +92,10 @@ if command -v zellij > /dev/null ; then
 fi
 {{- end}}
 
+if command -v zoxide > /dev/null ; then
+  eval "$(zoxide init zsh)"
+fi
+
 # some nice functions and aliases
 
 ## open neovim notes layout
