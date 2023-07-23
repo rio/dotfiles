@@ -33,11 +33,6 @@
     refreshPeriod = "168h"
 {{- end}}
 
-[".config/nvim"]
-    type = "archive"
-    url = "https://github.com/LazyVim/starter/archive/refs/heads/main.tar.gz"
-    stripComponents = 1
-
 {{ if eq .chezmoi.os "linux" -}}
 [".local/bin/starship"]
     type = "file"
