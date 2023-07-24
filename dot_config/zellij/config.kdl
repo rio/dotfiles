@@ -27,3 +27,4 @@ themes {
 theme "dracula"
 
 default_layout "compact"
+default_mode "locked"
