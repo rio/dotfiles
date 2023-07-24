@@ -75,6 +75,7 @@
     type = "archive"
     url = "https://github.com/LazyVim/starter/archive/refs/heads/main.tar.gz"
     stripComponents = 1
+    exclude = ["**/options.lua"]
 
 {{if eq .chezmoi.os "darwin"}}
 [".local/bin"]
