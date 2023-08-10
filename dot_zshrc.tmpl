@@ -19,6 +19,10 @@ if [[ -d $HOME/.local/bin/node-bin/bin ]] ; then
   export PATH=$HOME/.local/bin/node-bin/bin:$PATH
 fi 
 
+if [[ -d $HOME/.krew ]] ; then
+  export PATH=$HOME/.krew/bin:$PATH
+fi
+
 # edit PATH
 {{ if eq .chezmoi.os "linux" -}}
 export PATH=$HOME/.cargo/bin:$PATH
