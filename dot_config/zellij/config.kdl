@@ -1,9 +1,11 @@
 keybinds {
     unbind "Ctrl h"
-    shared_except "move" "locked" {
-        // do not use Ctrl h because
-        bind "Ctrl f" { SwitchToMode "Move"; }
-    }
+    unbind "Ctrl n"
+
+    // shared_except "move" "locked" {
+      // do not use Ctrl h because
+      //  bind "Ctrl f" { SwitchToMode "Move"; }
+    // }
 }
 
 pane_frames false
