@@ -1,9 +1,9 @@
-{{- $commonPackages := list "tmux" "less" "ripgrep" "entr" "bat" "zsh" "exa" "pass" "direnv" "git-lfs" "thefuck" "fzf" "wireguard-tools" -}}
+{{- $commonPackages := list "tmux" "less" "ripgrep" "entr" "bat" "zsh" "pass" "direnv" "git-lfs" "thefuck" "fzf" "wireguard-tools" "lsd" -}}
 
-{{- $linuxPackages  := list "fd-find" "powerline" -}}
+{{- $linuxPackages  := list "fd-find" -}}
 
 {{- $debianPackages := list "shellcheck" -}}
-{{- $fedoraPackages := list "ShellCheck" "procs" "tmux-powerline" -}}
+{{- $fedoraPackages := list "ShellCheck" "procs" -}}
 
 {{- $brewPackages   := list "fd" "shellcheck" "kind" "k3d" "k9s" "python" "procs" "bottom" "neovim" "starship" "go-task/tap/go-task" -}}
 {{- $caskPackages   := list "alacritty" "homebrew/cask-fonts/font-fira-code-nerd-font" -}}
@@ -42,6 +42,5 @@ sudo dnf install -y alacritty
 
 brew install --cask {{ $caskPackages | join " "}}
 brew install {{ concat $commonPackages $brewPackages | join " "}}
-pip3 install --user powerline-status
 
 {{- end }}

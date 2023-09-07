@@ -47,8 +47,12 @@ elif command -v vim > /dev/null ; then
   export VISUAL="vim"
 fi
 
-if command -v exa > /dev/null ; then
-{{if and .chezmoi.osRelease (eq .chezmoi.osRelease.id "ubuntu") -}} alias ll="exa -bghl" {{- else -}} alias ll="exa -bghl --git" {{- end}}
+if command -v lsd > /dev/null ; then
+  alias ls="lsd"
+  alias ll="ls -l"
+  alias la='ls -a'
+  alias lla='ls -la'
+  alias lt='ls --tree'
 fi
 
 # enable usage of .envrc files
