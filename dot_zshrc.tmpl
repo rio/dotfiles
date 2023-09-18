@@ -5,6 +5,9 @@ HISTFILE="$HOME/.zsh_history"
 HISTSIZE=60000
 SAVEHIST=50000
 
+# add user local completion folder to fpath
+fpath+=(~/.zsh/completion)
+
 if [[ -d $HOME/.local/bin ]] ; then 
   export PATH=$HOME/.local/bin:$PATH
 fi 

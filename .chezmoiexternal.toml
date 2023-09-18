@@ -57,6 +57,13 @@
     filter.args = ["--gzip", "--to-stdout", "--extract", "--file=-", "task"]
     url = "https://github.com/go-task/task/releases/latest/download/task_linux_amd64.tar.gz"
 
+[".zsh/completion/_task"]
+    type = "file"
+    executable = true
+    filter.command = "tar"
+    filter.args = ["--gzip", "--to-stdout", "--extract", "--file=-", "completion/zsh/_task"]
+    url = "https://github.com/go-task/task/releases/latest/download/task_linux_amd64.tar.gz"
+
 [".local/bin/zellij"]
     type = "file"
     executable = true
