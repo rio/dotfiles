@@ -63,11 +63,6 @@ if command -v direnv > /dev/null ; then
   eval "$(direnv hook zsh)"
 fi
 
-# enable layer 8 error correction
-if command -v thefuck > /dev/null ; then
-  eval $(thefuck --alias slap)
-fi
-
 # enable zsh vi-mode
 bindkey -v
 export KEYTIMEOUT=1 # make switching between modes faster
