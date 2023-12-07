@@ -1,0 +1,19 @@
+theme = "catppuccin_mocha"
+
+[editor]
+line-number = "relative"
+scrolloff = 20
+cursorline = true
+rulers = [120]
+text-width = 120
+bufferline = "multiple"
+color-modes = true
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "file-name", "read-only-indicator", "file-modification-indicator"]
+
+[editor.indent-guides]
+render = true
