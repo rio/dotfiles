@@ -46,7 +46,6 @@
     stripComponents = 1
     include = [
         "helix-23.10-x86_64-linux/runtime/**",
-        "helix-23.10-x86_64-linux/contrib/**",
     ]
     url = "https://github.com/helix-editor/helix/releases/download/23.10/helix-23.10-x86_64-linux.tar.xz"
 
