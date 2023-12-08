@@ -17,9 +17,3 @@ left = ["mode", "spinner", "version-control", "file-name", "read-only-indicator"
 
 [editor.indent-guides]
 render = true
-
-# YAML
-[language-server.yaml-language-server.config.yaml]
-format = { enable = true }
-validation = true
-schemaStore = { enable = true }
