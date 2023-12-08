@@ -41,8 +41,12 @@ fi
 
 autoload -Uz compinit && compinit
 
-# I need (neo)vim
-if command -v nvim > /dev/null ; then
+# trying out helix
+if command -v hx > /dev/null ; then
+  export EDITOR="hx"
+  export VISUAL="hx"
+# (neo)vim for backup
+elif command -v nvim > /dev/null ; then
   export EDITOR="nvim"
   export VISUAL="nvim"
 elif command -v vim > /dev/null ; then
