@@ -21,21 +21,6 @@
 {{- end}}
 
 {{ if eq .chezmoi.os "linux" -}}
-[".local/bin/hx"]
-    type = "file"
-    executable = true
-    filter.command = "tar"
-    filter.args = ["--xz", "--to-stdout", "--extract", "--file=-", "helix-23.10-x86_64-linux/hx"]
-    url = "https://github.com/helix-editor/helix/releases/download/23.10/helix-23.10-x86_64-linux.tar.xz"
-
-[".config/helix"]
-    type = "archive"
-    stripComponents = 1
-    include = [
-        "helix-23.10-x86_64-linux/runtime/**",
-    ]
-    url = "https://github.com/helix-editor/helix/releases/download/23.10/helix-23.10-x86_64-linux.tar.xz"
-
 [".local/bin/starship"]
     type = "file"
     executable = true
