@@ -1,0 +1,4 @@
+[".local/bin/devpod"]
+    type = "file"
+    executable = true
+    url = "https://github.com/loft-sh/devpod/releases/latest/download/devpod-{{.chezmoi.os}}-{{.chezmoi.arch}}"

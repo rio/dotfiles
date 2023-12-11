@@ -12,19 +12,6 @@
     stripComponents = 1
     refreshPeriod = "168h"
 
-[".local/bin/devpod"]
-    type = "file"
-    executable = true
-    {{ if and (eq .chezmoi.os "linux") (eq .chezmoi.arch "amd64") -}}
-    url = "https://github.com/loft-sh/devpod/releases/latest/download/devpod-linux-amd64"
-    {{ else if and (eq .chezmoi.os "linux") (eq .chezmoi.arch "arm64") -}}
-    url = "https://github.com/loft-sh/devpod/releases/latest/download/devpod-linux-arm64"
-    {{ else if and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "arm64") -}}
-    url = "https://github.com/loft-sh/devpod/releases/latest/download/devpod-darwin-amd64"
-    {{ else if and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "arm64") -}}
-    url = "https://github.com/loft-sh/devpod/releases/latest/download/devpod-darwin-arm64"
-    {{- end }}
-
 {{if (and .chezmoi.osRelease (eq .chezmoi.osRelease.id "fedora")) -}}
 [".fonts"]
     type = "archive"
