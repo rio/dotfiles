@@ -8,6 +8,7 @@ rulers = [120]
 text-width = 120
 bufferline = "multiple"
 color-modes = true
+true-color = true
 
 [editor.file-picker]
 hidden = false
