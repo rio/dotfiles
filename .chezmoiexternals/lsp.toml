@@ -1,0 +1,4 @@
+[".local/bin/terraform-ls"]
+  type = "archive-file"
+  url = "https://releases.hashicorp.com/terraform-ls/0.32.3/terraform-ls_0.32.3_{{.chezmoi.os}}_{{.chezmoi.arch}}.zip"
+  path = "terraform-ls"
