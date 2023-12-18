@@ -32,11 +32,6 @@
     url = "https://github.com/starship/starship/releases/latest/download/starship-x86_64-unknown-linux-gnu.tar.gz"
     {{- end }}
 
-[".local/bin/nvim-bin"]
-    type = "archive"
-    url = "https://github.com/neovim/neovim/releases/download/v0.9.1/nvim-linux64.tar.gz"
-    stripComponents = 1
-
 [".local/bin/task"]
     type = "file"
     executable = true
@@ -64,12 +59,6 @@
     stripComponents = 1
     checksum.sha256 = "7abc0e558fa3b3c4cc0fd3c7fa5dbe61500ba7213f5e87ed560c65a733c6a5c4"
 {{- end}}
-
-[".config/nvim"]
-    type = "archive"
-    url = "https://github.com/LazyVim/starter/archive/refs/heads/main.tar.gz"
-    stripComponents = 1
-    exclude = ["**/options.lua"]
 
 {{if eq .chezmoi.os "darwin"}}
 [".local/bin"]
