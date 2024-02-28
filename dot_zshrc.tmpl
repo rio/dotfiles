@@ -67,6 +67,9 @@ fi
 bindkey -v
 export KEYTIMEOUT=1 # make switching between modes faster
 
+# enable single-user nix installation if found
+if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then . $HOME/.nix-profile/etc/profile.d/nix.sh; fi
+
 # enable the starship prompt
 if command -v starship > /dev/null ; then
   eval "$(starship init zsh)"
