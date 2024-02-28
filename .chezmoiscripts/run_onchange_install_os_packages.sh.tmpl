@@ -2,10 +2,9 @@
 
 {{- $linuxPackages  := list "fd-find" -}}
 
-{{- $debianPackages := list "shellcheck" -}}
-{{- $fedoraPackages := list "ShellCheck" "procs" "lsd" "git-delta" -}}
+{{- $fedoraPackages := list "procs" "lsd" "git-delta" -}}
 
-{{- $brewPackages   := list "fd" "shellcheck" "kind" "k3d" "k9s" "python" "procs" "bottom" "neovim" "starship" "go-task/tap/go-task" -}}
+{{- $brewPackages   := list "fd" "kind" "k3d" "k9s" "python" "procs" "bottom" "neovim" "starship" "go-task/tap/go-task" -}}
 {{- $caskPackages   := list "alacritty" "homebrew/cask-fonts/font-fira-code-nerd-font" -}}
 
 #!/bin/bash
@@ -44,3 +43,5 @@ brew install --cask {{ $caskPackages | join " "}}
 brew install {{ concat $commonPackages $brewPackages | join " "}}
 
 {{- end }}
+
+nix-env --install shellcheck
