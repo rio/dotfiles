@@ -17,7 +17,7 @@
 {{- end -}}
 
 sudo apt update
-sudo apt install --no-install-recommends -y {{ concat $commonPackages $linuxPackages $debianPackages | join " " }}
+sudo apt install --no-install-recommends -y {{ concat $commonPackages $linuxPackages | join " " }}
 
 {{- else if eq .chezmoi.osRelease.id "fedora" -}}
 sudo dnf install -y {{ concat $commonPackages $linuxPackages $fedoraPackages | join " "}}
