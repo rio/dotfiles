@@ -1,8 +1,6 @@
 {{- $commonPackages := list "tmux" "less" "ripgrep" "entr" "bat" "zsh" "pass" "direnv" "git-lfs" "fzf" "wireguard-tools" -}}
 
-{{- $linuxPackages  := list "fd-find" -}}
-
-{{- $fedoraPackages := list "procs" "lsd" "git-delta" -}}
+{{- $fedoraPackages := list "git-delta" -}}
 
 {{- $brewPackages   := list "fd" "kind" "k3d" "k9s" "python" "procs" "bottom" "neovim" "starship" "go-task/tap/go-task" -}}
 {{- $caskPackages   := list "alacritty" "homebrew/cask-fonts/font-fira-code-nerd-font" -}}
@@ -17,14 +15,10 @@
 {{- end -}}
 
 sudo apt update
-sudo apt install --no-install-recommends -y {{ concat $commonPackages $linuxPackages | join " " }}
+sudo apt install --no-install-recommends -y {{ $commonPackages }}
 
 {{- else if eq .chezmoi.osRelease.id "fedora" -}}
-sudo dnf install -y {{ concat $commonPackages $linuxPackages $fedoraPackages | join " "}}
-
-{{ if eq .chezmoi.osRelease.variantID "workstation" "kde" -}}
-sudo dnf install -y alacritty
-{{- end -}}
+sudo dnf install -y {{ concat $commonPackages $fedoraPackages | join " "}}
 
 {{- end -}}
 
@@ -44,4 +38,8 @@ brew install {{ concat $commonPackages $brewPackages | join " "}}
 
 {{- end }}
 
-nix-env --install shellcheck
+nix-env --install \
+  shellcheck \
+  procs \
+  fd \
+  lsd
