@@ -1,12 +1,15 @@
-{{- $commonPackages := list "tmux" "less" "ripgrep" "entr" "bat" "zsh" "pass" "direnv" "git-lfs" "fzf" "wireguard-tools" -}}
-
-{{- $fedoraPackages := list "git-delta" -}}
+{{- $commonPackages := list "tmux" "less" "ripgrep" "entr" "bat" "zsh" "pass" "git-lfs" "fzf" "wireguard-tools" -}}
 
 {{- $brewPackages   := list "fd" "kind" "k3d" "k9s" "python" "procs" "bottom" "neovim" "starship" "go-task/tap/go-task" -}}
 {{- $caskPackages   := list "alacritty" "homebrew/cask-fonts/font-fira-code-nerd-font" -}}
 
 #!/bin/bash
 {{ if eq .chezmoi.os "linux" -}}
+
+if ! command -v nix-env &> /dev/null; then
+  curl -sSfL https://nixos.org/nix/install | sh -s -- --no-daemon --no-modify-profile
+  . $HOME/.nix-profile/etc/profile.d/nix.sh
+fi
 
 {{- if or (eq .chezmoi.osRelease.id "ubuntu" "debian") -}}
 
@@ -15,10 +18,10 @@
 {{- end -}}
 
 sudo apt update
-sudo apt install --no-install-recommends -y {{ $commonPackages }}
+sudo apt install --no-install-recommends -y {{ $commonPackages | join " " }}
 
 {{- else if eq .chezmoi.osRelease.id "fedora" -}}
-sudo dnf install -y {{ concat $commonPackages $fedoraPackages | join " "}}
+sudo dnf install -y {{ $commonPackages | join " "}}
 
 {{- end -}}
 
@@ -42,4 +45,5 @@ nix-env --install \
   shellcheck \
   procs \
   fd \
+  direnv \
   lsd
