@@ -4,12 +4,12 @@
 {{- $caskPackages   := list "alacritty" "homebrew/cask-fonts/font-fira-code-nerd-font" -}}
 
 #!/bin/bash
-{{ if eq .chezmoi.os "linux" -}}
-
-if ! command -v nix-env &> /dev/null; then
+if ! command -v nix-env &> /dev/null ; then
   curl -sSfL https://nixos.org/nix/install | sh -s -- --no-daemon --no-modify-profile
   . $HOME/.nix-profile/etc/profile.d/nix.sh
 fi
+
+{{ if eq .chezmoi.os "linux" -}}
 
 {{- if or (eq .chezmoi.osRelease.id "ubuntu" "debian") -}}
 
