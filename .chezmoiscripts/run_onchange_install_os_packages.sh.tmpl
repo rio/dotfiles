@@ -1,6 +1,6 @@
 {{- $commonPackages := list "tmux" "less" "ripgrep" "entr" "zsh" "pass" "git-lfs" "fzf" "wireguard-tools" -}}
 
-{{- $brewPackages   := list "fd" "kind" "k3d" "k9s" "python" "procs" "bottom" "neovim" "starship" "go-task/tap/go-task" -}}
+{{- $brewPackages   := list "fd" "kind" "k3d" "k9s" "python" "procs" "bottom" "neovim" "go-task/tap/go-task" -}}
 {{- $caskPackages   := list "alacritty" "homebrew/cask-fonts/font-fira-code-nerd-font" -}}
 
 #!/bin/bash
@@ -27,15 +27,6 @@ sudo dnf install -y {{ $commonPackages | join " "}}
 
 {{- else if (eq .chezmoi.os "darwin") -}}
 
-# note you should use rancher desktop for now. Lima didn't really work for me.
-# rancher desktop provides:
-# - kubectl
-# - docker
-# - docker-compose
-# - docker-buildx
-# - helm
-# - nerdctl
-
 brew install --cask {{ $caskPackages | join " "}}
 brew install {{ concat $commonPackages $brewPackages | join " "}}
 
@@ -48,4 +39,6 @@ nix-env --install \
   direnv \
   devpod \
   bat \
+  starship \
+  zellij \
   lsd

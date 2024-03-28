@@ -21,17 +21,6 @@
 {{- end}}
 
 {{ if eq .chezmoi.os "linux" -}}
-[".local/bin/starship"]
-    type = "file"
-    executable = true
-    filter.command = "tar"
-    filter.args = ["--gzip", "--to-stdout", "--extract", "--file=-", "starship"]
-    {{ if eq .chezmoi.arch "arm64" -}}
-    url = "https://github.com/starship/starship/releases/latest/download/starship-aarch64-unknown-linux-musl.tar.gz"
-    {{- else }}
-    url = "https://github.com/starship/starship/releases/latest/download/starship-x86_64-unknown-linux-gnu.tar.gz"
-    {{- end }}
-
 [".local/bin/task"]
     type = "file"
     executable = true
@@ -45,13 +34,6 @@
     filter.command = "tar"
     filter.args = ["--gzip", "--to-stdout", "--extract", "--file=-", "completion/zsh/_task"]
     url = "https://github.com/go-task/task/releases/latest/download/task_linux_amd64.tar.gz"
-
-[".local/bin/zellij"]
-    type = "file"
-    executable = true
-    filter.command = "tar"
-    filter.args = ["--gzip", "--to-stdout", "--extract", "--file=-", "zellij"]
-    url = "https://github.com/zellij-org/zellij/releases/latest/download/zellij-x86_64-unknown-linux-musl.tar.gz"
 
 [".local/bin/node-bin"]
     type = "archive"
