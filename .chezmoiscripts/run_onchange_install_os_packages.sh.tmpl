@@ -1,4 +1,4 @@
-{{- $commonPackages := list "tmux" "less" "ripgrep" "entr" "bat" "zsh" "pass" "git-lfs" "fzf" "wireguard-tools" -}}
+{{- $commonPackages := list "tmux" "less" "ripgrep" "entr" "zsh" "pass" "git-lfs" "fzf" "wireguard-tools" -}}
 
 {{- $brewPackages   := list "fd" "kind" "k3d" "k9s" "python" "procs" "bottom" "neovim" "starship" "go-task/tap/go-task" -}}
 {{- $caskPackages   := list "alacritty" "homebrew/cask-fonts/font-fira-code-nerd-font" -}}
@@ -14,7 +14,7 @@ fi
 {{- if or (eq .chezmoi.osRelease.id "ubuntu" "debian") -}}
 
 {{- if eq .chezmoi.osRelease.versionID "10" -}}
-{{- $commonPackages = without $commonPackages "bat" "wireguard-tools" -}}
+{{- $commonPackages = without $commonPackages "wireguard-tools" -}}
 {{- end -}}
 
 sudo apt update
@@ -46,4 +46,6 @@ nix-env --install \
   procs \
   fd \
   direnv \
+  devpod \
+  bat \
   lsd
