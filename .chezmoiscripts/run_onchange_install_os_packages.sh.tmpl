@@ -10,16 +10,16 @@ if ! command -v nix-env &> /dev/null ; then
 fi
 
 # install tools.
-nix profile install \
-  nixpkgs#bat \
-  nixpkgs#devpod \
-  nixpkgs#direnv \
-  nixpkgs#fd \
-  nixpkgs#lsd \
-  nixpkgs#procs \
-  nixpkgs#shellcheck \
-  nixpkgs#starship \
-  nixpkgs#zellij
+nix-env --install \
+  bat \
+  devpod \
+  direnv \
+  fd \
+  lsd \
+  procs \
+  shellcheck \
+  starship \
+  zellij
 
 {{ if eq .chezmoi.os "linux" -}}
 
