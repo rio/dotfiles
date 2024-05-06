@@ -72,19 +72,7 @@ fi
 
 # enable fzf autocompletion and key-bindings if found
 if command -v fzf > /dev/null ; then
-
-fzf_shell_script_location={{if and .chezmoi.osRelease (eq .chezmoi.osRelease.id "ubuntu" "debian") -}} '/usr/share/doc/fzf/examples' {{- else -}} '/usr/share/fzf/shell' {{- end}}
-
-{{if eq .chezmoi.os "darwin"}}
-
-if [[ -d /opt/homebrew/Cellar/fzf ]] ; then
-  fzf_shell_script_location="/opt/homebrew/Cellar/fzf/$(fzf --version | cut -d ' ' -f 1)/shell"
-fi
-
-{{- end}}
-
-source $fzf_shell_script_location/key-bindings.zsh
-
+  source $HOME/.nix-profile/share/fzf/key-bindings.zsh
 fi
 
 if command -v kubectl > /dev/null ; then
