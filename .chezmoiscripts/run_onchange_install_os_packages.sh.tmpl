@@ -1,5 +1,3 @@
-{{- $commonPackages := list "tmux" "less" "ripgrep" "entr" "zsh" "pass" "git-lfs" "fzf" "wireguard-tools" -}}
-
 {{- $brewPackages   := list "fd" "kind" "k3d" "k9s" "python" "procs" "bottom" "neovim" "go-task/tap/go-task" -}}
 {{- $caskPackages   := list "alacritty" "homebrew/cask-fonts/font-fira-code-nerd-font" -}}
 
@@ -9,37 +7,29 @@ if ! command -v nix-env &> /dev/null ; then
   . $HOME/.nix-profile/etc/profile.d/nix.sh
 fi
 
+{{ if eq .chezmoi.os "linux" -}}
+
 # install tools.
 nix-env --install \
   bat \
   devpod \
   direnv \
   fd \
+  fzf \
+  git-lfs \
   lsd \
+  pass \
   procs \
+  ripgrep \
   shellcheck \
   starship \
   zellij
 
-{{ if eq .chezmoi.os "linux" -}}
-
-{{- if or (eq .chezmoi.osRelease.id "ubuntu" "debian") -}}
-
-{{- if eq .chezmoi.osRelease.versionID "10" -}}
-{{- $commonPackages = without $commonPackages "wireguard-tools" -}}
-{{- end -}}
-
-sudo apt update
-sudo apt install --no-install-recommends -y {{ $commonPackages | join " " }}
-
-{{- else if eq .chezmoi.osRelease.id "fedora" -}}
-sudo dnf install -y {{ $commonPackages | join " "}}
-
-{{- end -}}
+  # nodejs-slim_20 \
 
 {{- else if (eq .chezmoi.os "darwin") -}}
 
 brew install --cask {{ $caskPackages | join " "}}
-brew install {{ concat $commonPackages $brewPackages | join " "}}
+brew install {{ $brewPackages | join " "}}
 
 {{- end }}
