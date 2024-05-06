@@ -9,6 +9,18 @@ if ! command -v nix-env &> /dev/null ; then
   . $HOME/.nix-profile/etc/profile.d/nix.sh
 fi
 
+# install tools.
+nix profile install \
+  nixpkgs#bat \
+  nixpkgs#devpod \
+  nixpkgs#direnv \
+  nixpkgs#fd \
+  nixpkgs#lsd \
+  nixpkgs#procs \
+  nixpkgs#shellcheck \
+  nixpkgs#starship \
+  nixpkgs#zellij
+
 {{ if eq .chezmoi.os "linux" -}}
 
 {{- if or (eq .chezmoi.osRelease.id "ubuntu" "debian") -}}
@@ -31,14 +43,3 @@ brew install --cask {{ $caskPackages | join " "}}
 brew install {{ concat $commonPackages $brewPackages | join " "}}
 
 {{- end }}
-
-nix-env --install \
-  shellcheck \
-  procs \
-  fd \
-  direnv \
-  devpod \
-  bat \
-  starship \
-  zellij \
-  lsd
