@@ -3,7 +3,7 @@
 set -euxo pipefail
 
 if ! command -v chezmoi >/dev/null; then
-	echo nope
+	sh -c "$(curl -fsLS get.chezmoi.io/lb)"
 fi
 
-echo $PWD >execution-location.txt
+chezmoi apply --source $PWD
