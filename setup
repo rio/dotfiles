@@ -1,9 +1,9 @@
 #!/bin/bash
 
-set -euxo pipefail
+set -euo pipefail
 
 if ! command -v chezmoi >/dev/null; then
 	sh -c "$(curl -fsLS get.chezmoi.io/lb)"
 fi
 
-chezmoi apply --source $PWD
+$HOME/.local/bin/chezmoi apply --source $PWD
