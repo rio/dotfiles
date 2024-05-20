@@ -19,27 +19,3 @@
     exact = true
     refreshPeriod = "168h"
 {{- end}}
-
-{{ if eq .chezmoi.os "linux" -}}
-[".local/bin/task"]
-    type = "file"
-    executable = true
-    filter.command = "tar"
-    filter.args = ["--gzip", "--to-stdout", "--extract", "--file=-", "task"]
-    url = "https://github.com/go-task/task/releases/latest/download/task_linux_amd64.tar.gz"
-
-[".zsh/completion/_task"]
-    type = "file"
-    executable = true
-    filter.command = "tar"
-    filter.args = ["--gzip", "--to-stdout", "--extract", "--file=-", "completion/zsh/_task"]
-    url = "https://github.com/go-task/task/releases/latest/download/task_linux_amd64.tar.gz"
-{{- end}}
-
-{{if eq .chezmoi.os "darwin"}}
-[".local/bin"]
-    type = "archive"
-    url = "https://github.com/zellij-org/zellij/releases/latest/download/zellij-aarch64-apple-darwin.tar.gz"
-    checksum.sha256 = "3de544f0cdae394b851bd0d2da13d3d7a841f7bddbc0a78ca8e4c9aea06bab64"
-{{- end}}
-

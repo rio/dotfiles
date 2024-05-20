@@ -1,13 +1,8 @@
-{{- $brewPackages   := list "fd" "kind" "k3d" "k9s" "python" "procs" "bottom" "neovim" "go-task/tap/go-task" -}}
-{{- $caskPackages   := list "alacritty" "homebrew/cask-fonts/font-fira-code-nerd-font" -}}
-
 #!/bin/bash
 if ! command -v nix-env &> /dev/null ; then
   curl -sSfL https://nixos.org/nix/install | sh -s -- --no-daemon --no-modify-profile
   . $HOME/.nix-profile/etc/profile.d/nix.sh
 fi
-
-{{ if eq .chezmoi.os "linux" -}}
 
 # install tools.
 nix-env --install \
