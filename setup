@@ -2,8 +2,9 @@
 
 set -euo pipefail
 
-if ! command -v chezmoi >/dev/null; then
-	sh -c "$(curl -fsLS get.chezmoi.io)" -- -b $HOME/.local/bin
+if command -v chezmoi >/dev/null; then
+	chezmoi apply --source $PWD
+else
+	sh -c "$(curl -fsLS get.chezmoi.io/lb)"
+	.local/bin/chezmoi apply --source $PWD
 fi
-
-$HOME/.local/bin/chezmoi apply --source $PWD
