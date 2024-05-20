@@ -3,7 +3,7 @@
 set -euo pipefail
 
 if ! command -v chezmoi >/dev/null; then
-	sh -c "$(curl -fsLS get.chezmoi.io/lb)"
+	sh -c "$(curl -fsLS get.chezmoi.io)" -- -b $HOME/.local/bin
 fi
 
 $HOME/.local/bin/chezmoi apply --source $PWD
