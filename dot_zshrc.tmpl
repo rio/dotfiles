@@ -12,11 +12,6 @@ if [[ -d $HOME/.local/bin ]] ; then
   export PATH=$HOME/.local/bin:$PATH
 fi 
 
-# add the manually downloaded neovim distribution to the path
-if [[ -d $HOME/.local/bin/nvim-bin/bin ]] ; then 
-  export PATH=$HOME/.local/bin/nvim-bin/bin:$PATH
-fi 
-
 if [[ -d $HOME/.krew ]] ; then
   export PATH=$HOME/.krew/bin:$PATH
 fi
