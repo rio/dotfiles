@@ -1,0 +1,14 @@
+packages:
+  nix:
+    - bat
+    - devpod
+    - direnv
+    - fd
+    - fzf
+    - git-lfs
+    - lsd
+    - neovim
+    - nodejs
+    - ripgrep
+    - starship
+    - zellij
