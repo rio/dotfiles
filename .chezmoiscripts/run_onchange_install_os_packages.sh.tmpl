@@ -13,17 +13,8 @@ nix-env --install \
   fzf \
   git-lfs \
   lsd \
+  neovim \
   nodejs \
-  procs \
   ripgrep \
-  shellcheck \
   starship \
   zellij
-
-
-{{- else if (eq .chezmoi.os "darwin") -}}
-
-brew install --cask {{ $caskPackages | join " "}}
-brew install {{ $brewPackages | join " "}}
-
-{{- end }}
