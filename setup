@@ -5,6 +5,6 @@ set -euo pipefail
 if command -v chezmoi >/dev/null; then
 	chezmoi apply --source $PWD
 else
-	sh -c "$(curl -fsLS get.chezmoi.io/lb)"
-	.local/bin/chezmoi apply --source $PWD
+	sh -c "$(curl -fsLS get.chezmoi.io)"
+	./bin/chezmoi apply --source $PWD
 fi
