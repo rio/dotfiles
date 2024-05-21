@@ -1,13 +1,16 @@
 #!/bin/bash
 
-set -exuo pipefail
+set -euo pipefail
 
-if command -v chezmoi >/dev/null; then
-	chezmoi apply --source $PWD
-else
+chezmoi_path="chezmoi"
+
+if ! command -v chezmoi >/dev/null; then
 	sh -c "$(curl -fsLS get.chezmoi.io)"
-	./bin/chezmoi apply --source $PWD
 fi
+
+set -x
+
+$chezmoi_path apply --source $PWD
 
 if command -v zsh >/dev/null; then
 	sudo chsh -s $(command -v zsh) $USER
