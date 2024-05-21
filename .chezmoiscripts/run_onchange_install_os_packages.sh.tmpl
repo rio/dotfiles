@@ -5,4 +5,5 @@ if ! command -v nix-env &> /dev/null ; then
 fi
 
 # install tools.
+# packages hash: {{ include "../.chezmoidata/packages.yaml" | sha256sum }}
 nix-env --install {{ .packages.nix | join " " }}
