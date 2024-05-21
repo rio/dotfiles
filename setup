@@ -6,6 +6,7 @@ chezmoi_path="chezmoi"
 
 if ! command -v chezmoi >/dev/null; then
 	sh -c "$(curl -fsLS get.chezmoi.io)"
+	chezmoi_path="./bin/chezmoi"
 fi
 
 set -x
