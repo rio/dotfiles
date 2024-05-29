@@ -1,5 +1,8 @@
 [tools]
 bat = "latest"
 neovim = "0.10.0"
+ripgrep = "latest"
+starship = "latest"
 xh = "latest"
+zellij = "latest"
 zoxide = "latest"
