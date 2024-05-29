@@ -70,8 +70,9 @@ if command -v starship > /dev/null ; then
 fi
 
 # enable fzf autocompletion and key-bindings if found
-if command -v fzf > /dev/null ; then
-  source $HOME/.nix-profile/share/fzf/key-bindings.zsh
+if mise where fzf > /dev/null ; then
+  source $(mise where fzf)/shell/key-bindings.zsh
+  source $(mise where fzf)/shell/completion.zsh
 fi
 
 if command -v kubectl > /dev/null ; then
