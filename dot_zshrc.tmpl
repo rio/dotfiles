@@ -37,6 +37,7 @@ if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then . $HOME/.nix-profile/etc
 # enable mise if found
 if (command -v mise > /dev/null); then
   eval "$(mise activate zsh)"
+  # triger the hook-env to enable mise in this .zshrc
   eval "$(mise hook-env -s zsh)"
 fi
 
