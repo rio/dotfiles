@@ -1,6 +1,0 @@
-packages:
-  nix:
-    - fd
-    - fzf
-    - git-lfs
-    - lsd

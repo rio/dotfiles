@@ -1,9 +1,0 @@
-#!/bin/bash
-if ! command -v nix-env &> /dev/null ; then
-  curl -sSfL https://nixos.org/nix/install | sh -s -- --no-daemon --no-modify-profile
-  . $HOME/.nix-profile/etc/profile.d/nix.sh
-fi
-
-# install tools.
-# packages hash: {{ include ".chezmoidata/packages.yaml" | sha256sum }}
-nix-env --install {{ .packages.nix | join " " }}

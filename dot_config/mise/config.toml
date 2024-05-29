@@ -1,5 +1,10 @@
 [tools]
 bat = "latest"
+fd = "latest"
+fzf = "latest"
+git = "latest"
+lazygit = "latest"
+lsd = "latest"
 neovim = "0.10.0"
 node = "20"
 ripgrep = "latest"
