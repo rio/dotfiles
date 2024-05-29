@@ -1,6 +1,5 @@
 packages:
   nix:
-    - devpod
     - direnv
     - fd
     - fzf
