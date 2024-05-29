@@ -1,4 +1,5 @@
 [tools]
 bat = "latest"
+neovim = "0.10.0"
 xh = "latest"
 zoxide = "latest"
