@@ -1,5 +1,4 @@
 [tools]
-autoconf = "latest"
 bat = "latest"
 fd = "latest"
 fzf = "latest"
