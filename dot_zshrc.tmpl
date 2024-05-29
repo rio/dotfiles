@@ -36,8 +36,9 @@ if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then . $HOME/.nix-profile/etc
 
 # enable mise if found
 if (command -v mise > /dev/null); then
-  # we rely on shims to install tools on demand
-  eval "$(mise activate --shims)"
+  eval "$(mise activate zsh)"
+  # triger the hook-env to enable mise in this .zshrc context
+  eval "$(mise hook-env -s zsh)"
 fi
 
 # (neo)vim
