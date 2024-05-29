@@ -34,6 +34,11 @@ autoload -Uz compinit && compinit
 # enable single-user nix installation if found
 if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then . $HOME/.nix-profile/etc/profile.d/nix.sh; fi
 
+# enable mise if found
+if (command -v mise > /dev/null); then
+  eval "$(mise activate zsh)"
+fi
+
 # (neo)vim
 if command -v nvim > /dev/null ; then
   export EDITOR="nvim"
