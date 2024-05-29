@@ -1,8 +1,6 @@
 packages:
   nix:
-    - direnv
     - fd
     - fzf
     - git-lfs
     - lsd
-    - nodejs
