@@ -1,4 +1,4 @@
-[".local/bin/mise"]
+[".local/bin/devpod"]
 type = "file"
 executable = true
-url = "https://github.com/jdx/mise/releases/download/v2024.5.24/mise-v2024.5.24-{{.chezmoi.os}}-x64"
+url = "https://github.com/loft-sh/devpod/releases/latest/download/devpod-{{.chezmoi.os}}-{{.chezmoi.arch}}"
