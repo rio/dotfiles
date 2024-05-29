@@ -2,6 +2,7 @@
 bat = "latest"
 fd = "latest"
 fzf = "latest"
+direnv = "latest"
 git = "latest"
 lazygit = "latest"
 lsd = "latest"
