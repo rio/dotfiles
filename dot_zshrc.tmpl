@@ -39,6 +39,11 @@ if (command -v mise > /dev/null); then
   eval "$(mise activate zsh)"
 fi
 
+# enable zoxide if found
+if command -v zoxide > /dev/null ; then
+  eval "$(zoxide init zsh)"
+fi
+
 # (neo)vim
 if command -v nvim > /dev/null ; then
   export EDITOR="nvim"
