@@ -93,9 +93,14 @@ fi
 
 # some nice functions and aliases
 
+## use bat instead of cat 
+if command -v bat > /dev/null ; then
+  alias cat="bat"
+fi
+
 ## bat on debian based systems is batcat. Fix that.
 if command -v batcat > /dev/null ; then
-  alias bat="batcat"
+  alias cat="batcat"
 fi
 
 if [[ -d .zsh/zsh-autosuggestions ]] ; then
