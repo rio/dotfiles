@@ -1,7 +1,7 @@
 [tools]
 bat = "latest"
 fd = "latest"
-fzf = "latest"
+fzf = "0.53.0"
 direnv = "latest"
 lazygit = "latest"
 lsd = "latest"
