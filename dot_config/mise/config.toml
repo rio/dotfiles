@@ -1,7 +1,7 @@
 [tools]
 bat = "latest"
 fd = "latest"
-fzf = "0.53.0"
+fzf = "latest"
 direnv = "latest"
 lazygit = "latest"
 lsd = "latest"
@@ -13,6 +13,7 @@ xh = "latest"
 zellij = "latest"
 zoxide = "latest"
 task = "latest"
+gum = "latest"
 
 [settings]
 http_timeout = 120
