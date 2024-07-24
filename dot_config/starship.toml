@@ -25,7 +25,10 @@ $conda\
 [](fg:color_bg3 bg:color_bg1)\
 $time\
 [ ](fg:color_bg1)\
-$line_break$character"""
+$line_break\
+$container\
+$hostname\
+$character"""
 
 palette = 'gruvbox_dark'
 
@@ -165,6 +168,15 @@ vimcmd_symbol = '[](bold fg:color_green)'
 vimcmd_replace_one_symbol = '[](bold fg:color_purple)'
 vimcmd_replace_symbol = '[](bold fg:color_purple)'
 vimcmd_visual_symbol = '[](bold fg:color_yellow)'
+
+# Custom config from here on
+[container]
+style = "bg:color_red fg:color_fg0"
+format = "[](color_red)[$symbol $name]($style)[ ](fg:color_red)"
+
+[hostname]
+style = "bg:color_red fg:color_fg0"
+format = "(color_red)[$sshsymbol$hostname]($style)[ ](fg:color_red)"
 
 [gcloud]
 disabled = true
