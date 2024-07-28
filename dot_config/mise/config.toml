@@ -13,7 +13,6 @@ xh = "latest"
 zellij = "latest"
 zoxide = "latest"
 task = "latest"
-gum = "latest"
 
 [settings]
 http_timeout = 120
