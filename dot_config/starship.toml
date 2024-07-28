@@ -177,7 +177,7 @@ format = "[](color_red)[$symbol $name]($style)[ ](fg:color_red)"
 
 [hostname]
 style = "bg:color_purple fg:color_fg0"
-format = "[](color_purple)[$sshsymbol$hostname]($style)[ ](fg:color_purple)"
+format = "[](color_purple)[$ssh_symbol$hostname]($style)[ ](fg:color_purple)"
 
 [gcloud]
 disabled = true
