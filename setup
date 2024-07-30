@@ -9,10 +9,10 @@ if ! command -v chezmoi >/dev/null; then
   chezmoi_path="./bin/chezmoi"
 fi
 
-set -x
-
 if command -v zsh >/dev/null; then
   sudo chsh -s $(command -v zsh) $USER
 fi
 
 $chezmoi_path apply --source $PWD
+
+exit 0
