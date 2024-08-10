@@ -29,6 +29,7 @@ $time\
 $line_break\
 $container\
 $hostname\
+$sudo\
 $character"""
 
 palette = 'gruvbox_dark'
@@ -179,6 +180,12 @@ format = "[](color_red)[$symbol $name]($style)[ ](fg:color_red)"
 ssh_symbol = "❮=❯ "
 style = "bg:color_red fg:color_fg0"
 format = "[](color_red)[$ssh_symbol$hostname]($style)[ ](fg:color_red)"
+
+[sudo]
+disabled = false
+symbol = "⚠️"
+style = "bg:color_red fg:color_fg0"
+format = "[](color_red)[$symbol]($style)[ ](fg:color_red)"
 
 [gcloud]
 disabled = true
