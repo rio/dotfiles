@@ -13,7 +13,7 @@ if wezterm.config_builder then
 
 	config.color_scheme = scheme_for_appearance(wezterm.gui.get_appearance())
 	config.hide_tab_bar_if_only_one_tab = true
-	config.window_decorations = "NONE"
+	config.window_decorations = "RESIZE"
 	config.window_background_opacity = 0.8
 end
 
