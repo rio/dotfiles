@@ -1,17 +1,17 @@
-keybinds {
-    // disable most sortcuts and lean mostly on tmux bindings
-    normal {
-      unbind "Ctrl h"
-      unbind "Ctrl n"
-      unbind "Ctrl o"
-      unbind "Ctrl t"
-      unbind "Ctrl p"
-    }
-}
+// keybinds {
+//     // disable most sortcuts and lean mostly on tmux bindings
+//     normal {
+//       unbind "Ctrl h"
+//       unbind "Ctrl n"
+//       unbind "Ctrl o"
+//       unbind "Ctrl t"
+//       unbind "Ctrl p"
+//     }
+// }
 
 pane_frames false
 
 theme "gruvbox-dark"
 
-default_mode "locked"
-default_layout "compact"
+// default_mode "locked"
+// default_layout "compact"
