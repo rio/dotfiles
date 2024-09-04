@@ -86,12 +86,6 @@ if command -v zoxide > /dev/null ; then
   alias cd="z"
 fi
 
-{{if not $remote -}}
-if command -v zellij > /dev/null ; then
-  eval "$(zellij setup --generate-auto-start zsh)"
-fi
-{{- end}}
-
 # some nice functions and aliases
 
 ## use bat instead of cat 
