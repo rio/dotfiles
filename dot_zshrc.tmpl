@@ -31,6 +31,9 @@ fi
 
 autoload -Uz compinit && compinit
 
+# enable brew if found on linux
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 # enable mise if found
 if (command -v mise > /dev/null); then
   eval "$(mise activate zsh)"
