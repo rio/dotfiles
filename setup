@@ -2,17 +2,18 @@
 
 set -euo pipefail
 
-chezmoi_path="chezmoi"
+if ! command -v brew >/dev/null; then
+  NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
 if ! command -v chezmoi >/dev/null; then
-  sh -c "$(curl -fsLS get.chezmoi.io)"
-  chezmoi_path="./bin/chezmoi"
+  brew install chezmoi
 fi
 
 if command -v zsh >/dev/null; then
   sudo chsh -s $(command -v zsh) $USER
 fi
 
-$chezmoi_path apply --source $PWD
+chezmoi apply --source $PWD
 
 exit 0
