@@ -1,3 +1,5 @@
 brew "uv"
 brew "gum"
 brew "zoxide"
+brew "neovim"
+brew "starship"
