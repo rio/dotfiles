@@ -1,1 +1,1 @@
-brew uv
+brew "uv"
