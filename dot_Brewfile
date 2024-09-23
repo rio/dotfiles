@@ -1,1 +1,3 @@
 brew "uv"
+brew "gum"
+brew "zoxide"
