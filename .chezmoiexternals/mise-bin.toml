@@ -1,4 +1,0 @@
-[".local/bin/mise"]
-type = "file"
-executable = true
-url = "https://github.com/jdx/mise/releases/download/v2024.6.4/mise-v2024.6.4-{{.chezmoi.os}}-x64"
