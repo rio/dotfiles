@@ -14,4 +14,4 @@ pane_frames false
 theme "gruvbox-dark"
 
 // default_mode "locked"
-// default_layout "compact"
+default_layout "compact"
