@@ -3,4 +3,4 @@ k9s:
     headless: true
     skin: transparent
   imageScans:
-    enable: true
+    enable: false
