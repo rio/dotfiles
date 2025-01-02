@@ -15,6 +15,8 @@ if wezterm.config_builder then
 	config.hide_tab_bar_if_only_one_tab = true
 	config.window_decorations = "RESIZE"
 	config.window_background_opacity = 0.8
+	config.font = wezterm.font("DepartureMono")
+	config.font_size = 12.0
 end
 
 return config
