@@ -1,0 +1,4 @@
+[".fonts"]
+type = "archive"
+url = "https://departuremono.com/assets/DepartureMono-1.422.zip"
+exclude = ["LICENSE", "README.md"]
