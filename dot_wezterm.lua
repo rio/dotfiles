@@ -17,8 +17,7 @@ if wezterm.config_builder then
 	config.window_background_opacity = 0.8
 	config.font = wezterm.font("DepartureMono")
 	config.font_size = 12.0
-	config.default_prog = { '/usr/bin/zsh' }
-
+	config.default_prog = { "/usr/bin/zsh", "--login" }
 end
 
 return config
