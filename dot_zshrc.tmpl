@@ -93,6 +93,10 @@ if command -v batcat > /dev/null ; then
   alias cat="batcat"
 fi
 
+if command -v dagger > /dev/null ; then 
+  export DAGGER_NO_NAG=1
+fi
+
 if [[ -d .zsh/zsh-autosuggestions ]] ; then
   source .zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
