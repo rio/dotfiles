@@ -32,7 +32,13 @@ fi
 autoload -Uz compinit && compinit
 
 # enable brew if found on linux
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+if [ -f /home/linuxbrew/.linuxbrew/bin/brew ] ; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
+if command -v mise > /dev/null ; then
+  eval "$(mise activate zsh)"
+fi
 
 # (neo)vim
 if command -v nvim > /dev/null ; then
