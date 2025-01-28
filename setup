@@ -2,13 +2,8 @@
 
 set -euo pipefail
 
-if ! command -v brew >/dev/null; then
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-fi
-
 if ! command -v chezmoi >/dev/null; then
-  brew install chezmoi
+  sh -c "$(curl -fsLS get.chezmoi.io/lb)"
 fi
 
 if command -v zsh >/dev/null; then
