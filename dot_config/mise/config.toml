@@ -1,13 +1,14 @@
 [tools]
-bat = "latest"
-fd = "latest"
-fzf = "0.53.0"
-direnv = "latest"
-lazygit = "latest"
-lsd = "latest"
-node = "latest"
+neovim = "latest"
 ripgrep = "latest"
+zoxide = "latest"
+lsd = "latest"
+bat = "latest"
+fzf = "latest"
+fd = "latest"
+direnv = "latest"
 xh = "latest"
-
-[settings]
-http_timeout = 120
+zellij = "latest"
+starship = "latest"
+node = "latest"
+chezmoi = "latest"
