@@ -29,8 +29,6 @@ if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
 fi
 {{- end}}
 
-autoload -Uz compinit && compinit
-
 # enable brew if found on linux
 if [ -f /home/linuxbrew/.linuxbrew/bin/brew ] ; then
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
@@ -39,6 +37,8 @@ fi
 if command -v mise > /dev/null ; then
   eval "$(mise activate zsh)"
 fi
+
+autoload -Uz compinit && compinit
 
 # (neo)vim
 if command -v nvim > /dev/null ; then
