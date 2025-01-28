@@ -2,14 +2,12 @@
 
 set -euo pipefail
 
-if ! command -v chezmoi >/dev/null; then
-  sh -c "$(curl -fsLS get.chezmoi.io/lb)"
-fi
-
 if command -v zsh >/dev/null; then
   sudo chsh -s $(command -v zsh) $USER
 fi
 
-chezmoi apply --source $PWD
+if ! command -v chezmoi >/dev/null; then
+  sh -c "$(curl -fsLS get.chezmoi.io)" -- apply --source $PWD
+fi
 
 exit 0
