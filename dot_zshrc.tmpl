@@ -81,6 +81,10 @@ if command -v kubectl > /dev/null ; then
   alias k="kubectl"
 fi
 
+if command -v flux > /dev/null ; then
+  source <(flux completion zsh)
+fi
+
 # if zoxide is installed, enable it
 if command -v zoxide > /dev/null ; then
   eval "$(zoxide init zsh)"
