@@ -1,4 +1,5 @@
 [tools]
+"ubi:fluxcd/flux2" = { version = "latest", exe = "flux" }
 neovim = "0.10.3"
 ripgrep = "latest"
 zoxide = "latest"
