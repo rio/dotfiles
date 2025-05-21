@@ -1,6 +1,4 @@
 [tools]
-"ubi:fluxcd/flux2" = { version = "latest", exe = "flux" }
-"ubi:nushell/nushell" = { version = "latest", exe = "nu" }
 neovim = "0.11.1"
 ripgrep = "latest"
 zoxide = "latest"
@@ -12,4 +10,4 @@ direnv = "latest"
 xh = "latest"
 zellij = "latest"
 starship = "latest"
-node = "latest"
+chezmoi = "latest"
