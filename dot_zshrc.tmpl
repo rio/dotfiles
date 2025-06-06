@@ -57,11 +57,6 @@ if command -v lsd > /dev/null ; then
   alias lt='ls --tree'
 fi
 
-# enable usage of .envrc files
-if command -v direnv > /dev/null ; then
-  eval "$(direnv hook zsh)"
-fi
-
 # enable zsh vi-mode
 bindkey -v
 export KEYTIMEOUT=1 # make switching between modes faster
