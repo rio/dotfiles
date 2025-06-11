@@ -10,7 +10,7 @@ fi
 
 # enable the starship prompt
 if command -v starship >/dev/null; then
-  eval "$(starship init zsh)"
+  eval "$(starship init bash)"
 fi
 
 # use bat instead of cat
