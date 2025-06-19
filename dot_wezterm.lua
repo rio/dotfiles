@@ -14,7 +14,7 @@ if wezterm.config_builder then
 	config.color_scheme = scheme_for_appearance(wezterm.gui.get_appearance())
 	config.hide_tab_bar_if_only_one_tab = true
 	config.window_decorations = "RESIZE"
-	config.window_background_opacity = 0.8
+	config.window_background_opacity = 0.9
 	config.font = wezterm.font("DepartureMono")
 	config.font_size = 12.0
 	config.default_prog = { "/usr/bin/zsh", "--login" }
