@@ -27,11 +27,11 @@ $conda\
 [](fg:sapphire bg:lavender)\
 $time\
 [ ](fg:lavender)\
-$cmd_duration\
 $line_break\
 $container\
 $hostname\
 $sudo\
+$cmd_duration\
 $character"""
 
 palette = 'catppuccin_mocha'
@@ -286,19 +286,19 @@ crust = "#181926"
 
 # Custom config from here on
 [container]
-style = "bg:color_red fg:color_fg0"
-format = "[](color_red)[$symbol $name]($style)[ ](fg:color_red)"
+style = "bg:lavender fg:crust"
+format = "[](lavender)[$symbol $name]($style)[ ](fg:lavender)"
 
 [hostname]
 ssh_symbol = "❮=❯ "
-style = "bg:color_red fg:color_fg0"
-format = "[](color_red)[$ssh_symbol$hostname]($style)[ ](fg:color_red)"
+style = "bg:lavender fg:crust"
+format = "[](lavender)[$ssh_symbol$hostname]($style)[ ](fg:lavender)"
 
 [sudo]
 disabled = false
 symbol = "⚠️"
-style = "bg:color_red fg:color_fg0"
-format = "[](color_red)[$symbol]($style)[ ](fg:color_red)"
+style = "bg:lavender fg:crust"
+format = "[](lavender)[$symbol]($style)[ ](fg:lavender)"
 
 [gcloud]
 disabled = true
