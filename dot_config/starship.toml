@@ -22,6 +22,7 @@ $python\
 [](fg:green bg:sapphire)\
 $docker_context\
 $kubernetes\
+$aws\
 $pulumi\
 $conda\
 [](fg:sapphire bg:lavender)\
@@ -302,6 +303,10 @@ format = "[](lavender)[$symbol]($style)[ ](fg:lavender)"
 
 [gcloud]
 disabled = true
+
+[aws]
+style = "bg:sapphire fg:crust"
+format = '[on AWS ($profile )(\($region\) )(\[$duration\] )]($style)'
 
 [kubernetes]
 symbol = '☸'
