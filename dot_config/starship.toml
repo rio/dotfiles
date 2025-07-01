@@ -306,7 +306,7 @@ disabled = true
 
 [aws]
 style = "bg:sapphire fg:crust"
-format = '[on AWS ($profile )(\($region\) )(\[$duration\] )]($style)'
+format = '[ on AWS ($profile )(\($region\) )(\[$duration\] )]($style)'
 
 [kubernetes]
 symbol = '☸'
