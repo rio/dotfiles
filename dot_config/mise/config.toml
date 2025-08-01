@@ -9,6 +9,7 @@ node = "23.11.0"
 ripgrep = "latest"
 starship = "latest"
 "ubi:charmbracelet/crush" = "0.1.10"
+"ubi:loft-sh/devpod" = { version = "0.7.0-alpha.34", matching = "devpod-", rename_exe = "devpod" }
 xh = "latest"
 zellij = "latest"
 zoxide = "latest"
