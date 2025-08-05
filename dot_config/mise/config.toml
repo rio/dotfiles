@@ -11,5 +11,5 @@ starship = "latest"
 "ubi:charmbracelet/crush" = "0.2.1"
 "ubi:loft-sh/devpod" = { version = "0.7.0-alpha.34", matching = "devpod-", rename_exe = "devpod" }
 xh = "latest"
-zellij = "latest"
+zellij = "0.43"
 zoxide = "latest"
