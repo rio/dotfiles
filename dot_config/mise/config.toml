@@ -1,6 +1,7 @@
 [tools]
 bat = "latest"
 chezmoi = "latest"
+doggo = "1.0.5"
 fd = "latest"
 fzf = "latest"
 lsd = "latest"
