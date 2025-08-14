@@ -6,11 +6,13 @@ if command -v zsh >/dev/null; then
   sudo chsh -s $(command -v zsh) $USER
 fi
 
+env
+
 if command -v mise >/dev/null; then
-  eval $(mise env)
+  eval "$(mise env)"
 fi
 
-echo $PATH
+env
 
 mise doctor
 
