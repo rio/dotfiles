@@ -10,6 +10,8 @@ if command -v mise >/dev/null; then
   eval $(mise env)
 fi
 
+mise doctor
+
 if ! command -v chezmoi >/dev/null; then
   sh -c "$(curl -fsLS get.chezmoi.io)" -- apply --source $PWD
 fi
