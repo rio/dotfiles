@@ -6,18 +6,14 @@ if command -v zsh >/dev/null; then
   sudo chsh -s $(command -v zsh) $USER
 fi
 
-env
-
 if command -v mise >/dev/null; then
-  eval "$(mise env)"
+  mise exec chezmoi -- chezmoi apply --source $PWD
+  exit 0
 fi
-
-env
-
-mise doctor
 
 if ! command -v chezmoi >/dev/null; then
   sh -c "$(curl -fsLS get.chezmoi.io)" -- apply --source $PWD
+  exit 0
 fi
 
-exit 0
+exit 1
