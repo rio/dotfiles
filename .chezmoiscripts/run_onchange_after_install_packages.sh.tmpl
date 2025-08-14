@@ -3,4 +3,5 @@
 
 set -euo pipefail
 
-$HOME/.local/bin/mise trust $HOME/.config/mise/config.toml && $HOME/.local/bin/mise install
+mise trust {{ .chezmoi.homeDir }}/.config/mise/config.toml
+mise install
