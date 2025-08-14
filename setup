@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -euo pipefail
+set -euxo pipefail
 
 if command -v zsh >/dev/null; then
   sudo chsh -s $(command -v zsh) $USER
@@ -9,6 +9,8 @@ fi
 if command -v mise >/dev/null; then
   eval $(mise env)
 fi
+
+echo $PATH
 
 mise doctor
 
