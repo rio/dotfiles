@@ -2,8 +2,10 @@
 sourceDir = {{ .chezmoi.sourceDir | quote }}
 
 [data]
-  {{- if $remote }}
-  remote = true
-  {{- else }}
-  remote = false
-  {{- end }}
+  remote = {{ $remote }}
+
+{{- if not $remote }}
+[git]
+  autoCommit = true
+  autoPush = true
+{{- end }}
