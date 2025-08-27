@@ -7,12 +7,14 @@ if command -v zsh >/dev/null; then
 fi
 
 if command -v mise >/dev/null; then
-  mise exec chezmoi -- chezmoi apply --source $PWD
+  mise exec chezmoi -- chezmoi init --source $PWD
+  mise exec chezmoi -- chezmoi apply
   exit 0
 fi
 
 if ! command -v chezmoi >/dev/null; then
-  sh -c "$(curl -fsLS get.chezmoi.io)" -- apply --source $PWD
+  sh -c "$(curl -fsLS get.chezmoi.io)" -- init --source $PWD
+  sh -c "$(curl -fsLS get.chezmoi.io)" -- apply
   exit 0
 fi
 
