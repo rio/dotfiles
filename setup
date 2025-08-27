@@ -13,8 +13,8 @@ if command -v mise >/dev/null; then
 fi
 
 if ! command -v chezmoi >/dev/null; then
-  sh -c "$(curl -fsLS get.chezmoi.io/lb)" -- init --source $PWD
-  ~/.local/bin/chezmoi apply
+  sh -c "$(curl -fsLS get.chezmoi.io)" -- init --source $PWD
+  ./bin/chezmoi apply
   exit 0
 fi
 
