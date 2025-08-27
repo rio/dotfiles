@@ -1,0 +1,9 @@
+{{- $remote := or (env "CODESPACES" | not | not) (env "SSH_CONNECTION" | not | not) (env "KUBERNETES_SERVICE_HOST" | not | not) (env "container" | not | not) (env "REMOTE_CONTAINERS" | not | not) (stat "/.dockerenv" | not | not) -}}
+sourceDir = {{ .chezmoi.sourceDir | quote }}
+
+[data]
+  {{- if $remote }}
+  remote = true
+  {{- else }}
+  remote = false
+  {{- end }}
