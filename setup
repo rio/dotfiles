@@ -6,9 +6,6 @@ if command -v zsh >/dev/null; then
   sudo chsh -s $(command -v zsh) $USER
 fi
 
-CHEZMOI_PATH="$(command -v chezmoi)"
-MISE_PATH="$(command -v mise)"
-
 if command -v chezmoi >/dev/null; then
   chezmoi -- chezmoi init --apply --source $PWD
   exit
