@@ -4,6 +4,9 @@ HISTFILE="$HOME/.zsh_history"
 HISTSIZE=60000
 SAVEHIST=50000
 
+# solve weird extra character issues when auto completing
+export LANG="en_US.UTF-8"
+
 # add user local completion folder to fpath
 fpath+=(~/.zsh/completion)
 
