@@ -4,6 +4,10 @@ HISTFILE="$HOME/.zsh_history"
 HISTSIZE=60000
 SAVEHIST=50000
 
+setopt HIST_IGNORE_SPACE # do not save a command if it starts with a space
+setopt HIST_IGNORE_DUPS  # do not save duplicate commands
+setopt SHARE_HISTORY     # make sure all shells have up to date history
+
 # solve weird extra character issues when auto completing
 export LANG="en_US.UTF-8"
 
