@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -euo pipefail
+set -exuo pipefail
 
 if command -v zsh >/dev/null; then
   sudo chsh -s $(command -v zsh) $USER
