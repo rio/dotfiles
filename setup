@@ -6,16 +6,20 @@ if command -v zsh >/dev/null; then
   sudo chsh -s $(command -v zsh) $USER
 fi
 
-if command -v mise >/dev/null; then
-  mise exec chezmoi -- chezmoi init --source $PWD
-  mise exec chezmoi -- chezmoi apply
-  exit 0
+CHEZMOI_PATH="$(command -v chezmoi)"
+MISE_PATH="$(command -v mise)"
+
+if [ -n "$CHEZMOI_PATH" ]; then
+  $CHEZMOI_PATH -- chezmoi init --apply --source $PWD
+  exit
 fi
 
-if ! command -v chezmoi >/dev/null; then
-  sh -c "$(curl -fsLS get.chezmoi.io)" -- init --source $PWD
-  ./bin/chezmoi apply
-  exit 0
+if [ -n "$MISE_PATH" ]; then
+  $MISE_PATH exec chezmoi -- chezmoi init --apply --source $PWD
+  exit
 fi
+
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply --source $PWD
+exit
 
 exit 1
