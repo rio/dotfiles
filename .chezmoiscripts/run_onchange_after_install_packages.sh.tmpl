@@ -3,5 +3,7 @@
 
 set -euo pipefail
 
-mise trust {{ .chezmoi.homeDir }}/.config/mise/config.toml
-mise install
+MISE_BIN_PATH={{ lookPath "mise" }}
+
+MISE_BIN_PATH trust {{ .chezmoi.homeDir }}/.config/mise/config.toml
+MISE_BIN_PATH install

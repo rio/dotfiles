@@ -18,5 +18,3 @@ fi
 
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply --source $PWD
 exit
-
-exit 1
