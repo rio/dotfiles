@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -exuo pipefail
+set -euo pipefail
 
 if command -v zsh >/dev/null; then
   sudo chsh -s $(command -v zsh) $USER
@@ -9,13 +9,13 @@ fi
 CHEZMOI_PATH="$(command -v chezmoi)"
 MISE_PATH="$(command -v mise)"
 
-if [ -n "$CHEZMOI_PATH" ]; then
-  $CHEZMOI_PATH -- chezmoi init --apply --source $PWD
+if command -v chezmoi >/dev/null; then
+  chezmoi -- chezmoi init --apply --source $PWD
   exit
 fi
 
-if [ -n "$MISE_PATH" ]; then
-  $MISE_PATH exec chezmoi -- chezmoi init --apply --source $PWD
+if command -v mise >/dev/null; then
+  mise exec chezmoi -- chezmoi init --apply --source $PWD
   exit
 fi
 
