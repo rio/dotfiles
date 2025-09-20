@@ -1,4 +1,4 @@
 return {
-  -- disable autocompletion of quotes, parentheses, etc.
-  { "echasnovski/mini.pairs", enabled = false },
+	-- disable autocompletion of quotes, parentheses, etc.
+	{ "nvim-mini/mini.pairs", enabled = false },
 }
