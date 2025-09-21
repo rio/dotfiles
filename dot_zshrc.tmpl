@@ -22,8 +22,8 @@ if [[ -d $HOME/.krew ]] ; then
 fi
 
 # edit PATH
-{{ if eq .chezmoi.os "linux" -}}
-export PATH=$HOME/.cargo/bin:$PATH
+{{ if eq .chezmoi.osRelease.id "bazzite" -}}
+export PATH=$HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:$PATH
 {{- end}}
 
 {{if not .remote -}}
