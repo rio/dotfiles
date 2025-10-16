@@ -1,3 +1,4 @@
 .oh-my-zsh/cache/*
 **/*.zwc
 setup
+README.md
