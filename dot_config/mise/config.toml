@@ -9,7 +9,7 @@ lsd = "latest"
 neovim = "0.11.4"
 node = "23.11.0"
 ripgrep = "latest"
-starship = "latest"
+starship = "1.23.0"
 "ubi:nushell/nushell" = { version = "0.108.0", exe = "nu" }
 xh = "latest"
 zellij = "0.43.0"
