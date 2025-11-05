@@ -21,6 +21,11 @@ if [[ -d $HOME/.krew ]] ; then
   export PATH=$HOME/.krew/bin:$PATH
 fi
 
+# Load local environment variables and secrets (ignored by Git)
+if [ -f ~/.zshrc.local ]; then
+    source ~/.zshrc.local
+fi
+
 # edit PATH
 {{ if eq .chezmoi.osRelease.id "bazzite" -}}
 export PATH=$HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:$PATH
