@@ -1,5 +1,7 @@
 {{- $remote := or (env "CODESPACES" | not | not) (env "SSH_CONNECTION" | not | not) (env "KUBERNETES_SERVICE_HOST" | not | not) (env "container" | not | not) (env "REMOTE_CONTAINERS" | not | not) (stat "/.dockerenv" | not | not) -}}
 
+set -o vi
+
 # edit PATH
 if [[ -d $HOME/.local/bin ]]; then
   export PATH=$HOME/.local/bin:$PATH
