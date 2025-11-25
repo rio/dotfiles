@@ -1,3 +1,5 @@
+min_version = "2025.11.7"
+
 [tools]
 bat = "0.25.0"
 btop = "1.4.4"
