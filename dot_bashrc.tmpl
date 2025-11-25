@@ -19,6 +19,15 @@ if command -v mise >/dev/null; then
   eval "$(mise activate bash)"
 fi
 
+# (neo)vim
+if command -v nvim > /dev/null ; then
+  export EDITOR="nvim"
+  export VISUAL="nvim"
+elif command -v vim > /dev/null ; then
+  export EDITOR="vim"
+  export VISUAL="vim"
+fi
+
 # enable the starship prompt
 if command -v starship >/dev/null; then
   eval "$(starship init bash)"
