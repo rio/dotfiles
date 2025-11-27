@@ -1,4 +1,4 @@
-min_version = "2025.11.9"
+min_version = "2025.11.8"
 
 [tools]
 bat = "0.25.0"
