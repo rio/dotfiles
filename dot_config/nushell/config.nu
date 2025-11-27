@@ -9,3 +9,4 @@ if (which nvim | is-not-empty) {
 alias ll = ls -l
 alias la = ls -la
 
+use ($nu.default-config-dir | path join mise.nu)
