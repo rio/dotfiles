@@ -18,3 +18,8 @@ starship = "1.23.0"
 zellij = "0.43.0"
 zoxide = "0.9.8"
 opencode = "1.0.119"
+
+[settings]
+experimental = true
+lockfile = true
+pin = true
