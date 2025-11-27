@@ -1,4 +1,4 @@
-min_version = "2025.11.7"
+min_version = "2025.11.9"
 
 [tools]
 bat = "0.25.0"
@@ -17,3 +17,4 @@ starship = "1.23.0"
 "ubi:nushell/nushell" = { version = "0.108.0", exe = "nu" }
 zellij = "0.43.0"
 zoxide = "0.9.8"
+opencode = "1.0.119"
