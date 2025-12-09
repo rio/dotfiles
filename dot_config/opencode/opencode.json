@@ -8,9 +8,9 @@
     }
   },
   "provider": {
-    "soundwave": {
+    "bmo-gpt": {
       "npm": "@ai-sdk/openai-compatible",
-      "name": "soundwave",
+      "name": "BMO GPT",
       "options": {
         "baseURL": "http://bmo.lan:8013/v1"
       },
@@ -21,7 +21,16 @@
             "context": 128000,
             "output": 65536
           }
-        },
+        }
+      }
+    },
+    "bmo-qwen": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "BMO Qwen",
+      "options": {
+        "baseURL": "http://bmo.lan:8012/v1"
+      },
+      "models": {
         "qwen3-coder:a3b": {
           "name": "Qwen3-Coder: 30B A3B",
           "limit": {
