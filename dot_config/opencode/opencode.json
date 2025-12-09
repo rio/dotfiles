@@ -12,7 +12,7 @@
       "npm": "@ai-sdk/openai-compatible",
       "name": "soundwave",
       "options": {
-        "baseURL": "http://bmo.lan:8013/v1"
+        "baseURL": "http://192.168.1.160:8013/v1"
       },
       "models": {
         "gpt-oss:120b": {
