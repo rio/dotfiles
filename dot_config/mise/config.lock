@@ -98,13 +98,13 @@ size = 55798646
 url = "https://nodejs.org/dist/v23.11.0/node-v23.11.0-linux-x64.tar.gz"
 
 [[tools.opencode]]
-version = "1.0.137"
+version = "1.0.218"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.linux-x64]
-checksum = "sha256:5cc00a29c6c4625dcf278240165660d5de8e73cc2d6b0c36d9d0e6f471069cbe"
-size = 49613747
-url = "https://github.com/sst/opencode/releases/download/v1.0.137/opencode-linux-x64.tar.gz"
+checksum = "sha256:23cea6c225a7bcc7779d9e213aaa16bf296c2312d96f501dca17ed45d22b2863"
+size = 50438160
+url = "https://github.com/sst/opencode/releases/download/v1.0.218/opencode-linux-x64.tar.gz"
 
 [[tools.ripgrep]]
 version = "14.1.1"
