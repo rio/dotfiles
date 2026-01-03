@@ -9,33 +9,17 @@
   },
   "username": "krullie",
   "provider": {
-    "bmo-gpt": {
+    "bmo": {
       "npm": "@ai-sdk/openai-compatible",
-      "name": "BMO GPT",
+      "name": "BMO",
       "options": {
-        "baseURL": "http://bmo.lan:8013/v1"
+        "baseURL": "http://192.168.1.161:8080/v1"
       },
       "models": {
-        "gpt-oss:120b": {
-          "name": "GPT OSS: 120B",
+        "bmo": {
+          "name": "BMO",
           "limit": {
-            "context": 128000,
-            "output": 65536
-          }
-        }
-      }
-    },
-    "bmo-qwen": {
-      "npm": "@ai-sdk/openai-compatible",
-      "name": "BMO Qwen",
-      "options": {
-        "baseURL": "http://bmo.lan:8012/v1"
-      },
-      "models": {
-        "qwen3-coder:a3b": {
-          "name": "Qwen3-Coder: 30B A3B",
-          "limit": {
-            "context": 128000,
+            "context": 256000,
             "output": 65536
           }
         }
