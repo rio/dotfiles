@@ -23,3 +23,6 @@ opencode = "1.0.223"
 experimental = true
 lockfile = true
 pin = true
+
+[env]
+OPENCODE_EXPERIMENTAL_BASH_DEFAULT_TIMEOUT_MS = '240000'
