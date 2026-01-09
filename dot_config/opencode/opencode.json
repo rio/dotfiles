@@ -9,19 +9,27 @@
   },
   "username": "krullie",
   "provider": {
-    "bmo": {
+    "bmo-devstral-small-2": {
       "npm": "@ai-sdk/openai-compatible",
-      "name": "BMO",
+      "name": "BMO Devstral Small 2",
       "options": {
-        "baseURL": "http://192.168.1.161:8080/v1"
+        "baseURL": "http://192.168.1.161:8081/v1"
       },
       "models": {
-        "bmo": {
-          "name": "BMO",
-          "limit": {
-            "context": 256000,
-            "output": 65536
-          }
+        "devstral-small-2": {
+          "name": "Devstral Small 2"
+        }
+      }
+    },
+    "bmo-gpt-oss": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "BMO GPT OSS 120b",
+      "options": {
+        "baseURL": "http://192.168.1.161:8082/v1"
+      },
+      "models": {
+        "gpt-oss:120b": {
+          "name": "GPT OSS 120b"
         }
       }
     }
