@@ -28,5 +28,5 @@ pin = true
 OPENCODE_EXPERIMENTAL_BASH_DEFAULT_TIMEOUT_MS = '240000'
 HF_HUB_ENABLE_HF_TRANSFER = "1"
 
-[tasks.server]
+[tasks.llama-server]
 run = "llama-server --models-preset {{env.MISE_TASK_DIR}}/llama-server.ini"
