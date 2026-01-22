@@ -26,7 +26,11 @@ pin = true
 
 [env]
 OPENCODE_EXPERIMENTAL_BASH_DEFAULT_TIMEOUT_MS = '240000'
+
+[tasks.llama-server.env]
 HF_HUB_ENABLE_HF_TRANSFER = "1"
+LLAMA_ARG_HOST = "0.0.0.0"
+LLAMA_ARG_PORT = "8080"
 
 [tasks.llama-server]
 run = "llama-server --models-preset {{env.MISE_TASK_DIR}}/llama-server.ini"
