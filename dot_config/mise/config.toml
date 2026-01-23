@@ -18,6 +18,7 @@ starship = "1.23.0"
 zellij = "0.43.0"
 zoxide = "0.9.8"
 opencode = "1.1.31"
+"github:peteonrails/voxtype" = "0.4.16"
 
 [settings]
 experimental = true
