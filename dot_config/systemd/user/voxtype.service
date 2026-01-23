@@ -6,7 +6,7 @@ After=graphical-session.target
 
 [Service]
 Type=simple
-ExecStart=/var/home/rio/.local/bin/voxtype daemon
+ExecStart=/var/home/rio/.local/bin/mise exec github:peteonrails/voxtype -- voxtype daemon
 Restart=on-failure
 RestartSec=5
 
