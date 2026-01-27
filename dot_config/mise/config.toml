@@ -1,24 +1,24 @@
 min_version = "2025.11.7"
 
 [tools]
-bat = "0.25.0"
-btop = "1.4.4"
+bat = "0.26.1"
+btop = "1.4.6"
 chezmoi = "latest"
-doggo = "1.0.5"
-fd = "10.2.0"
-fzf = "0.62.0"
-github-cli = "2.82.1"
-jj = "0.34.0"
-lsd = "1.1.5"
-neovim = "0.11.5"
-node = "23.11.0"
-ripgrep = "14.1.1"
-starship = "1.23.0"
-"ubi:nushell/nushell" = { version = "0.108.0", exe = "nu" }
-zellij = "0.43.0"
+doggo = "1.1.4"
+fd = "10.3.0"
+fzf = "0.67.0"
+github-cli = "2.86.0"
+jj = "0.37.0"
+lsd = "1.2.0"
+neovim = "0.11.6"
+node = "25.5.0"
+ripgrep = "15.1.0"
+starship = "1.24.2"
+"ubi:nushell/nushell" = { version = "0.110.0", exe = "nu" }
+zellij = "0.43.1"
 zoxide = "0.9.8"
-opencode = "1.1.31"
-"github:peteonrails/voxtype" = "0.4.16"
+opencode = "1.1.36"
+"github:peteonrails/voxtype" = { version = "0.4.16", asset_pattern = "voxtype-*-linux-x86_64-vulkan" }
 
 [settings]
 experimental = true
