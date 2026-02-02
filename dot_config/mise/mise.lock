@@ -1,0 +1,158 @@
+[[tools.bat]]
+version = "0.26.1"
+backend = "aqua:sharkdp/bat"
+"platforms.linux-arm64" = { checksum = "sha256:6369242c584065f195fb20cb36fbd7cb63ae690605bbe89868a7596b596c2c23", url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-aarch64-unknown-linux-musl.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:0dcd8ac79732c0d5b136f11f4ee00e581440e16a44eab5b3105b611bbf2cf191", url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-unknown-linux-musl.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:e30beff26779c9bf60bb541e1d79046250cb74378f2757f8eb250afddb19e114", url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-aarch64-apple-darwin.tar.gz"}
+"platforms.macos-x64" = { checksum = "sha256:830d63b0bba1fa040542ec569e3cf77f60d3356b9de75116a344b061e0894245", url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-apple-darwin.tar.gz"}
+"platforms.windows-x64" = { checksum = "sha256:0f729b4b6f5f28d395c641eacc2e9ff68d0096b85aa0eec344aa62425144b69b", url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-pc-windows-msvc.zip"}
+
+[[tools.btop]]
+version = "1.4.6"
+backend = "aqua:aristocratos/btop"
+"platforms.linux-arm64" = { checksum = "sha256:7902578c0439332573148caf6b3515df2b158d163baeeff046028e428ec3295a", url = "https://github.com/aristocratos/btop/releases/download/v1.4.6/btop-aarch64-unknown-linux-musl.tbz"}
+"platforms.linux-x64" = { checksum = "sha256:9bf7ed170423bb3709a8020767bd2ca529c5632af478f229dce7cdfd32b25691", url = "https://github.com/aristocratos/btop/releases/download/v1.4.6/btop-x86_64-unknown-linux-musl.tbz"}
+
+[[tools.chezmoi]]
+version = "2.69.3"
+backend = "aqua:twpayne/chezmoi"
+"platforms.linux-arm64" = { checksum = "sha256:0aef9ef75ee33cffb483a82c474b495d428e0f7941ab7898263c3519006e0662", url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_linux_arm64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:9b9bf911efed8aba28bd6f5df1e780a6123dc3fb177004c1ca36ec2b9eca7628", url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_linux_amd64.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:c5717b0d4d84d2941c2582fec26854d316ee5d7c27ec73903f7840554f1baeda", url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_darwin_arm64.tar.gz"}
+"platforms.macos-x64" = { checksum = "sha256:9dd51eccb801d3557f61c8559f4f31e5ebb21c4a1d983940141383b9b5069458", url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_darwin_amd64.tar.gz"}
+"platforms.windows-x64" = { checksum = "sha256:6504c72d9e11c57217a6c62586b588bc506f604618d7660a86b848165584af45", url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_windows_amd64.zip"}
+
+[[tools.doggo]]
+version = "1.1.4"
+backend = "aqua:mr-karan/doggo"
+"platforms.linux-arm64" = { checksum = "sha256:73963d2b39048997427a4596f4cd30e14a3d62015f7f39e2980d235a216e33e9", url = "https://github.com/mr-karan/doggo/releases/download/v1.1.4/doggo_1.1.4_Linux_arm64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:cb57b10dd48ed3084161de2afe71a74514177b440b3f5643e02bf7a638585a5c", url = "https://github.com/mr-karan/doggo/releases/download/v1.1.4/doggo_1.1.4_Linux_x86_64.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:e15fd69042ec78881774e2c76f815588530b81fed8b42cd9ee396f2013225020", url = "https://github.com/mr-karan/doggo/releases/download/v1.1.4/doggo_1.1.4_Darwin_arm64.tar.gz"}
+"platforms.macos-x64" = { checksum = "sha256:ca40b5c5723e5c4a872b19529f5fe213a7705ab0cdc0e512582ecc9a6d61f7d0", url = "https://github.com/mr-karan/doggo/releases/download/v1.1.4/doggo_1.1.4_Darwin_x86_64.tar.gz"}
+"platforms.windows-x64" = { checksum = "sha256:479d3cf06b4aa131a2b48b252bc3df5c2eb1191713a2df218c88720372d8a79c", url = "https://github.com/mr-karan/doggo/releases/download/v1.1.4/doggo_1.1.4_Windows_x86_64.zip"}
+
+[[tools.fd]]
+version = "10.3.0"
+backend = "aqua:sharkdp/fd"
+"platforms.linux-arm64" = { checksum = "sha256:996b9b1366433b211cb3bbedba91c9dbce2431842144d925428ead0adf32020b", url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-aarch64-unknown-linux-musl.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:2b6bfaae8c48f12050813c2ffe1884c61ea26e750d803df9c9114550a314cd14", url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-x86_64-unknown-linux-musl.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:0570263812089120bc2a5d84f9e65cd0c25e4a4d724c80075c357239c74ae904", url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-aarch64-apple-darwin.tar.gz"}
+"platforms.macos-x64" = { checksum = "sha256:50d30f13fe3d5914b14c4fff5abcbd4d0cdab4b855970a6956f4f006c17117a3", url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-x86_64-apple-darwin.tar.gz"}
+"platforms.windows-x64" = { checksum = "sha256:318aa2a6fa664325933e81fda60d523fff29444129e91ebf0726b5b3bcd8b059", url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-x86_64-pc-windows-msvc.zip"}
+
+[[tools.fzf]]
+version = "0.67.0"
+backend = "aqua:junegunn/fzf"
+"platforms.linux-arm64" = { checksum = "sha256:7071f48c2ac0f2bc992d6d33cc36fd675a579a98cc976dda699eea07dd5e9c58", url = "https://github.com/junegunn/fzf/releases/download/v0.67.0/fzf-0.67.0-linux_arm64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:4be08018ca37b32518c608741933ea335a406de3558242b60619e98f25be2be1", url = "https://github.com/junegunn/fzf/releases/download/v0.67.0/fzf-0.67.0-linux_amd64.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:b7f34c964d8e52c471c933cef8ec43dc71997c266cafafd1b013bed10fc229a1", url = "https://github.com/junegunn/fzf/releases/download/v0.67.0/fzf-0.67.0-darwin_arm64.tar.gz"}
+"platforms.macos-x64" = { checksum = "sha256:88dc853e0914793a2e7be0d1acfe6c922d9ccad08e3302df092399775b0279ff", url = "https://github.com/junegunn/fzf/releases/download/v0.67.0/fzf-0.67.0-darwin_amd64.tar.gz"}
+"platforms.windows-x64" = { checksum = "sha256:cad95326ed416d14226a03425513b049f5bc9a41f30a355e5fe204a29e666867", url = "https://github.com/junegunn/fzf/releases/download/v0.67.0/fzf-0.67.0-windows_amd64.zip"}
+
+[[tools.github-cli]]
+version = "2.86.0"
+backend = "aqua:cli/cli"
+"platforms.linux-arm64" = { checksum = "sha256:83cf7a7962ea9dfcc2c123666695792916a87af32cba5f1f6e585db08fa57547", url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_linux_arm64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:f3b08bd6a28420cc2229b0a1a687fa25f2b838d3f04b297414c1041ca68103c7", url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_linux_amd64.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:bde753978a352c5ae6c4abec47334d516e82807af20c9dbbd45507a5a0aedaaa", url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_macOS_arm64.zip"}
+"platforms.macos-x64" = { checksum = "sha256:ced7094d05702eb54a63542abd8a1dc570b7e5ae94951844eb1626ba74bc2c60", url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_macOS_amd64.zip"}
+"platforms.windows-x64" = { checksum = "sha256:983c74a8c594366b198485187cd6d4d07638f0bf9a9948d51a2a81a5164d8bfd", url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_windows_amd64.zip"}
+
+[[tools."github:peteonrails/voxtype"]]
+version = "0.4.16"
+backend = "github:peteonrails/voxtype[asset_pattern=voxtype-*-linux-x86_64-vulkan]"
+"platforms.linux-arm64" = { checksum = "sha256:2f48d7404368b12ab5c8203b886ef2e9bf8717b5ca83d4d75511b02cf4c40bae", url = "https://github.com/peteonrails/voxtype/releases/download/v0.4.16/voxtype-0.4.16-linux-x86_64-vulkan", url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/341794999"}
+"platforms.linux-x64" = { checksum = "sha256:2f48d7404368b12ab5c8203b886ef2e9bf8717b5ca83d4d75511b02cf4c40bae", url = "https://github.com/peteonrails/voxtype/releases/download/v0.4.16/voxtype-0.4.16-linux-x86_64-vulkan", url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/341794999"}
+"platforms.macos-arm64" = { checksum = "sha256:2f48d7404368b12ab5c8203b886ef2e9bf8717b5ca83d4d75511b02cf4c40bae", url = "https://github.com/peteonrails/voxtype/releases/download/v0.4.16/voxtype-0.4.16-linux-x86_64-vulkan", url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/341794999"}
+"platforms.macos-x64" = { checksum = "sha256:2f48d7404368b12ab5c8203b886ef2e9bf8717b5ca83d4d75511b02cf4c40bae", url = "https://github.com/peteonrails/voxtype/releases/download/v0.4.16/voxtype-0.4.16-linux-x86_64-vulkan", url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/341794999"}
+"platforms.windows-x64" = { checksum = "sha256:2f48d7404368b12ab5c8203b886ef2e9bf8717b5ca83d4d75511b02cf4c40bae", url = "https://github.com/peteonrails/voxtype/releases/download/v0.4.16/voxtype-0.4.16-linux-x86_64-vulkan", url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/341794999"}
+
+[tools."github:peteonrails/voxtype".options]
+asset_pattern = "voxtype-*-linux-x86_64-vulkan"
+
+[[tools.jj]]
+version = "0.37.0"
+backend = "aqua:jj-vcs/jj"
+"platforms.linux-arm64" = { checksum = "sha256:f42164567abbcc0b13354eeb1ecd11f4245d7dce4de849bf794a4d5e1b615c62", url = "https://github.com/jj-vcs/jj/releases/download/v0.37.0/jj-v0.37.0-aarch64-unknown-linux-musl.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:7fd8e28d65106768054becbc1e0b929bed7c4c963d598f9f9a629bfa92eb7171", url = "https://github.com/jj-vcs/jj/releases/download/v0.37.0/jj-v0.37.0-x86_64-unknown-linux-musl.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:e42bc72d8b67843555ae0a362a4432c1cc98cc3850a25bcd90599c3c4a6911bd", url = "https://github.com/jj-vcs/jj/releases/download/v0.37.0/jj-v0.37.0-aarch64-apple-darwin.tar.gz"}
+"platforms.macos-x64" = { checksum = "sha256:ac1cd91eebc7434a32f513974cecb3f21390e9478ba08a2f9815febf28b6dd7d", url = "https://github.com/jj-vcs/jj/releases/download/v0.37.0/jj-v0.37.0-x86_64-apple-darwin.tar.gz"}
+"platforms.windows-x64" = { checksum = "sha256:8400a4021a94dbb29b292b776812ef0d17c125bc72603cfdf8e18d2f382bccb1", url = "https://github.com/jj-vcs/jj/releases/download/v0.37.0/jj-v0.37.0-x86_64-pc-windows-msvc.zip"}
+
+[[tools.lsd]]
+version = "1.2.0"
+backend = "aqua:lsd-rs/lsd"
+"platforms.linux-arm64" = { checksum = "sha256:642ecb1a763b9f790a99c83a1445c117a6813ed4edb5d498d4420423c6353eb8", url = "https://github.com/lsd-rs/lsd/releases/download/v1.2.0/lsd-v1.2.0-aarch64-unknown-linux-musl.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:77849da1210336534258551a581401ba19ae6b8d7b66a2a1feff148ad41e3814", url = "https://github.com/lsd-rs/lsd/releases/download/v1.2.0/lsd-v1.2.0-x86_64-unknown-linux-musl.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:9e34a5d392ff913302098aad0543dafa1883c531eaf229b82f086c3fca675e3e", url = "https://github.com/lsd-rs/lsd/releases/download/v1.2.0/lsd-v1.2.0-aarch64-apple-darwin.tar.gz"}
+"platforms.macos-x64" = { checksum = "sha256:00d3c50551b270bbdf7da97816e5ba7f5fd10294cd310165f7f8b5523e738b9c", url = "https://github.com/lsd-rs/lsd/releases/download/v1.2.0/lsd-v1.2.0-x86_64-apple-darwin.tar.gz"}
+"platforms.windows-x64" = { checksum = "sha256:a65b9f457153934a7ce1f7e0fe1c4922a95bb2822222126e4fbaa6ee9c0d78e5", url = "https://github.com/lsd-rs/lsd/releases/download/v1.2.0/lsd-v1.2.0-x86_64-pc-windows-msvc.zip"}
+
+[[tools.neovim]]
+version = "0.11.6"
+backend = "aqua:neovim/neovim"
+"platforms.linux-arm64" = { checksum = "sha256:8ddc0c101846145e830b17bbca50782ca9307eee4fab539d9e2ddaf8793c06f1", url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-linux-arm64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:2fc90b962327f73a78afbfb8203fd19db8db9cdf4ee5e2bef84704339add89cc", url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-linux-x86_64.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:d5ee93b67630d5a87f3d336d0f7e8b2fe6973aa653d3cc93b82b820e6538c1dd", url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-macos-arm64.tar.gz"}
+"platforms.macos-x64" = { checksum = "sha256:6e665bb0a711cf974050e0f7183dbb696b1e7425814eb87df7cb094a49054a06", url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-macos-x86_64.tar.gz"}
+"platforms.windows-x64" = { checksum = "sha256:90fc6d7cdf3d3388737caab1e2c554aa24b468f3a5cc38ef63857ddf1103513c", url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-win64.zip"}
+
+[[tools.node]]
+version = "25.5.0"
+backend = "core:node"
+"platforms.linux-arm64" = { checksum = "sha256:20f9aa9f2174786754f1941a178a62b906216fcdcd923400817f4bfa72e12336", url = "https://nodejs.org/dist/v25.5.0/node-v25.5.0-linux-arm64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:e8e50aee2e5328bcbc2ead32d86d0b577220ccdd80c438583dca3aa2965873f2", url = "https://nodejs.org/dist/v25.5.0/node-v25.5.0-linux-x64.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:568ff9aae73e82499346be25250c7caacab2ca4bbb697bc73056cf3b983b8211", url = "https://nodejs.org/dist/v25.5.0/node-v25.5.0-darwin-arm64.tar.gz"}
+"platforms.macos-x64" = { checksum = "sha256:c36d2db9afc900b2cfa45b60a9423b4991ad86976acd3fe5b500abda91f21243", url = "https://nodejs.org/dist/v25.5.0/node-v25.5.0-darwin-x64.tar.gz"}
+"platforms.windows-x64" = { checksum = "sha256:4d2773e98d3f35d172478d5101de1f571d851053d2ed67bbe39a5bdeae87d804", url = "https://nodejs.org/dist/v25.5.0/node-v25.5.0-win-x64.zip"}
+
+[[tools.opencode]]
+version = "1.1.48"
+backend = "aqua:sst/opencode"
+"platforms.linux-arm64" = { checksum = "sha256:f4c17d49b3dbeca04b9e8eb780259cb12e6a0befe9b8a699816ae00a52161eb5", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.48/opencode-linux-arm64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:7524880c32215434e08fc2ea1a5acabe3491745c8a8752236830d07fc81e80bc", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.48/opencode-linux-x64.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:a84141379dd0c7a2b111bf96db6e8bcf6dc4382bcf58534813239dd362182aa5", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.48/opencode-darwin-arm64.zip"}
+"platforms.macos-x64" = { checksum = "sha256:6309fdbbd9144e4b337d5376c3942480d525b4c71818653e3c18bb2e0335c4bf", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.48/opencode-darwin-x64.zip"}
+"platforms.windows-x64" = { checksum = "sha256:9021714286a9e224b5306f35991d88d1f7ba6c909ec42d876e767d388745f9d6", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.48/opencode-windows-x64.zip"}
+
+[[tools.ripgrep]]
+version = "15.1.0"
+backend = "aqua:BurntSushi/ripgrep"
+"platforms.linux-arm64" = { checksum = "sha256:2b661c6ef508e902f388e9098d9c4c5aca72c87b55922d94abdba830b4dc885e", url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-aarch64-unknown-linux-gnu.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:1c9297be4a084eea7ecaedf93eb03d058d6faae29bbc57ecdaf5063921491599", url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-unknown-linux-musl.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:378e973289176ca0c6054054ee7f631a065874a352bf43f0fa60ef079b6ba715", url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-aarch64-apple-darwin.tar.gz"}
+"platforms.macos-x64" = { checksum = "sha256:64811cb24e77cac3057d6c40b63ac9becf9082eedd54ca411b475b755d334882", url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-apple-darwin.tar.gz"}
+"platforms.windows-x64" = { checksum = "sha256:124510b94b6baa3380d051fdf4650eaa80a302c876d611e9dba0b2e18d87493a", url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-pc-windows-msvc.zip"}
+
+[[tools.starship]]
+version = "1.24.2"
+backend = "aqua:starship/starship"
+"platforms.linux-arm64" = { checksum = "sha256:56b9ff412bbf374d29b99e5ac09a849124cb37a0a13121e8470df32de53c1ea6", url = "https://github.com/starship/starship/releases/download/v1.24.2/starship-aarch64-unknown-linux-musl.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:00ff3c1f8ffb59b5c15d4b44c076bcca04d92cf0055c86b916248c14f3ae714a", url = "https://github.com/starship/starship/releases/download/v1.24.2/starship-x86_64-unknown-linux-musl.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:d3a0da21374962625a2ee992110979bc1fa33424d7b6aea58a70405e26544fd9", url = "https://github.com/starship/starship/releases/download/v1.24.2/starship-aarch64-apple-darwin.tar.gz"}
+"platforms.macos-x64" = { checksum = "sha256:237beb10cc970c4361536e9f9f434dfed755f8282c5cd951b6a7e3fcbda8e779", url = "https://github.com/starship/starship/releases/download/v1.24.2/starship-x86_64-apple-darwin.tar.gz"}
+"platforms.windows-x64" = { checksum = "sha256:d38424c595320e9639a276666347d5e44cb004de3972f40b9a5a1a6b88537f29", url = "https://github.com/starship/starship/releases/download/v1.24.2/starship-x86_64-pc-windows-msvc.zip"}
+
+[[tools."ubi:nushell/nushell"]]
+version = "0.110.0"
+backend = "ubi:nushell/nushell[exe=nu]"
+
+[tools."ubi:nushell/nushell".options]
+exe = "nu"
+
+[[tools.zellij]]
+version = "0.43.1"
+backend = "aqua:zellij-org/zellij"
+"platforms.linux-arm64" = { checksum = "sha256:32321ad5f61c2c62d156162d1df95dc823666f84e4a0d7cd79b0fef02930b165", url = "https://github.com/zellij-org/zellij/releases/download/v0.43.1/zellij-aarch64-unknown-linux-musl.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:541d98efef5558293ef85ad9acd29e4d920b6e881513b9e77255d8207020d75a", url = "https://github.com/zellij-org/zellij/releases/download/v0.43.1/zellij-x86_64-unknown-linux-musl.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:a09ea51f3d98427253de2b889bb04f1aa0850fbb034911c7a01b8f0194edba66", url = "https://github.com/zellij-org/zellij/releases/download/v0.43.1/zellij-aarch64-apple-darwin.tar.gz"}
+"platforms.macos-x64" = { checksum = "sha256:7b0c1a9c2591eadf506ec58d62ef5f6d9c93d089a3603142af3dcca5fa575d44", url = "https://github.com/zellij-org/zellij/releases/download/v0.43.1/zellij-x86_64-apple-darwin.tar.gz"}
+
+[[tools.zoxide]]
+version = "0.9.8"
+backend = "aqua:ajeetdsouza/zoxide"
+"platforms.linux-arm64" = { url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-aarch64-unknown-linux-musl.tar.gz"}
+"platforms.linux-x64" = { url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-x86_64-unknown-linux-musl.tar.gz"}
+"platforms.macos-arm64" = { url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-aarch64-apple-darwin.tar.gz"}
+"platforms.macos-x64" = { url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-x86_64-apple-darwin.tar.gz"}
+"platforms.windows-x64" = { url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-x86_64-pc-windows-msvc.zip"}
