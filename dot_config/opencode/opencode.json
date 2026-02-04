@@ -13,11 +13,12 @@
       "npm": "@ai-sdk/openai-compatible",
       "name": "BMO",
       "options": {
-        "baseURL": "http://192.168.1.161:8080/v1"
+        "baseURL": "http://192.168.8.160:8012/v1"
       },
       "models": {
         "ggml-org/gpt-oss-120b-GGUF": {},
-        "unsloth/GLM-4.7-Flash-GGUF:UD-Q8_K_XL": {}
+        "unsloth/GLM-4.7-Flash-GGUF:UD-Q8_K_XL": {},
+        "unsloth/Qwen3-Coder-Next-GGUF:UD-Q6_K_XL": {}
       }
     }
   }
