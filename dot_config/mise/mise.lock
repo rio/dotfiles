@@ -107,13 +107,9 @@ backend = "core:node"
 "platforms.windows-x64" = { checksum = "sha256:4d2773e98d3f35d172478d5101de1f571d851053d2ed67bbe39a5bdeae87d804", url = "https://nodejs.org/dist/v25.5.0/node-v25.5.0-win-x64.zip"}
 
 [[tools.opencode]]
-version = "1.1.48"
+version = "1.1.53"
 backend = "aqua:sst/opencode"
-"platforms.linux-arm64" = { checksum = "sha256:f4c17d49b3dbeca04b9e8eb780259cb12e6a0befe9b8a699816ae00a52161eb5", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.48/opencode-linux-arm64.tar.gz"}
-"platforms.linux-x64" = { checksum = "sha256:7524880c32215434e08fc2ea1a5acabe3491745c8a8752236830d07fc81e80bc", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.48/opencode-linux-x64.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:a84141379dd0c7a2b111bf96db6e8bcf6dc4382bcf58534813239dd362182aa5", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.48/opencode-darwin-arm64.zip"}
-"platforms.macos-x64" = { checksum = "sha256:6309fdbbd9144e4b337d5376c3942480d525b4c71818653e3c18bb2e0335c4bf", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.48/opencode-darwin-x64.zip"}
-"platforms.windows-x64" = { checksum = "sha256:9021714286a9e224b5306f35991d88d1f7ba6c909ec42d876e767d388745f9d6", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.48/opencode-windows-x64.zip"}
+"platforms.linux-x64" = { checksum = "sha256:2c922540fb8e0a4cd7e15ae4b6eb7bc1f69dbe7683d45ac7056059ee832e2ad3", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.53/opencode-linux-x64.tar.gz"}
 
 [[tools.ripgrep]]
 version = "15.1.0"

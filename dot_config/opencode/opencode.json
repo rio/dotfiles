@@ -18,7 +18,8 @@
       "models": {
         "ggml-org/gpt-oss-120b-GGUF": {},
         "unsloth/GLM-4.7-Flash-GGUF:UD-Q8_K_XL": {},
-        "unsloth/Qwen3-Coder-Next-GGUF:UD-Q8_K_XL": {}
+        "unsloth/Qwen3-Coder-Next-GGUF:UD-Q8_K_XL": {},
+        "unsloth/Qwen3-Coder-Next-GGUF:MXFP4": {}
       }
     }
   }
