@@ -14,6 +14,9 @@
 [branch]
 	autoSetupMerge = true
 
+[rebase]
+	updateRefs = true
+
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
