@@ -3,3 +3,6 @@
 [ui]
 default-command = "log"
 diff-formatter = ["difft"]
+
+[user]
+name = "Rio Kierkels"
