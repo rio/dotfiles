@@ -2,3 +2,4 @@
 
 [ui]
 default-command = "log"
+diff-formatter = ["difft"]
