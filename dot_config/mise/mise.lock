@@ -68,13 +68,13 @@ backend = "aqua:cli/cli"
 "platforms.windows-x64" = { checksum = "sha256:983c74a8c594366b198485187cd6d4d07638f0bf9a9948d51a2a81a5164d8bfd", url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_windows_amd64.zip"}
 
 [[tools."github:peteonrails/voxtype"]]
-version = "0.4.16"
+version = "0.6.3"
 backend = "github:peteonrails/voxtype[asset_pattern=voxtype-*-linux-x86_64-vulkan]"
-"platforms.linux-arm64" = { checksum = "sha256:2f48d7404368b12ab5c8203b886ef2e9bf8717b5ca83d4d75511b02cf4c40bae", url = "https://github.com/peteonrails/voxtype/releases/download/v0.4.16/voxtype-0.4.16-linux-x86_64-vulkan", url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/341794999"}
-"platforms.linux-x64" = { checksum = "sha256:2f48d7404368b12ab5c8203b886ef2e9bf8717b5ca83d4d75511b02cf4c40bae", url = "https://github.com/peteonrails/voxtype/releases/download/v0.4.16/voxtype-0.4.16-linux-x86_64-vulkan", url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/341794999"}
-"platforms.macos-arm64" = { checksum = "sha256:2f48d7404368b12ab5c8203b886ef2e9bf8717b5ca83d4d75511b02cf4c40bae", url = "https://github.com/peteonrails/voxtype/releases/download/v0.4.16/voxtype-0.4.16-linux-x86_64-vulkan", url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/341794999"}
-"platforms.macos-x64" = { checksum = "sha256:2f48d7404368b12ab5c8203b886ef2e9bf8717b5ca83d4d75511b02cf4c40bae", url = "https://github.com/peteonrails/voxtype/releases/download/v0.4.16/voxtype-0.4.16-linux-x86_64-vulkan", url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/341794999"}
-"platforms.windows-x64" = { checksum = "sha256:2f48d7404368b12ab5c8203b886ef2e9bf8717b5ca83d4d75511b02cf4c40bae", url = "https://github.com/peteonrails/voxtype/releases/download/v0.4.16/voxtype-0.4.16-linux-x86_64-vulkan", url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/341794999"}
+"platforms.linux-arm64" = { checksum = "sha256:5af469003a6ce4e8a24716757587730cec0431e6a2cf5f09fc7864a54241cc49", url = "https://github.com/peteonrails/voxtype/releases/download/v0.6.3/voxtype-0.6.3-linux-x86_64-vulkan", url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/363038504"}
+"platforms.linux-x64" = { checksum = "sha256:5af469003a6ce4e8a24716757587730cec0431e6a2cf5f09fc7864a54241cc49", url = "https://github.com/peteonrails/voxtype/releases/download/v0.6.3/voxtype-0.6.3-linux-x86_64-vulkan", url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/363038504"}
+"platforms.macos-arm64" = { checksum = "sha256:5af469003a6ce4e8a24716757587730cec0431e6a2cf5f09fc7864a54241cc49", url = "https://github.com/peteonrails/voxtype/releases/download/v0.6.3/voxtype-0.6.3-linux-x86_64-vulkan", url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/363038504"}
+"platforms.macos-x64" = { checksum = "sha256:5af469003a6ce4e8a24716757587730cec0431e6a2cf5f09fc7864a54241cc49", url = "https://github.com/peteonrails/voxtype/releases/download/v0.6.3/voxtype-0.6.3-linux-x86_64-vulkan", url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/363038504"}
+"platforms.windows-x64" = { checksum = "sha256:5af469003a6ce4e8a24716757587730cec0431e6a2cf5f09fc7864a54241cc49", url = "https://github.com/peteonrails/voxtype/releases/download/v0.6.3/voxtype-0.6.3-linux-x86_64-vulkan", url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/363038504"}
 
 [tools."github:peteonrails/voxtype".options]
 asset_pattern = "voxtype-*-linux-x86_64-vulkan"
@@ -87,6 +87,15 @@ backend = "aqua:jj-vcs/jj"
 "platforms.macos-arm64" = { checksum = "sha256:a1e6d3d3818ab26652631964db4344288a6fe0dc4c077bdb366ff184aa1d8f27", url = "https://github.com/jj-vcs/jj/releases/download/v0.38.0/jj-v0.38.0-aarch64-apple-darwin.tar.gz"}
 "platforms.macos-x64" = { checksum = "sha256:09b81d1c35522b41f126dd509515203a2def329ef46207e95460c1896e18d181", url = "https://github.com/jj-vcs/jj/releases/download/v0.38.0/jj-v0.38.0-x86_64-apple-darwin.tar.gz"}
 "platforms.windows-x64" = { checksum = "sha256:13032f82286a0b224f9ce6f1e466a2323bee3af2efba423e35b4146975445e14", url = "https://github.com/jj-vcs/jj/releases/download/v0.38.0/jj-v0.38.0-x86_64-pc-windows-msvc.zip"}
+
+[[tools.kind]]
+version = "0.31.0"
+backend = "aqua:kubernetes-sigs/kind"
+"platforms.linux-arm64" = { checksum = "sha256:8e1014e87c34901cc422a1445866835d1e666f2a61301c27e722bdeab5a1f7e4", url = "https://github.com/kubernetes-sigs/kind/releases/download/v0.31.0/kind-linux-arm64"}
+"platforms.linux-x64" = { checksum = "sha256:eb244cbafcc157dff60cf68693c14c9a75c4e6e6fedaf9cd71c58117cb93e3fa", url = "https://github.com/kubernetes-sigs/kind/releases/download/v0.31.0/kind-linux-amd64"}
+"platforms.macos-arm64" = { checksum = "sha256:88bf554fe9da6311c9f8c2d082613c002911a476f6b5090e9420b35d84e70c5c", url = "https://github.com/kubernetes-sigs/kind/releases/download/v0.31.0/kind-darwin-arm64"}
+"platforms.macos-x64" = { checksum = "sha256:a8b3cf77b2ad77aec5bf710d1a2589d9117576132af812885cad41e9dede4d4e", url = "https://github.com/kubernetes-sigs/kind/releases/download/v0.31.0/kind-darwin-amd64"}
+"platforms.windows-x64" = { checksum = "sha256:2c3a9ff954de16244380778683cf99e271bfc2fac9c6c4e797e4623c45e59d9d", url = "https://github.com/kubernetes-sigs/kind/releases/download/v0.31.0/kind-windows-amd64"}
 
 [[tools.lsd]]
 version = "1.2.0"
@@ -118,7 +127,11 @@ backend = "core:node"
 [[tools.opencode]]
 version = "1.2.15"
 backend = "aqua:sst/opencode"
+"platforms.linux-arm64" = { checksum = "sha256:dd4ca5764a093f92d8515833d5c58eabc657e72cdc3ef2ba3ac11e0db749b80d", url = "https://github.com/anomalyco/opencode/releases/download/v1.2.15/opencode-linux-arm64.tar.gz"}
 "platforms.linux-x64" = { checksum = "sha256:78b01946464e935c9b79261eda4a48f406621b0787a358fe607b6c71305f320e", url = "https://github.com/anomalyco/opencode/releases/download/v1.2.15/opencode-linux-x64.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:4144cdb7ae4d183964d7b23bdd37061ed52761bbde7e55763e0ebd12998c1e5e", url = "https://github.com/anomalyco/opencode/releases/download/v1.2.15/opencode-darwin-arm64.zip"}
+"platforms.macos-x64" = { checksum = "sha256:ba44d38b7c7a15675246d95f25f1fc4f6b6fbf5229c08d47813ab98f3503a7e3", url = "https://github.com/anomalyco/opencode/releases/download/v1.2.15/opencode-darwin-x64.zip"}
+"platforms.windows-x64" = { checksum = "sha256:ab65f06a01bb3adab6094735ebb9249efce500aaebda7388d5bfd95c8d377e0d", url = "https://github.com/anomalyco/opencode/releases/download/v1.2.15/opencode-windows-x64.zip"}
 
 [[tools.ripgrep]]
 version = "15.1.0"

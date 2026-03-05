@@ -18,7 +18,7 @@ starship = "1.24.2"
 zellij = "0.43.1"
 zoxide = "0.9.8"
 opencode = "1.2.15"
-"github:peteonrails/voxtype" = { version = "0.4.16", asset_pattern = "voxtype-*-linux-x86_64-vulkan" }
+"github:peteonrails/voxtype" = { version = "0.6.3", asset_pattern = "voxtype-*-linux-x86_64-vulkan" }
 difftastic = "0.67.0"
 
 [settings]
@@ -27,6 +27,7 @@ lockfile = true
 pin = true
 
 [env]
+_.path = ["~/.cargo/bin"]
 OPENCODE_EXPERIMENTAL_BASH_DEFAULT_TIMEOUT_MS = '240000'
 
 [tasks.llama-server.env]

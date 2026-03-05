@@ -32,7 +32,7 @@ device = "default"
 sample_rate = 16000
 
 # Maximum recording duration in seconds (safety limit)
-max_duration_secs = 600
+max_duration_secs = 1800
 
 [audio.feedback]
 # Enable audio feedback sounds (beeps when recording starts/stops)
