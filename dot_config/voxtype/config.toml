@@ -44,6 +44,11 @@ theme = "subtle"
 # Volume level (0.0 to 1.0)
 volume = 0.1
 
+[vad]
+enabled = true
+backend = "whisper"
+threshold = 0.5
+
 [whisper]
 # Model to use for transcription
 # Options: tiny, tiny.en, base, base.en, small, small.en, medium, medium.en, large-v3, large-v3-turbo
@@ -63,6 +68,11 @@ translate = false
 # Number of CPU threads for inference (omit for auto-detection)
 # threads = 4
 
+eager_processing = true
+eager_interval_secs = 3
+context_window_optimization = true
+gpu_isolation = true
+
 [output]
 # Primary output mode: "type" or "clipboard"
 # - type: Simulates keyboard input at cursor position (requires ydotool)
@@ -75,6 +85,10 @@ fallback_to_clipboard = true
 # Delay between typed characters in milliseconds
 # 0 = fastest possible, increase if characters are dropped
 type_delay_ms = 0
+
+append_text = " "
+restore_clipboard = true
+restore_clipboard_delay_ms = 200
 
 [output.notification]
 # Show notification when recording starts (hotkey pressed)
@@ -90,7 +104,7 @@ on_transcription = false
 # Text processing options (word replacements, spoken punctuation)
 #
 # Enable spoken punctuation conversion (e.g., say "period" to get ".")
-spoken_punctuation = false
+spoken_punctuation = true
 #
 # Custom word replacements (case-insensitive)
 # replacements = { "hyperwhisper" = "hyprwhspr" }
@@ -99,4 +113,4 @@ spoken_punctuation = false
 # Uncomment to enable. Use "auto" for default location ($XDG_RUNTIME_DIR/voxtype/state)
 # or provide a custom path. The daemon writes state ("idle", "recording", "transcribing")
 # to this file whenever it changes.
-# state_file = "auto"
+state_file = "auto"
