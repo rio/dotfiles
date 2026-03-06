@@ -71,7 +71,9 @@ translate = false
 eager_processing = true
 eager_interval_secs = 3
 context_window_optimization = true
-gpu_isolation = true
+
+# keep model loaded in memory for speed boost
+gpu_isolation = false
 
 [output]
 # Primary output mode: "type" or "clipboard"
