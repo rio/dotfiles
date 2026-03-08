@@ -67,6 +67,15 @@ backend = "aqua:cli/cli"
 "platforms.macos-x64" = { checksum = "sha256:ced7094d05702eb54a63542abd8a1dc570b7e5ae94951844eb1626ba74bc2c60", url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_macOS_amd64.zip"}
 "platforms.windows-x64" = { checksum = "sha256:983c74a8c594366b198485187cd6d4d07638f0bf9a9948d51a2a81a5164d8bfd", url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_windows_amd64.zip"}
 
+[[tools."github:moltis-org/moltis"]]
+version = "0.10.17"
+backend = "github:moltis-org/moltis"
+"platforms.linux-arm64" = { checksum = "sha256:15249fd79f78a9c29ba2182b83057ce27d90706275cb001da7132b224be2720a", url = "https://github.com/moltis-org/moltis/releases/download/v0.10.17/moltis-0.10.17-aarch64-unknown-linux-gnu.tar.gz", url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/367886024"}
+"platforms.linux-x64" = { checksum = "sha256:dbdf4cb133bd988fbb1f9e6f3816c544c4f73fb3ceba583183320f98ff7ee405", url = "https://github.com/moltis-org/moltis/releases/download/v0.10.17/moltis-0.10.17-x86_64-unknown-linux-gnu.tar.gz", url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/367886002"}
+"platforms.macos-arm64" = { checksum = "sha256:8f87634d587fd9e18dce8710e74a198ce3b82c3ee80c3ae94235a2af880cd934", url = "https://github.com/moltis-org/moltis/releases/download/v0.10.17/moltis-0.10.17-aarch64-apple-darwin.tar.gz", url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/367886032"}
+"platforms.macos-x64" = { checksum = "sha256:79da1563e1db857b54ec3fda712213635ca0081d39547cbd96c0885c30457f57", url = "https://github.com/moltis-org/moltis/releases/download/v0.10.17/moltis-0.10.17-x86_64-apple-darwin.tar.gz", url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/367886025"}
+"platforms.windows-x64" = { checksum = "sha256:761ae2eefc799ee2e733cbaf466a584bff5f3e68bdb484f2aba4bc511bf27cd7", url = "https://github.com/moltis-org/moltis/releases/download/v0.10.17/moltis-0.10.17-x86_64-pc-windows-msvc.exe", url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/367886004"}
+
 [[tools."github:peteonrails/voxtype"]]
 version = "0.6.3"
 backend = "github:peteonrails/voxtype[asset_pattern=voxtype-*-linux-x86_64-vulkan]"
