@@ -8,7 +8,15 @@ backend = "aqua:sharkdp/bat"
 checksum = "sha256:6369242c584065f195fb20cb36fbd7cb63ae690605bbe89868a7596b596c2c23"
 url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-aarch64-unknown-linux-musl.tar.gz"
 
+[tools.bat."platforms.linux-arm64-musl"]
+checksum = "sha256:6369242c584065f195fb20cb36fbd7cb63ae690605bbe89868a7596b596c2c23"
+url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-aarch64-unknown-linux-musl.tar.gz"
+
 [tools.bat."platforms.linux-x64"]
+checksum = "sha256:0dcd8ac79732c0d5b136f11f4ee00e581440e16a44eab5b3105b611bbf2cf191"
+url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-unknown-linux-musl.tar.gz"
+
+[tools.bat."platforms.linux-x64-musl"]
 checksum = "sha256:0dcd8ac79732c0d5b136f11f4ee00e581440e16a44eab5b3105b611bbf2cf191"
 url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-unknown-linux-musl.tar.gz"
 
@@ -32,7 +40,15 @@ backend = "aqua:aristocratos/btop"
 checksum = "sha256:7902578c0439332573148caf6b3515df2b158d163baeeff046028e428ec3295a"
 url = "https://github.com/aristocratos/btop/releases/download/v1.4.6/btop-aarch64-unknown-linux-musl.tbz"
 
+[tools.btop."platforms.linux-arm64-musl"]
+checksum = "sha256:7902578c0439332573148caf6b3515df2b158d163baeeff046028e428ec3295a"
+url = "https://github.com/aristocratos/btop/releases/download/v1.4.6/btop-aarch64-unknown-linux-musl.tbz"
+
 [tools.btop."platforms.linux-x64"]
+checksum = "sha256:9bf7ed170423bb3709a8020767bd2ca529c5632af478f229dce7cdfd32b25691"
+url = "https://github.com/aristocratos/btop/releases/download/v1.4.6/btop-x86_64-unknown-linux-musl.tbz"
+
+[tools.btop."platforms.linux-x64-musl"]
 checksum = "sha256:9bf7ed170423bb3709a8020767bd2ca529c5632af478f229dce7cdfd32b25691"
 url = "https://github.com/aristocratos/btop/releases/download/v1.4.6/btop-x86_64-unknown-linux-musl.tbz"
 
@@ -43,22 +59,37 @@ backend = "aqua:twpayne/chezmoi"
 [tools.chezmoi."platforms.linux-arm64"]
 checksum = "sha256:0aef9ef75ee33cffb483a82c474b495d428e0f7941ab7898263c3519006e0662"
 url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_linux_arm64.tar.gz"
+provenance = "cosign"
+
+[tools.chezmoi."platforms.linux-arm64-musl"]
+checksum = "sha256:0aef9ef75ee33cffb483a82c474b495d428e0f7941ab7898263c3519006e0662"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_linux_arm64.tar.gz"
+provenance = "cosign"
 
 [tools.chezmoi."platforms.linux-x64"]
 checksum = "sha256:9b9bf911efed8aba28bd6f5df1e780a6123dc3fb177004c1ca36ec2b9eca7628"
 url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_linux_amd64.tar.gz"
+provenance = "cosign"
+
+[tools.chezmoi."platforms.linux-x64-musl"]
+checksum = "sha256:9b9bf911efed8aba28bd6f5df1e780a6123dc3fb177004c1ca36ec2b9eca7628"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_linux_amd64.tar.gz"
+provenance = "cosign"
 
 [tools.chezmoi."platforms.macos-arm64"]
 checksum = "sha256:c5717b0d4d84d2941c2582fec26854d316ee5d7c27ec73903f7840554f1baeda"
 url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_darwin_arm64.tar.gz"
+provenance = "cosign"
 
 [tools.chezmoi."platforms.macos-x64"]
 checksum = "sha256:9dd51eccb801d3557f61c8559f4f31e5ebb21c4a1d983940141383b9b5069458"
 url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_darwin_amd64.tar.gz"
+provenance = "cosign"
 
 [tools.chezmoi."platforms.windows-x64"]
 checksum = "sha256:6504c72d9e11c57217a6c62586b588bc506f604618d7660a86b848165584af45"
 url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_windows_amd64.zip"
+provenance = "cosign"
 
 [[tools.difftastic]]
 version = "0.67.0"
@@ -68,7 +99,15 @@ backend = "aqua:Wilfred/difftastic"
 checksum = "sha256:e36f746fbf5d37c68c1d760878fdb77778066c6a646253bb8d9ae7d3fe84c81b"
 url = "https://github.com/Wilfred/difftastic/releases/download/0.67.0/difft-aarch64-unknown-linux-gnu.tar.gz"
 
+[tools.difftastic."platforms.linux-arm64-musl"]
+checksum = "sha256:e36f746fbf5d37c68c1d760878fdb77778066c6a646253bb8d9ae7d3fe84c81b"
+url = "https://github.com/Wilfred/difftastic/releases/download/0.67.0/difft-aarch64-unknown-linux-gnu.tar.gz"
+
 [tools.difftastic."platforms.linux-x64"]
+checksum = "sha256:328e1ab028a36b81ae990c9fc40a1c8eb618e14559e0d67a0a63f328ad85de09"
+url = "https://github.com/Wilfred/difftastic/releases/download/0.67.0/difft-x86_64-unknown-linux-musl.tar.gz"
+
+[tools.difftastic."platforms.linux-x64-musl"]
 checksum = "sha256:328e1ab028a36b81ae990c9fc40a1c8eb618e14559e0d67a0a63f328ad85de09"
 url = "https://github.com/Wilfred/difftastic/releases/download/0.67.0/difft-x86_64-unknown-linux-musl.tar.gz"
 
@@ -92,7 +131,15 @@ backend = "aqua:mr-karan/doggo"
 checksum = "sha256:73963d2b39048997427a4596f4cd30e14a3d62015f7f39e2980d235a216e33e9"
 url = "https://github.com/mr-karan/doggo/releases/download/v1.1.4/doggo_1.1.4_Linux_arm64.tar.gz"
 
+[tools.doggo."platforms.linux-arm64-musl"]
+checksum = "sha256:73963d2b39048997427a4596f4cd30e14a3d62015f7f39e2980d235a216e33e9"
+url = "https://github.com/mr-karan/doggo/releases/download/v1.1.4/doggo_1.1.4_Linux_arm64.tar.gz"
+
 [tools.doggo."platforms.linux-x64"]
+checksum = "sha256:cb57b10dd48ed3084161de2afe71a74514177b440b3f5643e02bf7a638585a5c"
+url = "https://github.com/mr-karan/doggo/releases/download/v1.1.4/doggo_1.1.4_Linux_x86_64.tar.gz"
+
+[tools.doggo."platforms.linux-x64-musl"]
 checksum = "sha256:cb57b10dd48ed3084161de2afe71a74514177b440b3f5643e02bf7a638585a5c"
 url = "https://github.com/mr-karan/doggo/releases/download/v1.1.4/doggo_1.1.4_Linux_x86_64.tar.gz"
 
@@ -116,7 +163,15 @@ backend = "aqua:sharkdp/fd"
 checksum = "sha256:996b9b1366433b211cb3bbedba91c9dbce2431842144d925428ead0adf32020b"
 url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-aarch64-unknown-linux-musl.tar.gz"
 
+[tools.fd."platforms.linux-arm64-musl"]
+checksum = "sha256:996b9b1366433b211cb3bbedba91c9dbce2431842144d925428ead0adf32020b"
+url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-aarch64-unknown-linux-musl.tar.gz"
+
 [tools.fd."platforms.linux-x64"]
+checksum = "sha256:2b6bfaae8c48f12050813c2ffe1884c61ea26e750d803df9c9114550a314cd14"
+url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-x86_64-unknown-linux-musl.tar.gz"
+
+[tools.fd."platforms.linux-x64-musl"]
 checksum = "sha256:2b6bfaae8c48f12050813c2ffe1884c61ea26e750d803df9c9114550a314cd14"
 url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-x86_64-unknown-linux-musl.tar.gz"
 
@@ -140,7 +195,15 @@ backend = "aqua:junegunn/fzf"
 checksum = "sha256:7071f48c2ac0f2bc992d6d33cc36fd675a579a98cc976dda699eea07dd5e9c58"
 url = "https://github.com/junegunn/fzf/releases/download/v0.67.0/fzf-0.67.0-linux_arm64.tar.gz"
 
+[tools.fzf."platforms.linux-arm64-musl"]
+checksum = "sha256:7071f48c2ac0f2bc992d6d33cc36fd675a579a98cc976dda699eea07dd5e9c58"
+url = "https://github.com/junegunn/fzf/releases/download/v0.67.0/fzf-0.67.0-linux_arm64.tar.gz"
+
 [tools.fzf."platforms.linux-x64"]
+checksum = "sha256:4be08018ca37b32518c608741933ea335a406de3558242b60619e98f25be2be1"
+url = "https://github.com/junegunn/fzf/releases/download/v0.67.0/fzf-0.67.0-linux_amd64.tar.gz"
+
+[tools.fzf."platforms.linux-x64-musl"]
 checksum = "sha256:4be08018ca37b32518c608741933ea335a406de3558242b60619e98f25be2be1"
 url = "https://github.com/junegunn/fzf/releases/download/v0.67.0/fzf-0.67.0-linux_amd64.tar.gz"
 
@@ -164,7 +227,15 @@ backend = "aqua:cli/cli"
 checksum = "sha256:83cf7a7962ea9dfcc2c123666695792916a87af32cba5f1f6e585db08fa57547"
 url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_linux_arm64.tar.gz"
 
+[tools.github-cli."platforms.linux-arm64-musl"]
+checksum = "sha256:83cf7a7962ea9dfcc2c123666695792916a87af32cba5f1f6e585db08fa57547"
+url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_linux_arm64.tar.gz"
+
 [tools.github-cli."platforms.linux-x64"]
+checksum = "sha256:f3b08bd6a28420cc2229b0a1a687fa25f2b838d3f04b297414c1041ca68103c7"
+url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_linux_amd64.tar.gz"
+
+[tools.github-cli."platforms.linux-x64-musl"]
 checksum = "sha256:f3b08bd6a28420cc2229b0a1a687fa25f2b838d3f04b297414c1041ca68103c7"
 url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_linux_amd64.tar.gz"
 
@@ -189,7 +260,17 @@ checksum = "sha256:15249fd79f78a9c29ba2182b83057ce27d90706275cb001da7132b224be27
 url = "https://github.com/moltis-org/moltis/releases/download/v0.10.17/moltis-0.10.17-aarch64-unknown-linux-gnu.tar.gz"
 url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/367886024"
 
+[tools."github:moltis-org/moltis"."platforms.linux-arm64-musl"]
+checksum = "sha256:15249fd79f78a9c29ba2182b83057ce27d90706275cb001da7132b224be2720a"
+url = "https://github.com/moltis-org/moltis/releases/download/v0.10.17/moltis-0.10.17-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/367886024"
+
 [tools."github:moltis-org/moltis"."platforms.linux-x64"]
+checksum = "sha256:dbdf4cb133bd988fbb1f9e6f3816c544c4f73fb3ceba583183320f98ff7ee405"
+url = "https://github.com/moltis-org/moltis/releases/download/v0.10.17/moltis-0.10.17-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/367886002"
+
+[tools."github:moltis-org/moltis"."platforms.linux-x64-musl"]
 checksum = "sha256:dbdf4cb133bd988fbb1f9e6f3816c544c4f73fb3ceba583183320f98ff7ee405"
 url = "https://github.com/moltis-org/moltis/releases/download/v0.10.17/moltis-0.10.17-x86_64-unknown-linux-gnu.tar.gz"
 url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/367886002"
@@ -221,7 +302,17 @@ checksum = "sha256:5af469003a6ce4e8a24716757587730cec0431e6a2cf5f09fc7864a54241c
 url = "https://github.com/peteonrails/voxtype/releases/download/v0.6.3/voxtype-0.6.3-linux-x86_64-vulkan"
 url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/363038504"
 
+[tools."github:peteonrails/voxtype"."platforms.linux-arm64-musl"]
+checksum = "sha256:5af469003a6ce4e8a24716757587730cec0431e6a2cf5f09fc7864a54241cc49"
+url = "https://github.com/peteonrails/voxtype/releases/download/v0.6.3/voxtype-0.6.3-linux-x86_64-vulkan"
+url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/363038504"
+
 [tools."github:peteonrails/voxtype"."platforms.linux-x64"]
+checksum = "sha256:5af469003a6ce4e8a24716757587730cec0431e6a2cf5f09fc7864a54241cc49"
+url = "https://github.com/peteonrails/voxtype/releases/download/v0.6.3/voxtype-0.6.3-linux-x86_64-vulkan"
+url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/363038504"
+
+[tools."github:peteonrails/voxtype"."platforms.linux-x64-musl"]
 checksum = "sha256:5af469003a6ce4e8a24716757587730cec0431e6a2cf5f09fc7864a54241cc49"
 url = "https://github.com/peteonrails/voxtype/releases/download/v0.6.3/voxtype-0.6.3-linux-x86_64-vulkan"
 url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/363038504"
@@ -249,7 +340,15 @@ backend = "aqua:jj-vcs/jj"
 checksum = "sha256:bae97959e06d92b79d96b09a90545e157ef0f300a0482d9b9a81128610e896aa"
 url = "https://github.com/jj-vcs/jj/releases/download/v0.38.0/jj-v0.38.0-aarch64-unknown-linux-musl.tar.gz"
 
+[tools.jj."platforms.linux-arm64-musl"]
+checksum = "sha256:bae97959e06d92b79d96b09a90545e157ef0f300a0482d9b9a81128610e896aa"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.38.0/jj-v0.38.0-aarch64-unknown-linux-musl.tar.gz"
+
 [tools.jj."platforms.linux-x64"]
+checksum = "sha256:ed830d9a34a304f8ba258806b52521250a9fffded32ae89c4eb5285b33556a17"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.38.0/jj-v0.38.0-x86_64-unknown-linux-musl.tar.gz"
+
+[tools.jj."platforms.linux-x64-musl"]
 checksum = "sha256:ed830d9a34a304f8ba258806b52521250a9fffded32ae89c4eb5285b33556a17"
 url = "https://github.com/jj-vcs/jj/releases/download/v0.38.0/jj-v0.38.0-x86_64-unknown-linux-musl.tar.gz"
 
@@ -265,30 +364,6 @@ url = "https://github.com/jj-vcs/jj/releases/download/v0.38.0/jj-v0.38.0-x86_64-
 checksum = "sha256:13032f82286a0b224f9ce6f1e466a2323bee3af2efba423e35b4146975445e14"
 url = "https://github.com/jj-vcs/jj/releases/download/v0.38.0/jj-v0.38.0-x86_64-pc-windows-msvc.zip"
 
-[[tools.kind]]
-version = "0.31.0"
-backend = "aqua:kubernetes-sigs/kind"
-
-[tools.kind."platforms.linux-arm64"]
-checksum = "sha256:8e1014e87c34901cc422a1445866835d1e666f2a61301c27e722bdeab5a1f7e4"
-url = "https://github.com/kubernetes-sigs/kind/releases/download/v0.31.0/kind-linux-arm64"
-
-[tools.kind."platforms.linux-x64"]
-checksum = "sha256:eb244cbafcc157dff60cf68693c14c9a75c4e6e6fedaf9cd71c58117cb93e3fa"
-url = "https://github.com/kubernetes-sigs/kind/releases/download/v0.31.0/kind-linux-amd64"
-
-[tools.kind."platforms.macos-arm64"]
-checksum = "sha256:88bf554fe9da6311c9f8c2d082613c002911a476f6b5090e9420b35d84e70c5c"
-url = "https://github.com/kubernetes-sigs/kind/releases/download/v0.31.0/kind-darwin-arm64"
-
-[tools.kind."platforms.macos-x64"]
-checksum = "sha256:a8b3cf77b2ad77aec5bf710d1a2589d9117576132af812885cad41e9dede4d4e"
-url = "https://github.com/kubernetes-sigs/kind/releases/download/v0.31.0/kind-darwin-amd64"
-
-[tools.kind."platforms.windows-x64"]
-checksum = "sha256:2c3a9ff954de16244380778683cf99e271bfc2fac9c6c4e797e4623c45e59d9d"
-url = "https://github.com/kubernetes-sigs/kind/releases/download/v0.31.0/kind-windows-amd64"
-
 [[tools.lsd]]
 version = "1.2.0"
 backend = "aqua:lsd-rs/lsd"
@@ -297,7 +372,15 @@ backend = "aqua:lsd-rs/lsd"
 checksum = "sha256:642ecb1a763b9f790a99c83a1445c117a6813ed4edb5d498d4420423c6353eb8"
 url = "https://github.com/lsd-rs/lsd/releases/download/v1.2.0/lsd-v1.2.0-aarch64-unknown-linux-musl.tar.gz"
 
+[tools.lsd."platforms.linux-arm64-musl"]
+checksum = "sha256:642ecb1a763b9f790a99c83a1445c117a6813ed4edb5d498d4420423c6353eb8"
+url = "https://github.com/lsd-rs/lsd/releases/download/v1.2.0/lsd-v1.2.0-aarch64-unknown-linux-musl.tar.gz"
+
 [tools.lsd."platforms.linux-x64"]
+checksum = "sha256:77849da1210336534258551a581401ba19ae6b8d7b66a2a1feff148ad41e3814"
+url = "https://github.com/lsd-rs/lsd/releases/download/v1.2.0/lsd-v1.2.0-x86_64-unknown-linux-musl.tar.gz"
+
+[tools.lsd."platforms.linux-x64-musl"]
 checksum = "sha256:77849da1210336534258551a581401ba19ae6b8d7b66a2a1feff148ad41e3814"
 url = "https://github.com/lsd-rs/lsd/releases/download/v1.2.0/lsd-v1.2.0-x86_64-unknown-linux-musl.tar.gz"
 
@@ -353,7 +436,15 @@ backend = "core:node"
 checksum = "sha256:20f9aa9f2174786754f1941a178a62b906216fcdcd923400817f4bfa72e12336"
 url = "https://nodejs.org/dist/v25.5.0/node-v25.5.0-linux-arm64.tar.gz"
 
+[tools.node."platforms.linux-arm64-musl"]
+checksum = "sha256:20f9aa9f2174786754f1941a178a62b906216fcdcd923400817f4bfa72e12336"
+url = "https://nodejs.org/dist/v25.5.0/node-v25.5.0-linux-arm64.tar.gz"
+
 [tools.node."platforms.linux-x64"]
+checksum = "sha256:e8e50aee2e5328bcbc2ead32d86d0b577220ccdd80c438583dca3aa2965873f2"
+url = "https://nodejs.org/dist/v25.5.0/node-v25.5.0-linux-x64.tar.gz"
+
+[tools.node."platforms.linux-x64-musl"]
 checksum = "sha256:e8e50aee2e5328bcbc2ead32d86d0b577220ccdd80c438583dca3aa2965873f2"
 url = "https://nodejs.org/dist/v25.5.0/node-v25.5.0-linux-x64.tar.gz"
 
@@ -377,7 +468,15 @@ backend = "aqua:sst/opencode"
 checksum = "sha256:dd4ca5764a093f92d8515833d5c58eabc657e72cdc3ef2ba3ac11e0db749b80d"
 url = "https://github.com/anomalyco/opencode/releases/download/v1.2.15/opencode-linux-arm64.tar.gz"
 
+[tools.opencode."platforms.linux-arm64-musl"]
+checksum = "sha256:dd4ca5764a093f92d8515833d5c58eabc657e72cdc3ef2ba3ac11e0db749b80d"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.2.15/opencode-linux-arm64.tar.gz"
+
 [tools.opencode."platforms.linux-x64"]
+checksum = "sha256:78b01946464e935c9b79261eda4a48f406621b0787a358fe607b6c71305f320e"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.2.15/opencode-linux-x64.tar.gz"
+
+[tools.opencode."platforms.linux-x64-musl"]
 checksum = "sha256:78b01946464e935c9b79261eda4a48f406621b0787a358fe607b6c71305f320e"
 url = "https://github.com/anomalyco/opencode/releases/download/v1.2.15/opencode-linux-x64.tar.gz"
 
@@ -401,7 +500,15 @@ backend = "aqua:BurntSushi/ripgrep"
 checksum = "sha256:2b661c6ef508e902f388e9098d9c4c5aca72c87b55922d94abdba830b4dc885e"
 url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-aarch64-unknown-linux-gnu.tar.gz"
 
+[tools.ripgrep."platforms.linux-arm64-musl"]
+checksum = "sha256:2b661c6ef508e902f388e9098d9c4c5aca72c87b55922d94abdba830b4dc885e"
+url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-aarch64-unknown-linux-gnu.tar.gz"
+
 [tools.ripgrep."platforms.linux-x64"]
+checksum = "sha256:1c9297be4a084eea7ecaedf93eb03d058d6faae29bbc57ecdaf5063921491599"
+url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-unknown-linux-musl.tar.gz"
+
+[tools.ripgrep."platforms.linux-x64-musl"]
 checksum = "sha256:1c9297be4a084eea7ecaedf93eb03d058d6faae29bbc57ecdaf5063921491599"
 url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-unknown-linux-musl.tar.gz"
 
@@ -425,7 +532,15 @@ backend = "aqua:starship/starship"
 checksum = "sha256:56b9ff412bbf374d29b99e5ac09a849124cb37a0a13121e8470df32de53c1ea6"
 url = "https://github.com/starship/starship/releases/download/v1.24.2/starship-aarch64-unknown-linux-musl.tar.gz"
 
+[tools.starship."platforms.linux-arm64-musl"]
+checksum = "sha256:56b9ff412bbf374d29b99e5ac09a849124cb37a0a13121e8470df32de53c1ea6"
+url = "https://github.com/starship/starship/releases/download/v1.24.2/starship-aarch64-unknown-linux-musl.tar.gz"
+
 [tools.starship."platforms.linux-x64"]
+checksum = "sha256:00ff3c1f8ffb59b5c15d4b44c076bcca04d92cf0055c86b916248c14f3ae714a"
+url = "https://github.com/starship/starship/releases/download/v1.24.2/starship-x86_64-unknown-linux-musl.tar.gz"
+
+[tools.starship."platforms.linux-x64-musl"]
 checksum = "sha256:00ff3c1f8ffb59b5c15d4b44c076bcca04d92cf0055c86b916248c14f3ae714a"
 url = "https://github.com/starship/starship/releases/download/v1.24.2/starship-x86_64-unknown-linux-musl.tar.gz"
 
@@ -442,11 +557,14 @@ checksum = "sha256:d38424c595320e9639a276666347d5e44cb004de3972f40b9a5a1a6b88537
 url = "https://github.com/starship/starship/releases/download/v1.24.2/starship-x86_64-pc-windows-msvc.zip"
 
 [[tools."ubi:nushell/nushell"]]
-version = "0.110.0"
+version = "0.111.0"
 backend = "ubi:nushell/nushell"
 
 [tools."ubi:nushell/nushell".options]
 exe = "nu"
+
+[tools."ubi:nushell/nushell"."platforms.linux-x64-nu-nu"]
+checksum = "blake3:8cb9276b10c86fcb19981bfb09bb7477ac64d904052ed3c50ef2933382d81f8b"
 
 [[tools.zellij]]
 version = "0.43.1"
@@ -456,7 +574,15 @@ backend = "aqua:zellij-org/zellij"
 checksum = "sha256:32321ad5f61c2c62d156162d1df95dc823666f84e4a0d7cd79b0fef02930b165"
 url = "https://github.com/zellij-org/zellij/releases/download/v0.43.1/zellij-aarch64-unknown-linux-musl.tar.gz"
 
+[tools.zellij."platforms.linux-arm64-musl"]
+checksum = "sha256:32321ad5f61c2c62d156162d1df95dc823666f84e4a0d7cd79b0fef02930b165"
+url = "https://github.com/zellij-org/zellij/releases/download/v0.43.1/zellij-aarch64-unknown-linux-musl.tar.gz"
+
 [tools.zellij."platforms.linux-x64"]
+checksum = "sha256:541d98efef5558293ef85ad9acd29e4d920b6e881513b9e77255d8207020d75a"
+url = "https://github.com/zellij-org/zellij/releases/download/v0.43.1/zellij-x86_64-unknown-linux-musl.tar.gz"
+
+[tools.zellij."platforms.linux-x64-musl"]
 checksum = "sha256:541d98efef5558293ef85ad9acd29e4d920b6e881513b9e77255d8207020d75a"
 url = "https://github.com/zellij-org/zellij/releases/download/v0.43.1/zellij-x86_64-unknown-linux-musl.tar.gz"
 
@@ -475,7 +601,13 @@ backend = "aqua:ajeetdsouza/zoxide"
 [tools.zoxide."platforms.linux-arm64"]
 url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-aarch64-unknown-linux-musl.tar.gz"
 
+[tools.zoxide."platforms.linux-arm64-musl"]
+url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-aarch64-unknown-linux-musl.tar.gz"
+
 [tools.zoxide."platforms.linux-x64"]
+url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-x86_64-unknown-linux-musl.tar.gz"
+
+[tools.zoxide."platforms.linux-x64-musl"]
 url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.zoxide."platforms.macos-arm64"]
