@@ -252,43 +252,43 @@ checksum = "sha256:983c74a8c594366b198485187cd6d4d07638f0bf9a9948d51a2a81a5164d8
 url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_windows_amd64.zip"
 
 [[tools."github:moltis-org/moltis"]]
-version = "0.10.17"
+version = "0.10.18"
 backend = "github:moltis-org/moltis"
 
 [tools."github:moltis-org/moltis"."platforms.linux-arm64"]
-checksum = "sha256:15249fd79f78a9c29ba2182b83057ce27d90706275cb001da7132b224be2720a"
-url = "https://github.com/moltis-org/moltis/releases/download/v0.10.17/moltis-0.10.17-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/367886024"
+checksum = "sha256:53dc92c041f7ac248d207abe977c7d709308337da79bb0fdca2eccf893c3d14b"
+url = "https://github.com/moltis-org/moltis/releases/download/v0.10.18/moltis-0.10.18-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/370272049"
 
 [tools."github:moltis-org/moltis"."platforms.linux-arm64-musl"]
-checksum = "sha256:15249fd79f78a9c29ba2182b83057ce27d90706275cb001da7132b224be2720a"
-url = "https://github.com/moltis-org/moltis/releases/download/v0.10.17/moltis-0.10.17-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/367886024"
+checksum = "sha256:53dc92c041f7ac248d207abe977c7d709308337da79bb0fdca2eccf893c3d14b"
+url = "https://github.com/moltis-org/moltis/releases/download/v0.10.18/moltis-0.10.18-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/370272049"
 
 [tools."github:moltis-org/moltis"."platforms.linux-x64"]
-checksum = "sha256:dbdf4cb133bd988fbb1f9e6f3816c544c4f73fb3ceba583183320f98ff7ee405"
-url = "https://github.com/moltis-org/moltis/releases/download/v0.10.17/moltis-0.10.17-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/367886002"
+checksum = "sha256:4654e4630c74a43bd6f8a766114b3b6b5c8a9eea50116e1230ad1d9d7d25a5b9"
+url = "https://github.com/moltis-org/moltis/releases/download/v0.10.18/moltis-0.10.18-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/370272011"
 
 [tools."github:moltis-org/moltis"."platforms.linux-x64-musl"]
-checksum = "sha256:dbdf4cb133bd988fbb1f9e6f3816c544c4f73fb3ceba583183320f98ff7ee405"
-url = "https://github.com/moltis-org/moltis/releases/download/v0.10.17/moltis-0.10.17-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/367886002"
+checksum = "sha256:4654e4630c74a43bd6f8a766114b3b6b5c8a9eea50116e1230ad1d9d7d25a5b9"
+url = "https://github.com/moltis-org/moltis/releases/download/v0.10.18/moltis-0.10.18-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/370272011"
 
 [tools."github:moltis-org/moltis"."platforms.macos-arm64"]
-checksum = "sha256:8f87634d587fd9e18dce8710e74a198ce3b82c3ee80c3ae94235a2af880cd934"
-url = "https://github.com/moltis-org/moltis/releases/download/v0.10.17/moltis-0.10.17-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/367886032"
+checksum = "sha256:2d5fee143a34a65bc4c9a3abb591e0c6e551bfe266754d391d1976e1aea1b6c7"
+url = "https://github.com/moltis-org/moltis/releases/download/v0.10.18/moltis-0.10.18-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/370272042"
 
 [tools."github:moltis-org/moltis"."platforms.macos-x64"]
-checksum = "sha256:79da1563e1db857b54ec3fda712213635ca0081d39547cbd96c0885c30457f57"
-url = "https://github.com/moltis-org/moltis/releases/download/v0.10.17/moltis-0.10.17-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/367886025"
+checksum = "sha256:40fa6d6fb96cf664d3d86ff4917bb5aa1d312cd8240ba10a5380a9774ad3597b"
+url = "https://github.com/moltis-org/moltis/releases/download/v0.10.18/moltis-0.10.18-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/370272025"
 
 [tools."github:moltis-org/moltis"."platforms.windows-x64"]
-checksum = "sha256:761ae2eefc799ee2e733cbaf466a584bff5f3e68bdb484f2aba4bc511bf27cd7"
-url = "https://github.com/moltis-org/moltis/releases/download/v0.10.17/moltis-0.10.17-x86_64-pc-windows-msvc.exe"
-url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/367886004"
+checksum = "sha256:9974cabeff3703201a7907596ddc8fb41e5f8e7be9ade05ad84f86e8c4352631"
+url = "https://github.com/moltis-org/moltis/releases/download/v0.10.18/moltis-0.10.18-x86_64-pc-windows-msvc.exe"
+url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/370272007"
 
 [[tools."github:peteonrails/voxtype"]]
 version = "0.6.3"

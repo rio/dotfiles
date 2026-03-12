@@ -19,7 +19,7 @@ zoxide = "0.9.8"
 opencode = "1.2.15"
 "github:peteonrails/voxtype" = { version = "0.6.3", asset_pattern = "voxtype-*-linux-x86_64-vulkan" }
 difftastic = "0.67.0"
-"github:moltis-org/moltis" = "0.10.17"
+"github:moltis-org/moltis" = "0.10.18"
 neovim = "0.11.6"
 
 [settings]
