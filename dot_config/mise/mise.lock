@@ -461,36 +461,36 @@ checksum = "sha256:4d2773e98d3f35d172478d5101de1f571d851053d2ed67bbe39a5bdeae87d
 url = "https://nodejs.org/dist/v25.5.0/node-v25.5.0-win-x64.zip"
 
 [[tools.opencode]]
-version = "1.2.15"
+version = "1.2.27"
 backend = "aqua:sst/opencode"
 
 [tools.opencode."platforms.linux-arm64"]
-checksum = "sha256:dd4ca5764a093f92d8515833d5c58eabc657e72cdc3ef2ba3ac11e0db749b80d"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.2.15/opencode-linux-arm64.tar.gz"
+checksum = "sha256:bcd91a3ebe9480ffb1702e5c71168d451150421acc99c6d1abf5edc5e2cb39f5"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.2.27/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-arm64-musl"]
-checksum = "sha256:dd4ca5764a093f92d8515833d5c58eabc657e72cdc3ef2ba3ac11e0db749b80d"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.2.15/opencode-linux-arm64.tar.gz"
+checksum = "sha256:bcd91a3ebe9480ffb1702e5c71168d451150421acc99c6d1abf5edc5e2cb39f5"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.2.27/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-x64"]
-checksum = "sha256:78b01946464e935c9b79261eda4a48f406621b0787a358fe607b6c71305f320e"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.2.15/opencode-linux-x64.tar.gz"
+checksum = "sha256:6fe3820b145857f7ff507d2826058b7acf1fce8258def1498468dd43809e69e8"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.2.27/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.linux-x64-musl"]
-checksum = "sha256:78b01946464e935c9b79261eda4a48f406621b0787a358fe607b6c71305f320e"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.2.15/opencode-linux-x64.tar.gz"
+checksum = "sha256:6fe3820b145857f7ff507d2826058b7acf1fce8258def1498468dd43809e69e8"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.2.27/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:4144cdb7ae4d183964d7b23bdd37061ed52761bbde7e55763e0ebd12998c1e5e"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.2.15/opencode-darwin-arm64.zip"
+checksum = "sha256:fa680fa79086c7509d3a2c21e49c9264b803da7c0f1b7807ed842b8e37325597"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.2.27/opencode-darwin-arm64.zip"
 
 [tools.opencode."platforms.macos-x64"]
-checksum = "sha256:ba44d38b7c7a15675246d95f25f1fc4f6b6fbf5229c08d47813ab98f3503a7e3"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.2.15/opencode-darwin-x64.zip"
+checksum = "sha256:fc719db27acbc817ff2a4df2bbaa788e02976ddc26a96c84de4fdbe663714b8c"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.2.27/opencode-darwin-x64.zip"
 
 [tools.opencode."platforms.windows-x64"]
-checksum = "sha256:ab65f06a01bb3adab6094735ebb9249efce500aaebda7388d5bfd95c8d377e0d"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.2.15/opencode-windows-x64.zip"
+checksum = "sha256:9e2e43568e6f952e8c7cb77b934fbff53f454f0213688f24f3c3769b69703e84"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.2.27/opencode-windows-x64.zip"
 
 [[tools.ripgrep]]
 version = "15.1.0"
