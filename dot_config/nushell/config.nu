@@ -8,5 +8,6 @@ if (which nvim | is-not-empty) {
 # aliases
 alias ll = ls -l
 alias la = ls -la
+alias cat = bat
 
 use ($nu.default-config-dir | path join mise.nu)
