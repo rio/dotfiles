@@ -3,7 +3,6 @@ min_version = "2025.11.7"
 [tools]
 bat = "0.26.1"
 btop = "1.4.6"
-chezmoi = "latest"
 doggo = "1.1.4"
 fd = "10.3.0"
 fzf = "0.67.0"
@@ -21,6 +20,7 @@ opencode = "1.2.27"
 difftastic = "0.67.0"
 "github:moltis-org/moltis" = "0.10.18"
 neovim = "0.11.6"
+"github:twpayne/chezmoi" = "2.70.0"
 
 [settings]
 experimental = true

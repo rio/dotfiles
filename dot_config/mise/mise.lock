@@ -52,45 +52,6 @@ url = "https://github.com/aristocratos/btop/releases/download/v1.4.6/btop-x86_64
 checksum = "sha256:9bf7ed170423bb3709a8020767bd2ca529c5632af478f229dce7cdfd32b25691"
 url = "https://github.com/aristocratos/btop/releases/download/v1.4.6/btop-x86_64-unknown-linux-musl.tbz"
 
-[[tools.chezmoi]]
-version = "2.69.3"
-backend = "aqua:twpayne/chezmoi"
-
-[tools.chezmoi."platforms.linux-arm64"]
-checksum = "sha256:0aef9ef75ee33cffb483a82c474b495d428e0f7941ab7898263c3519006e0662"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_linux_arm64.tar.gz"
-provenance = "cosign"
-
-[tools.chezmoi."platforms.linux-arm64-musl"]
-checksum = "sha256:0aef9ef75ee33cffb483a82c474b495d428e0f7941ab7898263c3519006e0662"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_linux_arm64.tar.gz"
-provenance = "cosign"
-
-[tools.chezmoi."platforms.linux-x64"]
-checksum = "sha256:9b9bf911efed8aba28bd6f5df1e780a6123dc3fb177004c1ca36ec2b9eca7628"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_linux_amd64.tar.gz"
-provenance = "cosign"
-
-[tools.chezmoi."platforms.linux-x64-musl"]
-checksum = "sha256:9b9bf911efed8aba28bd6f5df1e780a6123dc3fb177004c1ca36ec2b9eca7628"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_linux_amd64.tar.gz"
-provenance = "cosign"
-
-[tools.chezmoi."platforms.macos-arm64"]
-checksum = "sha256:c5717b0d4d84d2941c2582fec26854d316ee5d7c27ec73903f7840554f1baeda"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_darwin_arm64.tar.gz"
-provenance = "cosign"
-
-[tools.chezmoi."platforms.macos-x64"]
-checksum = "sha256:9dd51eccb801d3557f61c8559f4f31e5ebb21c4a1d983940141383b9b5069458"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_darwin_amd64.tar.gz"
-provenance = "cosign"
-
-[tools.chezmoi."platforms.windows-x64"]
-checksum = "sha256:6504c72d9e11c57217a6c62586b588bc506f604618d7660a86b848165584af45"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_windows_amd64.zip"
-provenance = "cosign"
-
 [[tools.difftastic]]
 version = "0.67.0"
 backend = "aqua:Wilfred/difftastic"
@@ -331,6 +292,45 @@ url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/3630
 checksum = "sha256:5af469003a6ce4e8a24716757587730cec0431e6a2cf5f09fc7864a54241cc49"
 url = "https://github.com/peteonrails/voxtype/releases/download/v0.6.3/voxtype-0.6.3-linux-x86_64-vulkan"
 url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/363038504"
+
+[[tools."github:twpayne/chezmoi"]]
+version = "2.70.0"
+backend = "github:twpayne/chezmoi"
+
+[tools."github:twpayne/chezmoi"."platforms.linux-arm64"]
+checksum = "sha256:ae14fdaa95411726659eb86d6ee014a60c6cbe6c8f7341d5252e075ad84f1ca3"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.0/chezmoi_2.70.0_linux_arm64.pkg.tar.zst"
+url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/370444450"
+
+[tools."github:twpayne/chezmoi"."platforms.linux-arm64-musl"]
+checksum = "sha256:ae14fdaa95411726659eb86d6ee014a60c6cbe6c8f7341d5252e075ad84f1ca3"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.0/chezmoi_2.70.0_linux_arm64.pkg.tar.zst"
+url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/370444450"
+
+[tools."github:twpayne/chezmoi"."platforms.linux-x64"]
+checksum = "sha256:32dbc87a4db7163d0f8c3156b631e3ee1cc6fed400f43ff467eca4211f2905e7"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.0/chezmoi_2.70.0_linux-glibc_amd64.tar.gz"
+url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/370444442"
+
+[tools."github:twpayne/chezmoi"."platforms.linux-x64-musl"]
+checksum = "sha256:bf16a9f373dacca92c8ceb691d63c2ad5eaec1b54c4a62a15adf2f1ef15a6060"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.0/chezmoi_2.70.0_linux-musl_amd64.tar.gz"
+url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/370444443"
+
+[tools."github:twpayne/chezmoi"."platforms.macos-arm64"]
+checksum = "sha256:87142ac0465e9b1cd04a71c06c5164867fded7778c3c098f8efbea3ee9df1ade"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.0/chezmoi_2.70.0_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/370444375"
+
+[tools."github:twpayne/chezmoi"."platforms.macos-x64"]
+checksum = "sha256:8d8abb5da0805ce6fa4d387cf3d9615281ad5b26007bf4d469af603ab3c237af"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.0/chezmoi_2.70.0_darwin_amd64.tar.gz"
+url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/370444389"
+
+[tools."github:twpayne/chezmoi"."platforms.windows-x64"]
+checksum = "sha256:bd75e4892ed22d5ab767c06242fc72c23c5848ad5b1aea27fd95aec03c10c777"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.0/chezmoi_2.70.0_windows_amd64.zip"
+url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/370444385"
 
 [[tools.jj]]
 version = "0.39.0"
