@@ -53,36 +53,36 @@ checksum = "sha256:9bf7ed170423bb3709a8020767bd2ca529c5632af478f229dce7cdfd32b25
 url = "https://github.com/aristocratos/btop/releases/download/v1.4.6/btop-x86_64-unknown-linux-musl.tbz"
 
 [[tools.difftastic]]
-version = "0.67.0"
+version = "0.68.0"
 backend = "aqua:Wilfred/difftastic"
 
 [tools.difftastic."platforms.linux-arm64"]
-checksum = "sha256:e36f746fbf5d37c68c1d760878fdb77778066c6a646253bb8d9ae7d3fe84c81b"
-url = "https://github.com/Wilfred/difftastic/releases/download/0.67.0/difft-aarch64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:faadfb3a88c194033449092fad3a86f1179738a0b3bfc44580c83473bdb17451"
+url = "https://github.com/Wilfred/difftastic/releases/download/0.68.0/difft-aarch64-unknown-linux-gnu.tar.gz"
 
 [tools.difftastic."platforms.linux-arm64-musl"]
-checksum = "sha256:e36f746fbf5d37c68c1d760878fdb77778066c6a646253bb8d9ae7d3fe84c81b"
-url = "https://github.com/Wilfred/difftastic/releases/download/0.67.0/difft-aarch64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:faadfb3a88c194033449092fad3a86f1179738a0b3bfc44580c83473bdb17451"
+url = "https://github.com/Wilfred/difftastic/releases/download/0.68.0/difft-aarch64-unknown-linux-gnu.tar.gz"
 
 [tools.difftastic."platforms.linux-x64"]
-checksum = "sha256:328e1ab028a36b81ae990c9fc40a1c8eb618e14559e0d67a0a63f328ad85de09"
-url = "https://github.com/Wilfred/difftastic/releases/download/0.67.0/difft-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:c242d19dd36deca88da9792ab81781babc309c4f3e9ccc8ce8b3a175b52e7b16"
+url = "https://github.com/Wilfred/difftastic/releases/download/0.68.0/difft-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.difftastic."platforms.linux-x64-musl"]
-checksum = "sha256:328e1ab028a36b81ae990c9fc40a1c8eb618e14559e0d67a0a63f328ad85de09"
-url = "https://github.com/Wilfred/difftastic/releases/download/0.67.0/difft-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:c242d19dd36deca88da9792ab81781babc309c4f3e9ccc8ce8b3a175b52e7b16"
+url = "https://github.com/Wilfred/difftastic/releases/download/0.68.0/difft-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.difftastic."platforms.macos-arm64"]
-checksum = "sha256:cdb1d74f2b0f37df3bce7a9ac09d8ecd0d2d94530627516ff9b12f25d187a555"
-url = "https://github.com/Wilfred/difftastic/releases/download/0.67.0/difft-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:35df7904af1c1aec9570f08e1a7825301ee317f3131b6b4edbf3f6d8d209cd8c"
+url = "https://github.com/Wilfred/difftastic/releases/download/0.68.0/difft-aarch64-apple-darwin.tar.gz"
 
 [tools.difftastic."platforms.macos-x64"]
-checksum = "sha256:83cc28d781f11b7fc2723b73ded623cf97a70a0849dff1efa39d1864adfdac54"
-url = "https://github.com/Wilfred/difftastic/releases/download/0.67.0/difft-x86_64-apple-darwin.tar.gz"
+checksum = "sha256:9c727343fd0fc0504cb004b6619358e5446324e09562fb8e39d66bc82e680070"
+url = "https://github.com/Wilfred/difftastic/releases/download/0.68.0/difft-x86_64-apple-darwin.tar.gz"
 
 [tools.difftastic."platforms.windows-x64"]
-checksum = "sha256:5fd7aa37ce90f838fb91f6e4b2765ac9cad0a7e9d1dccc5b19529fd6b4cbf8b4"
-url = "https://github.com/Wilfred/difftastic/releases/download/0.67.0/difft-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:a87429ebc75343c9731debfd083b954bbd1e87011f962078b9ade92e33440348"
+url = "https://github.com/Wilfred/difftastic/releases/download/0.68.0/difft-x86_64-pc-windows-msvc.zip"
 
 [[tools.doggo]]
 version = "1.1.4"
@@ -117,100 +117,97 @@ checksum = "sha256:479d3cf06b4aa131a2b48b252bc3df5c2eb1191713a2df218c88720372d8a
 url = "https://github.com/mr-karan/doggo/releases/download/v1.1.4/doggo_1.1.4_Windows_x86_64.zip"
 
 [[tools.fd]]
-version = "10.3.0"
+version = "10.4.2"
 backend = "aqua:sharkdp/fd"
 
 [tools.fd."platforms.linux-arm64"]
-checksum = "sha256:996b9b1366433b211cb3bbedba91c9dbce2431842144d925428ead0adf32020b"
-url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:f32d3657473fba74e2600babc8db0b93420d51169223b7e8143b2ed55d8fd9e8"
+url = "https://github.com/sharkdp/fd/releases/download/v10.4.2/fd-v10.4.2-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.fd."platforms.linux-arm64-musl"]
-checksum = "sha256:996b9b1366433b211cb3bbedba91c9dbce2431842144d925428ead0adf32020b"
-url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:f32d3657473fba74e2600babc8db0b93420d51169223b7e8143b2ed55d8fd9e8"
+url = "https://github.com/sharkdp/fd/releases/download/v10.4.2/fd-v10.4.2-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.fd."platforms.linux-x64"]
-checksum = "sha256:2b6bfaae8c48f12050813c2ffe1884c61ea26e750d803df9c9114550a314cd14"
-url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:e3257d48e29a6be965187dbd24ce9af564e0fe67b3e73c9bdcd180f4ec11bdde"
+url = "https://github.com/sharkdp/fd/releases/download/v10.4.2/fd-v10.4.2-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.fd."platforms.linux-x64-musl"]
-checksum = "sha256:2b6bfaae8c48f12050813c2ffe1884c61ea26e750d803df9c9114550a314cd14"
-url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:e3257d48e29a6be965187dbd24ce9af564e0fe67b3e73c9bdcd180f4ec11bdde"
+url = "https://github.com/sharkdp/fd/releases/download/v10.4.2/fd-v10.4.2-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.fd."platforms.macos-arm64"]
-checksum = "sha256:0570263812089120bc2a5d84f9e65cd0c25e4a4d724c80075c357239c74ae904"
-url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-aarch64-apple-darwin.tar.gz"
-
-[tools.fd."platforms.macos-x64"]
-checksum = "sha256:50d30f13fe3d5914b14c4fff5abcbd4d0cdab4b855970a6956f4f006c17117a3"
-url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-x86_64-apple-darwin.tar.gz"
+checksum = "sha256:623dc0afc81b92e4d4606b380d7bc91916ba7b97814263e554d50923a39e480a"
+url = "https://github.com/sharkdp/fd/releases/download/v10.4.2/fd-v10.4.2-aarch64-apple-darwin.tar.gz"
 
 [tools.fd."platforms.windows-x64"]
-checksum = "sha256:318aa2a6fa664325933e81fda60d523fff29444129e91ebf0726b5b3bcd8b059"
-url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:b2816e506390a89941c63c9187d58a3cc10e9a55f2ef0685f9ea0eccaf7c98c8"
+url = "https://github.com/sharkdp/fd/releases/download/v10.4.2/fd-v10.4.2-x86_64-pc-windows-msvc.zip"
 
 [[tools.fzf]]
-version = "0.67.0"
+version = "0.70.0"
 backend = "aqua:junegunn/fzf"
 
 [tools.fzf."platforms.linux-arm64"]
-checksum = "sha256:7071f48c2ac0f2bc992d6d33cc36fd675a579a98cc976dda699eea07dd5e9c58"
-url = "https://github.com/junegunn/fzf/releases/download/v0.67.0/fzf-0.67.0-linux_arm64.tar.gz"
+checksum = "sha256:90a07a13b61f56dd59ccfd0f0bf05070e9cec067713d313fa2607aab2dc0e422"
+url = "https://github.com/junegunn/fzf/releases/download/v0.70.0/fzf-0.70.0-linux_arm64.tar.gz"
 
 [tools.fzf."platforms.linux-arm64-musl"]
-checksum = "sha256:7071f48c2ac0f2bc992d6d33cc36fd675a579a98cc976dda699eea07dd5e9c58"
-url = "https://github.com/junegunn/fzf/releases/download/v0.67.0/fzf-0.67.0-linux_arm64.tar.gz"
+checksum = "sha256:90a07a13b61f56dd59ccfd0f0bf05070e9cec067713d313fa2607aab2dc0e422"
+url = "https://github.com/junegunn/fzf/releases/download/v0.70.0/fzf-0.70.0-linux_arm64.tar.gz"
 
 [tools.fzf."platforms.linux-x64"]
-checksum = "sha256:4be08018ca37b32518c608741933ea335a406de3558242b60619e98f25be2be1"
-url = "https://github.com/junegunn/fzf/releases/download/v0.67.0/fzf-0.67.0-linux_amd64.tar.gz"
+checksum = "sha256:8fd0e0b93bdf64ba90081ffb6658d77ea5a024c122b36852b1de30f9d2733754"
+url = "https://github.com/junegunn/fzf/releases/download/v0.70.0/fzf-0.70.0-linux_amd64.tar.gz"
 
 [tools.fzf."platforms.linux-x64-musl"]
-checksum = "sha256:4be08018ca37b32518c608741933ea335a406de3558242b60619e98f25be2be1"
-url = "https://github.com/junegunn/fzf/releases/download/v0.67.0/fzf-0.67.0-linux_amd64.tar.gz"
+checksum = "sha256:8fd0e0b93bdf64ba90081ffb6658d77ea5a024c122b36852b1de30f9d2733754"
+url = "https://github.com/junegunn/fzf/releases/download/v0.70.0/fzf-0.70.0-linux_amd64.tar.gz"
 
 [tools.fzf."platforms.macos-arm64"]
-checksum = "sha256:b7f34c964d8e52c471c933cef8ec43dc71997c266cafafd1b013bed10fc229a1"
-url = "https://github.com/junegunn/fzf/releases/download/v0.67.0/fzf-0.67.0-darwin_arm64.tar.gz"
+checksum = "sha256:75f4905c2e3d00666d81dffdd001bb2a9a8e0ad4e4ac8cecfc17a7401b99e6e4"
+url = "https://github.com/junegunn/fzf/releases/download/v0.70.0/fzf-0.70.0-darwin_arm64.tar.gz"
 
 [tools.fzf."platforms.macos-x64"]
-checksum = "sha256:88dc853e0914793a2e7be0d1acfe6c922d9ccad08e3302df092399775b0279ff"
-url = "https://github.com/junegunn/fzf/releases/download/v0.67.0/fzf-0.67.0-darwin_amd64.tar.gz"
+checksum = "sha256:46af74cfeb171c5e2eb936096a653061a0de0f5aeb70319bf9935d8d193e078f"
+url = "https://github.com/junegunn/fzf/releases/download/v0.70.0/fzf-0.70.0-darwin_amd64.tar.gz"
 
 [tools.fzf."platforms.windows-x64"]
-checksum = "sha256:cad95326ed416d14226a03425513b049f5bc9a41f30a355e5fe204a29e666867"
-url = "https://github.com/junegunn/fzf/releases/download/v0.67.0/fzf-0.67.0-windows_amd64.zip"
+checksum = "sha256:7465a6738e2c844742df973459c7509aed2d10d7a72bfd6de201b867b4eda4cd"
+url = "https://github.com/junegunn/fzf/releases/download/v0.70.0/fzf-0.70.0-windows_amd64.zip"
 
 [[tools.github-cli]]
-version = "2.86.0"
+version = "2.88.1"
 backend = "aqua:cli/cli"
 
 [tools.github-cli."platforms.linux-arm64"]
-checksum = "sha256:83cf7a7962ea9dfcc2c123666695792916a87af32cba5f1f6e585db08fa57547"
-url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_linux_arm64.tar.gz"
+checksum = "sha256:039ce25aab0cfa0ea5160e3db75ed44699bde4b20ff63ec5991f82201f1b33b8"
+url = "https://github.com/cli/cli/releases/download/v2.88.1/gh_2.88.1_linux_arm64.tar.gz"
 
 [tools.github-cli."platforms.linux-arm64-musl"]
-checksum = "sha256:83cf7a7962ea9dfcc2c123666695792916a87af32cba5f1f6e585db08fa57547"
-url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_linux_arm64.tar.gz"
+checksum = "sha256:039ce25aab0cfa0ea5160e3db75ed44699bde4b20ff63ec5991f82201f1b33b8"
+url = "https://github.com/cli/cli/releases/download/v2.88.1/gh_2.88.1_linux_arm64.tar.gz"
 
 [tools.github-cli."platforms.linux-x64"]
-checksum = "sha256:f3b08bd6a28420cc2229b0a1a687fa25f2b838d3f04b297414c1041ca68103c7"
-url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_linux_amd64.tar.gz"
+checksum = "sha256:36352a993b97e9758793cdb87f9ba674bd6d88c914488e122be78a1962203803"
+url = "https://github.com/cli/cli/releases/download/v2.88.1/gh_2.88.1_linux_amd64.tar.gz"
+provenance = "github-attestations"
 
 [tools.github-cli."platforms.linux-x64-musl"]
-checksum = "sha256:f3b08bd6a28420cc2229b0a1a687fa25f2b838d3f04b297414c1041ca68103c7"
-url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_linux_amd64.tar.gz"
+checksum = "sha256:36352a993b97e9758793cdb87f9ba674bd6d88c914488e122be78a1962203803"
+url = "https://github.com/cli/cli/releases/download/v2.88.1/gh_2.88.1_linux_amd64.tar.gz"
 
 [tools.github-cli."platforms.macos-arm64"]
-checksum = "sha256:bde753978a352c5ae6c4abec47334d516e82807af20c9dbbd45507a5a0aedaaa"
-url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_macOS_arm64.zip"
+checksum = "sha256:bdbeed4821d450ef0d14821d856c05b308ab449fbf60527f298d96fbf5d2447b"
+url = "https://github.com/cli/cli/releases/download/v2.88.1/gh_2.88.1_macOS_arm64.zip"
 
 [tools.github-cli."platforms.macos-x64"]
-checksum = "sha256:ced7094d05702eb54a63542abd8a1dc570b7e5ae94951844eb1626ba74bc2c60"
-url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_macOS_amd64.zip"
+checksum = "sha256:ff0fc4bdb9699f0c02e5bcdcbd09d0f8e4c4659aa5d30bcd39a3557ed7379b2e"
+url = "https://github.com/cli/cli/releases/download/v2.88.1/gh_2.88.1_macOS_amd64.zip"
 
 [tools.github-cli."platforms.windows-x64"]
-checksum = "sha256:983c74a8c594366b198485187cd6d4d07638f0bf9a9948d51a2a81a5164d8bfd"
-url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_windows_amd64.zip"
+checksum = "sha256:8fdaac525d8919f9f8c265f99ffa26189e5f1fd3a35636adad4fd890a141a555"
+url = "https://github.com/cli/cli/releases/download/v2.88.1/gh_2.88.1_windows_amd64.zip"
 
 [[tools."github:nushell/nushell"]]
 version = "0.111.0"
@@ -422,36 +419,36 @@ url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-macos-x86
 url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-win64.zip"
 
 [[tools.node]]
-version = "25.5.0"
+version = "25.8.1"
 backend = "core:node"
 
 [tools.node."platforms.linux-arm64"]
-checksum = "sha256:20f9aa9f2174786754f1941a178a62b906216fcdcd923400817f4bfa72e12336"
-url = "https://nodejs.org/dist/v25.5.0/node-v25.5.0-linux-arm64.tar.gz"
+checksum = "sha256:d990ec3c21ce8bdb6f76ed4e1c875d6e3e4b75a02d018e85df0662c0bad83b53"
+url = "https://nodejs.org/dist/v25.8.1/node-v25.8.1-linux-arm64.tar.gz"
 
 [tools.node."platforms.linux-arm64-musl"]
-checksum = "sha256:20f9aa9f2174786754f1941a178a62b906216fcdcd923400817f4bfa72e12336"
-url = "https://nodejs.org/dist/v25.5.0/node-v25.5.0-linux-arm64.tar.gz"
+checksum = "sha256:d990ec3c21ce8bdb6f76ed4e1c875d6e3e4b75a02d018e85df0662c0bad83b53"
+url = "https://nodejs.org/dist/v25.8.1/node-v25.8.1-linux-arm64.tar.gz"
 
 [tools.node."platforms.linux-x64"]
-checksum = "sha256:e8e50aee2e5328bcbc2ead32d86d0b577220ccdd80c438583dca3aa2965873f2"
-url = "https://nodejs.org/dist/v25.5.0/node-v25.5.0-linux-x64.tar.gz"
+checksum = "sha256:6fe3b8fa448579f728f7a0e5bbb3ab6a352d2c6307e13ae37a86106a3e4c9aaf"
+url = "https://nodejs.org/dist/v25.8.1/node-v25.8.1-linux-x64.tar.gz"
 
 [tools.node."platforms.linux-x64-musl"]
-checksum = "sha256:e8e50aee2e5328bcbc2ead32d86d0b577220ccdd80c438583dca3aa2965873f2"
-url = "https://nodejs.org/dist/v25.5.0/node-v25.5.0-linux-x64.tar.gz"
+checksum = "sha256:6fe3b8fa448579f728f7a0e5bbb3ab6a352d2c6307e13ae37a86106a3e4c9aaf"
+url = "https://nodejs.org/dist/v25.8.1/node-v25.8.1-linux-x64.tar.gz"
 
 [tools.node."platforms.macos-arm64"]
-checksum = "sha256:568ff9aae73e82499346be25250c7caacab2ca4bbb697bc73056cf3b983b8211"
-url = "https://nodejs.org/dist/v25.5.0/node-v25.5.0-darwin-arm64.tar.gz"
+checksum = "sha256:c667629236e3213616f0917b84eb52706e213c0e8a2312402335fff6fc7463c4"
+url = "https://nodejs.org/dist/v25.8.1/node-v25.8.1-darwin-arm64.tar.gz"
 
 [tools.node."platforms.macos-x64"]
-checksum = "sha256:c36d2db9afc900b2cfa45b60a9423b4991ad86976acd3fe5b500abda91f21243"
-url = "https://nodejs.org/dist/v25.5.0/node-v25.5.0-darwin-x64.tar.gz"
+checksum = "sha256:1e5ebf69955e01216f5c60b9c989d1bdda8e5022e2f60c75e1baf309c5bff50e"
+url = "https://nodejs.org/dist/v25.8.1/node-v25.8.1-darwin-x64.tar.gz"
 
 [tools.node."platforms.windows-x64"]
-checksum = "sha256:4d2773e98d3f35d172478d5101de1f571d851053d2ed67bbe39a5bdeae87d804"
-url = "https://nodejs.org/dist/v25.5.0/node-v25.5.0-win-x64.zip"
+checksum = "sha256:09a5a0dbb2f4cefa800880012810e2dfaac0016a62e75f064c4ab7f3606b2d78"
+url = "https://nodejs.org/dist/v25.8.1/node-v25.8.1-win-x64.zip"
 
 [[tools.opencode]]
 version = "1.2.27"
@@ -578,26 +575,33 @@ checksum = "sha256:7b0c1a9c2591eadf506ec58d62ef5f6d9c93d089a3603142af3dcca5fa575
 url = "https://github.com/zellij-org/zellij/releases/download/v0.43.1/zellij-x86_64-apple-darwin.tar.gz"
 
 [[tools.zoxide]]
-version = "0.9.8"
+version = "0.9.9"
 backend = "aqua:ajeetdsouza/zoxide"
 
 [tools.zoxide."platforms.linux-arm64"]
-url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:96e6ea2e47a71db42cb7ad5a36e9209c8cb3708f8ae00f6945573d0d93315cb0"
+url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.9/zoxide-0.9.9-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.zoxide."platforms.linux-arm64-musl"]
-url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:96e6ea2e47a71db42cb7ad5a36e9209c8cb3708f8ae00f6945573d0d93315cb0"
+url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.9/zoxide-0.9.9-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.zoxide."platforms.linux-x64"]
-url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:4ff057d3c4d957946937274c2b8be7af2a9bbae7f90a1b5e9baaa7cb65a20caa"
+url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.9/zoxide-0.9.9-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.zoxide."platforms.linux-x64-musl"]
-url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:4ff057d3c4d957946937274c2b8be7af2a9bbae7f90a1b5e9baaa7cb65a20caa"
+url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.9/zoxide-0.9.9-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.zoxide."platforms.macos-arm64"]
-url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:57e733d0436309dae2ed97e46bba43937209395298e1d88812d4e893900cb40a"
+url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.9/zoxide-0.9.9-aarch64-apple-darwin.tar.gz"
 
 [tools.zoxide."platforms.macos-x64"]
-url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-x86_64-apple-darwin.tar.gz"
+checksum = "sha256:364249cff18354397c72ebb6b8f7358404c051c486e0f2f7a46e36c86c16f8c7"
+url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.9/zoxide-0.9.9-x86_64-apple-darwin.tar.gz"
 
 [tools.zoxide."platforms.windows-x64"]
-url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:5af00d0916f05631e3030537289eac56605e7c1733318c4d525c8e847f12496d"
+url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.9/zoxide-0.9.9-x86_64-pc-windows-msvc.zip"
