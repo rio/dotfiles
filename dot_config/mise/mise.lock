@@ -212,44 +212,44 @@ url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_macOS_amd6
 checksum = "sha256:983c74a8c594366b198485187cd6d4d07638f0bf9a9948d51a2a81a5164d8bfd"
 url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_windows_amd64.zip"
 
-[[tools."github:moltis-org/moltis"]]
-version = "0.10.18"
-backend = "github:moltis-org/moltis"
+[[tools."github:nushell/nushell"]]
+version = "0.111.0"
+backend = "github:nushell/nushell"
 
-[tools."github:moltis-org/moltis"."platforms.linux-arm64"]
-checksum = "sha256:53dc92c041f7ac248d207abe977c7d709308337da79bb0fdca2eccf893c3d14b"
-url = "https://github.com/moltis-org/moltis/releases/download/v0.10.18/moltis-0.10.18-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/370272049"
+[tools."github:nushell/nushell"."platforms.linux-arm64"]
+checksum = "sha256:ff72150fefcac7c990fa0f2e04550d51b609274cbd0a2831335e6975bd2079c8"
+url = "https://github.com/nushell/nushell/releases/download/0.111.0/nu-0.111.0-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/364358182"
 
-[tools."github:moltis-org/moltis"."platforms.linux-arm64-musl"]
-checksum = "sha256:53dc92c041f7ac248d207abe977c7d709308337da79bb0fdca2eccf893c3d14b"
-url = "https://github.com/moltis-org/moltis/releases/download/v0.10.18/moltis-0.10.18-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/370272049"
+[tools."github:nushell/nushell"."platforms.linux-arm64-musl"]
+checksum = "sha256:fe8c4e1d8efd5333425b53d0502b43f7e78bebc5e9e44f27a49870ea65394d74"
+url = "https://github.com/nushell/nushell/releases/download/0.111.0/nu-0.111.0-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/364358420"
 
-[tools."github:moltis-org/moltis"."platforms.linux-x64"]
-checksum = "sha256:4654e4630c74a43bd6f8a766114b3b6b5c8a9eea50116e1230ad1d9d7d25a5b9"
-url = "https://github.com/moltis-org/moltis/releases/download/v0.10.18/moltis-0.10.18-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/370272011"
+[tools."github:nushell/nushell"."platforms.linux-x64"]
+checksum = "sha256:aa5376efaa5f2da98ebae884b901af6504dc8291acf5f4147ac994e9d03cd1ba"
+url = "https://github.com/nushell/nushell/releases/download/0.111.0/nu-0.111.0-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/364357940"
 
-[tools."github:moltis-org/moltis"."platforms.linux-x64-musl"]
-checksum = "sha256:4654e4630c74a43bd6f8a766114b3b6b5c8a9eea50116e1230ad1d9d7d25a5b9"
-url = "https://github.com/moltis-org/moltis/releases/download/v0.10.18/moltis-0.10.18-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/370272011"
+[tools."github:nushell/nushell"."platforms.linux-x64-musl"]
+checksum = "sha256:aaf0cce45be9f3b30b3e297b9b5026f91b48df088b3c110ac5db79a7a7d957e5"
+url = "https://github.com/nushell/nushell/releases/download/0.111.0/nu-0.111.0-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/364357936"
 
-[tools."github:moltis-org/moltis"."platforms.macos-arm64"]
-checksum = "sha256:2d5fee143a34a65bc4c9a3abb591e0c6e551bfe266754d391d1976e1aea1b6c7"
-url = "https://github.com/moltis-org/moltis/releases/download/v0.10.18/moltis-0.10.18-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/370272042"
+[tools."github:nushell/nushell"."platforms.macos-arm64"]
+checksum = "sha256:260e59f7f9ac65cad4624cd45c11e38ac8aed7d0d7d027ad2d39f50d2373b274"
+url = "https://github.com/nushell/nushell/releases/download/0.111.0/nu-0.111.0-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/364358588"
 
-[tools."github:moltis-org/moltis"."platforms.macos-x64"]
-checksum = "sha256:40fa6d6fb96cf664d3d86ff4917bb5aa1d312cd8240ba10a5380a9774ad3597b"
-url = "https://github.com/moltis-org/moltis/releases/download/v0.10.18/moltis-0.10.18-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/370272025"
+[tools."github:nushell/nushell"."platforms.macos-x64"]
+checksum = "sha256:20dae71461c4d432531f78e5dfcd1f3cf5919ebbbafd10a95e8a2925532b721a"
+url = "https://github.com/nushell/nushell/releases/download/0.111.0/nu-0.111.0-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/364359961"
 
-[tools."github:moltis-org/moltis"."platforms.windows-x64"]
-checksum = "sha256:9974cabeff3703201a7907596ddc8fb41e5f8e7be9ade05ad84f86e8c4352631"
-url = "https://github.com/moltis-org/moltis/releases/download/v0.10.18/moltis-0.10.18-x86_64-pc-windows-msvc.exe"
-url_api = "https://api.github.com/repos/moltis-org/moltis/releases/assets/370272007"
+[tools."github:nushell/nushell"."platforms.windows-x64"]
+checksum = "sha256:4efd0a72ce26052961183aa3ecb8dce17bb6c43903392bc3521a9fda4e6127b2"
+url = "https://github.com/nushell/nushell/releases/download/0.111.0/nu-0.111.0-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/364363191"
 
 [[tools."github:peteonrails/voxtype"]]
 version = "0.6.3"
@@ -548,16 +548,6 @@ url = "https://github.com/starship/starship/releases/download/v1.24.2/starship-x
 [tools.starship."platforms.windows-x64"]
 checksum = "sha256:d38424c595320e9639a276666347d5e44cb004de3972f40b9a5a1a6b88537f29"
 url = "https://github.com/starship/starship/releases/download/v1.24.2/starship-x86_64-pc-windows-msvc.zip"
-
-[[tools."ubi:nushell/nushell"]]
-version = "0.111.0"
-backend = "ubi:nushell/nushell"
-
-[tools."ubi:nushell/nushell".options]
-exe = "nu"
-
-[tools."ubi:nushell/nushell"."platforms.linux-x64-nu-nu"]
-checksum = "blake3:8cb9276b10c86fcb19981bfb09bb7477ac64d904052ed3c50ef2933382d81f8b"
 
 [[tools.zellij]]
 version = "0.43.1"
