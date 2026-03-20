@@ -213,6 +213,45 @@ url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_macOS_amd6
 checksum = "sha256:983c74a8c594366b198485187cd6d4d07638f0bf9a9948d51a2a81a5164d8bfd"
 url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_windows_amd64.zip"
 
+[[tools."github:neovim/neovim"]]
+version = "0.11.6"
+backend = "github:neovim/neovim"
+
+[tools."github:neovim/neovim"."platforms.linux-arm64"]
+checksum = "sha256:8ddc0c101846145e830b17bbca50782ca9307eee4fab539d9e2ddaf8793c06f1"
+url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/neovim/neovim/releases/assets/346172469"
+
+[tools."github:neovim/neovim"."platforms.linux-arm64-musl"]
+checksum = "sha256:8ddc0c101846145e830b17bbca50782ca9307eee4fab539d9e2ddaf8793c06f1"
+url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/neovim/neovim/releases/assets/346172469"
+
+[tools."github:neovim/neovim"."platforms.linux-x64"]
+checksum = "sha256:2fc90b962327f73a78afbfb8203fd19db8db9cdf4ee5e2bef84704339add89cc"
+url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-linux-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/neovim/neovim/releases/assets/346172465"
+
+[tools."github:neovim/neovim"."platforms.linux-x64-musl"]
+checksum = "sha256:2fc90b962327f73a78afbfb8203fd19db8db9cdf4ee5e2bef84704339add89cc"
+url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-linux-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/neovim/neovim/releases/assets/346172465"
+
+[tools."github:neovim/neovim"."platforms.macos-arm64"]
+checksum = "sha256:d5ee93b67630d5a87f3d336d0f7e8b2fe6973aa653d3cc93b82b820e6538c1dd"
+url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-macos-arm64.tar.gz"
+url_api = "https://api.github.com/repos/neovim/neovim/releases/assets/346172468"
+
+[tools."github:neovim/neovim"."platforms.macos-x64"]
+checksum = "sha256:6e665bb0a711cf974050e0f7183dbb696b1e7425814eb87df7cb094a49054a06"
+url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-macos-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/neovim/neovim/releases/assets/346172466"
+
+[tools."github:neovim/neovim"."platforms.windows-x64"]
+checksum = "sha256:90fc6d7cdf3d3388737caab1e2c554aa24b468f3a5cc38ef63857ddf1103513c"
+url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-win64.zip"
+url_api = "https://api.github.com/repos/neovim/neovim/releases/assets/346172479"
+
 [[tools."github:nushell/nushell"]]
 version = "0.111.0"
 backend = "github:nushell/nushell"
@@ -396,31 +435,6 @@ url = "https://github.com/lsd-rs/lsd/releases/download/v1.2.0/lsd-v1.2.0-x86_64-
 [tools.lsd."platforms.windows-x64"]
 checksum = "sha256:a65b9f457153934a7ce1f7e0fe1c4922a95bb2822222126e4fbaa6ee9c0d78e5"
 url = "https://github.com/lsd-rs/lsd/releases/download/v1.2.0/lsd-v1.2.0-x86_64-pc-windows-msvc.zip"
-
-[[tools.neovim]]
-version = "0.11.6"
-backend = "vfox:mise-plugins/vfox-neovim"
-
-[tools.neovim."platforms.linux-arm64"]
-url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-linux-arm64.tar.gz"
-
-[tools.neovim."platforms.linux-arm64-musl"]
-url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-linux-arm64.tar.gz"
-
-[tools.neovim."platforms.linux-x64"]
-url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-linux-x86_64.tar.gz"
-
-[tools.neovim."platforms.linux-x64-musl"]
-url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-linux-x86_64.tar.gz"
-
-[tools.neovim."platforms.macos-arm64"]
-url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-macos-arm64.tar.gz"
-
-[tools.neovim."platforms.macos-x64"]
-url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-macos-x86_64.tar.gz"
-
-[tools.neovim."platforms.windows-x64"]
-url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-win64.zip"
 
 [[tools.node]]
 version = "25.5.0"
