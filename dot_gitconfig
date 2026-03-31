@@ -17,6 +17,9 @@
 [rebase]
 	updateRefs = true
 
+[diff]
+  external = difft
+
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
