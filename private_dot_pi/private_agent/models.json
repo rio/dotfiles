@@ -1,0 +1,31 @@
+{
+  "providers": {
+    "bmo-8000": {
+      "baseUrl": "http://bmo.lan:8000/v1",
+      "api": "openai-completions",
+      "apiKey": "dummy",
+      "models": [
+        {
+          "id": "qwen3.6-35B-A3B",
+          "name": "Qwen 3.6 35B A3B",
+          "reasoning": true,
+          "input": [
+            "text",
+            "image"
+          ],
+          "contextWindow": 256000,
+          "maxTokens": 64000,
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "compat": {
+            "thinkingFormat": "qwen-chat-template"
+          }
+        }
+      ]
+    }
+  }
+}

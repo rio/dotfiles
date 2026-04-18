@@ -1,0 +1,5 @@
+{
+  "app.editor.external": ["ctrl+e"],
+  "app.interrupt": ["escape"],
+  "app.exit": ["ctrl+d"]
+}

@@ -1,0 +1,12 @@
+{
+  "lastChangelogVersion": "0.67.68",
+  "defaultThinkingLevel": "high",
+  "editorPaddingX": 1,
+  "hideThinkingBlock": false,
+  "defaultProvider": "bmo-8000",
+  "defaultModel": "qwen3.6-35B-A3B",
+  "transport": "sse",
+  "enableInstallTelemetry": false,
+  "treeFilterMode": "default",
+  "theme": "catppuccin-mocha"
+}
