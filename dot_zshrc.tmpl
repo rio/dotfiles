@@ -22,15 +22,17 @@ if [[ -d $HOME/.krew ]] ; then
 fi
 
 # edit PATH
-{{ if eq .chezmoi.osRelease.id "bazzite" -}}
+{{ if and .chezmoi.osRelease (eq .chezmoi.osRelease.id "bazzite") -}}
 export PATH=$HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:$PATH
 {{- end}}
 
 {{if not .remote -}}
 # setup gpg-agent ssh
-unset SSH_AGENT_PID
-if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
-        export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+if command -v gpgconf >/dev/null 2>&1; then
+  unset SSH_AGENT_PID
+  if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
+    export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+  fi
 fi
 {{- end}}
 
