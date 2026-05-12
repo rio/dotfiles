@@ -2,6 +2,7 @@
 #
 # Location: ~/.config/voxtype/config.toml
 # All settings can be overridden via CLI flags
+engine = "parakeet"
 
 [hotkey]
 # Key to hold for push-to-talk
@@ -44,10 +45,9 @@ theme = "subtle"
 # Volume level (0.0 to 1.0)
 volume = 0.1
 
-[vad]
-enabled = true
-backend = "whisper"
-threshold = 0.5
+[parakeet]
+model = "parakeet-tdt-0.6b-v3"
+
 
 [whisper]
 # Model to use for transcription

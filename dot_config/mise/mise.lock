@@ -292,46 +292,46 @@ url = "https://github.com/nushell/nushell/releases/download/0.111.0/nu-0.111.0-x
 url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/364363191"
 
 [[tools."github:peteonrails/voxtype"]]
-version = "0.6.3"
+version = "0.7.1"
 backend = "github:peteonrails/voxtype"
 
 [tools."github:peteonrails/voxtype".options]
-asset_pattern = "voxtype-*-linux-x86_64-vulkan"
+asset_pattern = "voxtype-*-linux-x86_64-onnx-avx512"
 
 [tools."github:peteonrails/voxtype"."platforms.linux-arm64"]
-checksum = "sha256:5af469003a6ce4e8a24716757587730cec0431e6a2cf5f09fc7864a54241cc49"
-url = "https://github.com/peteonrails/voxtype/releases/download/v0.6.3/voxtype-0.6.3-linux-x86_64-vulkan"
-url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/363038504"
+checksum = "sha256:9e676643947cd353cd8c947755414638f017a89282d6df927cef63320efe609d"
+url = "https://github.com/peteonrails/voxtype/releases/download/v0.7.1/voxtype-0.7.1-linux-x86_64-onnx-avx512"
+url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/417752816"
 
 [tools."github:peteonrails/voxtype"."platforms.linux-arm64-musl"]
-checksum = "sha256:5af469003a6ce4e8a24716757587730cec0431e6a2cf5f09fc7864a54241cc49"
-url = "https://github.com/peteonrails/voxtype/releases/download/v0.6.3/voxtype-0.6.3-linux-x86_64-vulkan"
-url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/363038504"
+checksum = "sha256:9e676643947cd353cd8c947755414638f017a89282d6df927cef63320efe609d"
+url = "https://github.com/peteonrails/voxtype/releases/download/v0.7.1/voxtype-0.7.1-linux-x86_64-onnx-avx512"
+url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/417752816"
 
 [tools."github:peteonrails/voxtype"."platforms.linux-x64"]
-checksum = "sha256:5af469003a6ce4e8a24716757587730cec0431e6a2cf5f09fc7864a54241cc49"
-url = "https://github.com/peteonrails/voxtype/releases/download/v0.6.3/voxtype-0.6.3-linux-x86_64-vulkan"
-url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/363038504"
+checksum = "sha256:9e676643947cd353cd8c947755414638f017a89282d6df927cef63320efe609d"
+url = "https://github.com/peteonrails/voxtype/releases/download/v0.7.1/voxtype-0.7.1-linux-x86_64-onnx-avx512"
+url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/417752816"
 
 [tools."github:peteonrails/voxtype"."platforms.linux-x64-musl"]
-checksum = "sha256:5af469003a6ce4e8a24716757587730cec0431e6a2cf5f09fc7864a54241cc49"
-url = "https://github.com/peteonrails/voxtype/releases/download/v0.6.3/voxtype-0.6.3-linux-x86_64-vulkan"
-url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/363038504"
+checksum = "sha256:9e676643947cd353cd8c947755414638f017a89282d6df927cef63320efe609d"
+url = "https://github.com/peteonrails/voxtype/releases/download/v0.7.1/voxtype-0.7.1-linux-x86_64-onnx-avx512"
+url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/417752816"
 
 [tools."github:peteonrails/voxtype"."platforms.macos-arm64"]
-checksum = "sha256:5af469003a6ce4e8a24716757587730cec0431e6a2cf5f09fc7864a54241cc49"
-url = "https://github.com/peteonrails/voxtype/releases/download/v0.6.3/voxtype-0.6.3-linux-x86_64-vulkan"
-url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/363038504"
+checksum = "sha256:9e676643947cd353cd8c947755414638f017a89282d6df927cef63320efe609d"
+url = "https://github.com/peteonrails/voxtype/releases/download/v0.7.1/voxtype-0.7.1-linux-x86_64-onnx-avx512"
+url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/417752816"
 
 [tools."github:peteonrails/voxtype"."platforms.macos-x64"]
-checksum = "sha256:5af469003a6ce4e8a24716757587730cec0431e6a2cf5f09fc7864a54241cc49"
-url = "https://github.com/peteonrails/voxtype/releases/download/v0.6.3/voxtype-0.6.3-linux-x86_64-vulkan"
-url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/363038504"
+checksum = "sha256:9e676643947cd353cd8c947755414638f017a89282d6df927cef63320efe609d"
+url = "https://github.com/peteonrails/voxtype/releases/download/v0.7.1/voxtype-0.7.1-linux-x86_64-onnx-avx512"
+url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/417752816"
 
 [tools."github:peteonrails/voxtype"."platforms.windows-x64"]
-checksum = "sha256:5af469003a6ce4e8a24716757587730cec0431e6a2cf5f09fc7864a54241cc49"
-url = "https://github.com/peteonrails/voxtype/releases/download/v0.6.3/voxtype-0.6.3-linux-x86_64-vulkan"
-url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/363038504"
+checksum = "sha256:9e676643947cd353cd8c947755414638f017a89282d6df927cef63320efe609d"
+url = "https://github.com/peteonrails/voxtype/releases/download/v0.7.1/voxtype-0.7.1-linux-x86_64-onnx-avx512"
+url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/417752816"
 
 [[tools."github:twpayne/chezmoi"]]
 version = "2.70.0"
