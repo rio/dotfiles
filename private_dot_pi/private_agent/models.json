@@ -1,10 +1,30 @@
 {
   "providers": {
-    "bmo-8000": {
-      "baseUrl": "http://bmo.lan:8000/v1",
+    "bmo.rio.systems": {
+      "baseUrl": "http://bmo.rio.systems:8000/v1",
       "api": "openai-completions",
       "apiKey": "dummy",
       "models": [
+        {
+          "id": "claude-opus-4-6",
+          "name": "Claude Opus 4.6",
+          "reasoning": true,
+          "input": [
+            "text",
+            "image"
+          ],
+          "contextWindow": 256000,
+          "maxTokens": 64000,
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "compat": {
+            "thinkingFormat": "qwen-chat-template"
+          }
+        },
         {
           "id": "qwen3.6-35B-A3B",
           "name": "Qwen 3.6 35B A3B",
@@ -23,6 +43,80 @@
           },
           "compat": {
             "thinkingFormat": "qwen-chat-template"
+          }
+        },
+        {
+          "id": "qwen3.6-27B",
+          "name": "Qwen 3.6 27B",
+          "reasoning": true,
+          "input": [
+            "text",
+            "image"
+          ],
+          "contextWindow": 256000,
+          "maxTokens": 64000,
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "compat": {
+            "thinkingFormat": "qwen-chat-template"
+          }
+        },
+        {
+          "id": "qwen3.5-122B-A10B",
+          "name": "Qwen 3.5 122B A10B",
+          "reasoning": true,
+          "input": [
+            "text",
+            "image"
+          ],
+          "contextWindow": 256000,
+          "maxTokens": 64000,
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "compat": {
+            "thinkingFormat": "qwen-chat-template"
+          }
+        },
+        {
+          "id": "gemma-4-26B-A4B",
+          "name": "Gemma 4 26B A$B",
+          "reasoning": true,
+          "input": [
+            "text",
+            "image"
+          ],
+          "contextWindow": 256000,
+          "maxTokens": 64000,
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          }
+        },
+        {
+          "id": "gemma-4-31B",
+          "name": "Gemma 4 31B",
+          "reasoning": true,
+          "input": [
+            "text",
+            "image"
+          ],
+          "contextWindow": 256000,
+          "maxTokens": 64000,
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
           }
         }
       ]
