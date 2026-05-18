@@ -213,6 +213,40 @@ url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_macOS_amd6
 checksum = "sha256:983c74a8c594366b198485187cd6d4d07638f0bf9a9948d51a2a81a5164d8bfd"
 url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_windows_amd64.zip"
 
+[[tools."github:abiosoft/colima"]]
+version = "0.10.1"
+backend = "github:abiosoft/colima"
+
+[tools."github:abiosoft/colima"."platforms.linux-arm64"]
+checksum = "sha256:9d89f1fc10d15eb214e9ab7b30b70bc1524df33bcd7d6828082132e09e33e8ef"
+url = "https://github.com/abiosoft/colima/releases/download/v0.10.1/colima-Linux-aarch64"
+url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/360099495"
+
+[tools."github:abiosoft/colima"."platforms.linux-arm64-musl"]
+checksum = "sha256:9d89f1fc10d15eb214e9ab7b30b70bc1524df33bcd7d6828082132e09e33e8ef"
+url = "https://github.com/abiosoft/colima/releases/download/v0.10.1/colima-Linux-aarch64"
+url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/360099495"
+
+[tools."github:abiosoft/colima"."platforms.linux-x64"]
+checksum = "sha256:71293b94c725e26b35dcd00dfbc4713436237e76d99e768f5b14cebc4e7bfe8e"
+url = "https://github.com/abiosoft/colima/releases/download/v0.10.1/colima-Linux-x86_64"
+url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/360099484"
+
+[tools."github:abiosoft/colima"."platforms.linux-x64-musl"]
+checksum = "sha256:71293b94c725e26b35dcd00dfbc4713436237e76d99e768f5b14cebc4e7bfe8e"
+url = "https://github.com/abiosoft/colima/releases/download/v0.10.1/colima-Linux-x86_64"
+url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/360099484"
+
+[tools."github:abiosoft/colima"."platforms.macos-arm64"]
+checksum = "sha256:cff716570125444d9560e735d8a23ea50e9f70ca722bb9f44ab456c548425ea3"
+url = "https://github.com/abiosoft/colima/releases/download/v0.10.1/colima-Darwin-arm64"
+url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/360099480"
+
+[tools."github:abiosoft/colima"."platforms.macos-x64"]
+checksum = "sha256:c927d411f70b7b40aced1caeef36cf3b19e0318cfad3606a0292cd488e9c4a0f"
+url = "https://github.com/abiosoft/colima/releases/download/v0.10.1/colima-Darwin-x86_64"
+url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/360099482"
+
 [[tools."github:neovim/neovim"]]
 version = "0.12.0"
 backend = "github:neovim/neovim"
