@@ -131,7 +131,7 @@ smart_auto_submit = true
 "cube control" = "kubectl"
 
 [post_process]
-command = "sed 's/uh, //g'"
+command = "sed 's/ uh //g'"
 
 [meeting]
 enabled = true
