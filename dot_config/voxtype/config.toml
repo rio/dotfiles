@@ -120,6 +120,9 @@ spoken_punctuation = true
 # Custom word replacements (case-insensitive)
 # replacements = { "hyperwhisper" = "hyprwhspr" }
 
+# removes um uh, etc.
+filter_filler_words = true
+
 # State file for external integrations (Waybar, polybar, etc.)
 # Uncomment to enable. Use "auto" for default location ($XDG_RUNTIME_DIR/voxtype/state)
 # or provide a custom path. The daemon writes state ("idle", "recording", "transcribing")
@@ -129,9 +132,6 @@ smart_auto_submit = true
 
 [text.replacements]
 "cube control" = "kubectl"
-
-[post_process]
-command = "sed 's/ uh //g'"
 
 [meeting]
 enabled = true
