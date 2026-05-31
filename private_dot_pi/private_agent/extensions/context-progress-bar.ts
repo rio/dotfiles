@@ -85,21 +85,42 @@ function formatTokens(count: number): string {
 	return `${Math.round(count / 1000000)}M`;
 }
 
-/** Compute cumulative token usage from session entries. */
+/** Compute cumulative token usage from the active session path only. */
 function computeTokenStats(
 	entries: Array<{
 		type: string;
+		id: string;
+		parentId: string | null;
 		message?: { role: string; usage: { input: number; output: number; cacheRead: number; cacheWrite: number; cost: { total: number } }; };
 	}>,
+	leafId: string | null,
 ): { totalInput: number; totalOutput: number; totalCacheRead: number; totalCacheWrite: number } {
-	let totalInput = 0, totalOutput = 0, totalCacheRead = 0, totalCacheWrite = 0;
+	// Build id → entry map
+	const byId = new Map<string, typeof entries[number]>();
 	for (const entry of entries) {
-		if (entry.type === "message" && entry.message?.role === "assistant") {
+		byId.set(entry.id, entry);
+	}
+
+	// Walk from leaf to root to get the active path
+	const activePath: typeof entries[number][] = [];
+	let current = leafId ? byId.get(leafId) : undefined;
+	while (current) {
+		activePath.unshift(current);
+		current = current.parentId ? byId.get(current.parentId) : undefined;
+	}
+
+	// Sum usage from active path only
+	let totalInput = 0, totalOutput = 0, totalCacheRead = 0, totalCacheWrite = 0;
+	for (const entry of activePath) {
+		if (entry.type === "message" && entry.message?.usage) {
 			const u = entry.message.usage;
 			totalInput += u.input;
-			totalOutput += u.output;
 			totalCacheRead += u.cacheRead;
 			totalCacheWrite += u.cacheWrite;
+			// Only assistant messages produce output tokens
+			if (entry.message.role === "assistant") {
+				totalOutput += u.output;
+			}
 		}
 	}
 	return { totalInput, totalOutput, totalCacheRead, totalCacheWrite };
@@ -110,8 +131,11 @@ function computeTokenStats(
 interface SessionAccessor {
 	getEntries: () => Array<{
 		type: string;
+		id: string;
+		parentId: string | null;
 		message?: { role: string; usage: { input: number; output: number; cacheRead: number; cacheWrite: number; cost: { total: number } }; };
 	}>;
+	getLeafId: () => string | null;
 	getCwd: () => string;
 	getSessionName: () => string | undefined;
 	getContextUsage: () => { tokens: number | null; contextWindow: number; percent: number | null } | undefined;
@@ -163,7 +187,7 @@ function createFooterComponent(
 				return cachedLines;
 			}
 
-			const stats = computeTokenStats(entries);
+			const stats = computeTokenStats(entries, session.getLeafId());
 			const contextUsage = session.getContextUsage();
 			const contextWindow = contextUsage?.contextWindow ?? 0;
 			const contextTokens = contextUsage?.tokens ?? null;
@@ -222,6 +246,7 @@ export default function (pi: ExtensionAPI) {
 	pi.on("session_start", async (_event, ctx) => {
 		const sessionAccessor: SessionAccessor = {
 			getEntries: () => ctx.sessionManager.getEntries(),
+			getLeafId: () => ctx.sessionManager.getLeafId(),
 			getCwd: () => ctx.sessionManager.getCwd(),
 			getSessionName: () => ctx.sessionManager.getSessionName(),
 			getContextUsage: () => ctx.getContextUsage(),
