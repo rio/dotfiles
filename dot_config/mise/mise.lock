@@ -503,7 +503,7 @@ checksum = "sha256:371071a4f7e2c8a5dd280730049c685911feecc59f50ebc488d675dc1087c
 url = "https://nodejs.org/dist/v26.2.0/node-v26.2.0-win-x64.zip"
 
 [[tools."npm:@earendil-works/pi-coding-agent"]]
-version = "0.77.0"
+version = "0.78.0"
 backend = "npm:@earendil-works/pi-coding-agent"
 
 [[tools.opencode]]

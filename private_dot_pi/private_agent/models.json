@@ -6,8 +6,8 @@
       "apiKey": "dummy",
       "models": [
         {
-          "id": "claude-sonnet-4-6",
-          "name": "Claude Sonnet 4.6",
+          "id": "claude-opus-4-7",
+          "name": "Claude Opus 4.7",
           "reasoning": true,
           "input": [
             "text",
