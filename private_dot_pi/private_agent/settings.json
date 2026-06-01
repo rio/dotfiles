@@ -4,7 +4,7 @@
   "editorPaddingX": 1,
   "hideThinkingBlock": true,
   "defaultProvider": "bmo.rio.systems",
-  "defaultModel": "claude-opus-4-6",
+  "defaultModel": "claude-sonnet-4-6",
   "transport": "sse",
   "enableInstallTelemetry": false,
   "treeFilterMode": "default",
