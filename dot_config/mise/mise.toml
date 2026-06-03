@@ -18,7 +18,7 @@ opencode = "1.2.27"
 "github:peteonrails/voxtype" = { version = "0.7.1", asset_pattern = "voxtype-*-linux-x86_64-onnx-avx512" }
 difftastic = "0.67.0"
 "github:twpayne/chezmoi" = "2.70.0"
-"github:nushell/nushell" = { version = "0.111.0", exe = "nu" }
+"github:nushell/nushell" = { version = "0.113.1", exe = "nu" }
 "github:neovim/neovim" = "0.12.0"
 "npm:@earendil-works/pi-coding-agent" = "0.78.0"
 "github:abiosoft/colima" = { version = "0.10.1", bin = "colima" }
