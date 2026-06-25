@@ -49,7 +49,8 @@ volume = 0.1
 [parakeet]
 model = "parakeet-tdt-0.6b-v3"
 on_demand_loading = false
-
+model_type = "tdt"
+streaming = false              #
 
 [whisper]
 # Model to use for transcription
@@ -59,10 +60,7 @@ on_demand_loading = false
 # Or provide absolute path to a custom .bin model file
 model = "large-v3-turbo"
 
-# Language for transcription
-# Use "en" for English, "auto" for auto-detection
-# See: https://github.com/openai/whisper#available-models-and-languages
-language = "en"
+language = ["en", "nl"]
 
 # Translate non-English speech to English
 translate = false
@@ -72,12 +70,17 @@ translate = false
 
 # this leads to repeated words. Not needed in my opinion. The trade off is waiting time.
 eager_processing = false
+context_window_optimization = false
 
 # keep model loaded in memory for speed boost
 gpu_isolation = false
 mode = "local"
 flash_attention = false
 on_demand_loading = false
+
+[vad]
+enabled = true      # rejects silence-only audio → kills the decoder-loop repetition
+backend = "whisper"
 
 [output]
 # Primary output mode: "type" or "clipboard"
