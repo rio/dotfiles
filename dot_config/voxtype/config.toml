@@ -70,9 +70,8 @@ translate = false
 # Number of CPU threads for inference (omit for auto-detection)
 # threads = 4
 
-eager_processing = true
-eager_interval_secs = 3
-context_window_optimization = true
+# this leads to repeated words. Not needed in my opinion. The trade off is waiting time.
+eager_processing = false
 
 # keep model loaded in memory for speed boost
 gpu_isolation = false
