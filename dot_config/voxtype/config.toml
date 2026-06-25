@@ -2,7 +2,7 @@
 #
 # Location: ~/.config/voxtype/config.toml
 # All settings can be overridden via CLI flags
-engine = "parakeet"
+engine = "whisper"
 
 [hotkey]
 # Key to hold for push-to-talk
