@@ -78,6 +78,9 @@ mode = "local"
 flash_attention = false
 on_demand_loading = false
 
+# extend this if words keep getting transcribed wrong.
+initial_prompt = "Technical discussion using command-line tools like mise and awk."
+
 [vad]
 enabled = true      # rejects silence-only audio → kills the decoder-loop repetition
 backend = "whisper"
@@ -118,9 +121,6 @@ show_engine_icon = false
 #
 # Enable spoken punctuation conversion (e.g., say "period" to get ".")
 spoken_punctuation = true
-#
-# Custom word replacements (case-insensitive)
-# replacements = { "hyperwhisper" = "hyprwhspr" }
 
 # removes um uh, etc.
 filter_filler_words = true
@@ -134,6 +134,7 @@ smart_auto_submit = true
 
 [text.replacements]
 "cube control" = "kubectl"
+"Mies" = "mise"
 
 [meeting]
 enabled = true
