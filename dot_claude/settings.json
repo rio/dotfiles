@@ -1,5 +1,5 @@
 {
-  "model": "claude-fable-5[1m]",
+  "model": "opus[1m]",
   "tui": "fullscreen",
   "theme": "dark",
   "effortLevel": "xhigh",
