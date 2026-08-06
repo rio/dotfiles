@@ -147,88 +147,88 @@ url = "https://github.com/sharkdp/fd/releases/download/v10.4.2/fd-v10.4.2-x86_64
 url_api = "https://api.github.com/repos/sharkdp/fd/releases/assets/370661516"
 
 [[tools.fzf]]
-version = "0.74.0"
+version = "0.74.2"
 backend = "aqua:junegunn/fzf"
 
 [tools.fzf."platforms.linux-arm64"]
-checksum = "sha256:bd9e6165ebdb702215d42368cbb95b8dd70a4e77ee97925adac8c31660e30ef7"
-url = "https://github.com/junegunn/fzf/releases/download/v0.74.0/fzf-0.74.0-linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/468106539"
+checksum = "sha256:1373e3f5ed3c468179d4529942ddd96c234bcad1bcacaf238916e26a5234b5b2"
+url = "https://github.com/junegunn/fzf/releases/download/v0.74.2/fzf-0.74.2-linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/497342620"
 
 [tools.fzf."platforms.linux-arm64-musl"]
-checksum = "sha256:bd9e6165ebdb702215d42368cbb95b8dd70a4e77ee97925adac8c31660e30ef7"
-url = "https://github.com/junegunn/fzf/releases/download/v0.74.0/fzf-0.74.0-linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/468106539"
+checksum = "sha256:1373e3f5ed3c468179d4529942ddd96c234bcad1bcacaf238916e26a5234b5b2"
+url = "https://github.com/junegunn/fzf/releases/download/v0.74.2/fzf-0.74.2-linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/497342620"
 
 [tools.fzf."platforms.linux-x64"]
-checksum = "sha256:cf919f05b7581b4c744d764eaa704665d61dd6d3ca785f0df2351281dff60cda"
-url = "https://github.com/junegunn/fzf/releases/download/v0.74.0/fzf-0.74.0-linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/468106615"
+checksum = "sha256:b3648f48675612b69ee35371cf6dc99ca96d767e89b912d079080916ac8ba8bd"
+url = "https://github.com/junegunn/fzf/releases/download/v0.74.2/fzf-0.74.2-linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/497342478"
 
 [tools.fzf."platforms.linux-x64-musl"]
-checksum = "sha256:cf919f05b7581b4c744d764eaa704665d61dd6d3ca785f0df2351281dff60cda"
-url = "https://github.com/junegunn/fzf/releases/download/v0.74.0/fzf-0.74.0-linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/468106615"
+checksum = "sha256:b3648f48675612b69ee35371cf6dc99ca96d767e89b912d079080916ac8ba8bd"
+url = "https://github.com/junegunn/fzf/releases/download/v0.74.2/fzf-0.74.2-linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/497342478"
 
 [tools.fzf."platforms.macos-arm64"]
-checksum = "sha256:da60e8980e4239a0fc5f1fcfe873f243dfda93a6a13b696b00e1dc8584a77a87"
-url = "https://github.com/junegunn/fzf/releases/download/v0.74.0/fzf-0.74.0-darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/468106617"
+checksum = "sha256:d60ddb36356566ac69bae7c3504e888916cf747c9ad2132141c09229b1e28dee"
+url = "https://github.com/junegunn/fzf/releases/download/v0.74.2/fzf-0.74.2-darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/497342630"
 
 [tools.fzf."platforms.macos-x64"]
-checksum = "sha256:e2c470f058ac18615f54c0bebe0fd2956f2aa8e306a11621783a00aaa386eedd"
-url = "https://github.com/junegunn/fzf/releases/download/v0.74.0/fzf-0.74.0-darwin_amd64.tar.gz"
-url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/468106579"
+checksum = "sha256:b019ae8bcca33945a2ffbbbf8369705405cd1406fc4d74267e712797010e3676"
+url = "https://github.com/junegunn/fzf/releases/download/v0.74.2/fzf-0.74.2-darwin_amd64.tar.gz"
+url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/497342631"
 
 [tools.fzf."platforms.windows-x64"]
-checksum = "sha256:614efa4ea923a3d6715856b5f6fb6ce815acdb0ce549e7499202808f7a7a78e7"
-url = "https://github.com/junegunn/fzf/releases/download/v0.74.0/fzf-0.74.0-windows_amd64.zip"
-url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/468106560"
+checksum = "sha256:a5a3b27dd203469139d10669721952335b9b46f19346e3d1abc102a67ea60804"
+url = "https://github.com/junegunn/fzf/releases/download/v0.74.2/fzf-0.74.2-windows_amd64.zip"
+url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/497342617"
 
 [[tools.github-cli]]
-version = "2.96.0"
+version = "2.97.0"
 backend = "aqua:cli/cli"
 
 [tools.github-cli."platforms.linux-arm64"]
-checksum = "sha256:06f86ec7103d41993b76cd78072f43595c34aaa56506d971d9860e67140bf909"
-url = "https://github.com/cli/cli/releases/download/v2.96.0/gh_2.96.0_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/cli/cli/releases/assets/464728549"
+checksum = "sha256:73ea440ecad9c9e284429997ee6f93577bc6f7bc6fba357ef62c53ad8fb641a5"
+url = "https://github.com/cli/cli/releases/download/v2.97.0/gh_2.97.0_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/cli/cli/releases/assets/496108278"
 provenance = "github-attestations"
 
 [tools.github-cli."platforms.linux-arm64-musl"]
-checksum = "sha256:06f86ec7103d41993b76cd78072f43595c34aaa56506d971d9860e67140bf909"
-url = "https://github.com/cli/cli/releases/download/v2.96.0/gh_2.96.0_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/cli/cli/releases/assets/464728549"
+checksum = "sha256:73ea440ecad9c9e284429997ee6f93577bc6f7bc6fba357ef62c53ad8fb641a5"
+url = "https://github.com/cli/cli/releases/download/v2.97.0/gh_2.97.0_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/cli/cli/releases/assets/496108278"
 provenance = "github-attestations"
 
 [tools.github-cli."platforms.linux-x64"]
-checksum = "sha256:83d5c2ccad5498f58bf6368acb1ab32588cf43ab3a4b1c301bf36328b1c8bd60"
-url = "https://github.com/cli/cli/releases/download/v2.96.0/gh_2.96.0_linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/cli/cli/releases/assets/464728543"
+checksum = "sha256:a2c9b8497e1f85b1ad0dfcb78b5a622e098801b8e461e459e88e1ee12f018112"
+url = "https://github.com/cli/cli/releases/download/v2.97.0/gh_2.97.0_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/cli/cli/releases/assets/496108269"
 provenance = "github-attestations"
 
 [tools.github-cli."platforms.linux-x64-musl"]
-checksum = "sha256:83d5c2ccad5498f58bf6368acb1ab32588cf43ab3a4b1c301bf36328b1c8bd60"
-url = "https://github.com/cli/cli/releases/download/v2.96.0/gh_2.96.0_linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/cli/cli/releases/assets/464728543"
+checksum = "sha256:a2c9b8497e1f85b1ad0dfcb78b5a622e098801b8e461e459e88e1ee12f018112"
+url = "https://github.com/cli/cli/releases/download/v2.97.0/gh_2.97.0_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/cli/cli/releases/assets/496108269"
 provenance = "github-attestations"
 
 [tools.github-cli."platforms.macos-arm64"]
-checksum = "sha256:f23a0c37d963aacc3bed703ccbd59b41c5ca22101fab7f00eb2b7cad23aba463"
-url = "https://github.com/cli/cli/releases/download/v2.96.0/gh_2.96.0_macOS_arm64.zip"
-url_api = "https://api.github.com/repos/cli/cli/releases/assets/464728562"
+checksum = "sha256:a58b8fd77b417a38f47a0b54d1370c59b0fcdb324ccc9ca002b0998f7c4c999e"
+url = "https://github.com/cli/cli/releases/download/v2.97.0/gh_2.97.0_macOS_arm64.zip"
+url_api = "https://api.github.com/repos/cli/cli/releases/assets/496108298"
 provenance = "github-attestations"
 
 [tools.github-cli."platforms.macos-x64"]
-checksum = "sha256:4bd449df9ad639391bc62b8032546f0fe9edcd8526e06682a4f88abd8c5d163c"
-url = "https://github.com/cli/cli/releases/download/v2.96.0/gh_2.96.0_macOS_amd64.zip"
-url_api = "https://api.github.com/repos/cli/cli/releases/assets/464728560"
+checksum = "sha256:63298c998cc2a924c9e254c6af6a1caad6ece281122687a91f079bc0a462700e"
+url = "https://github.com/cli/cli/releases/download/v2.97.0/gh_2.97.0_macOS_amd64.zip"
+url_api = "https://api.github.com/repos/cli/cli/releases/assets/496108300"
 provenance = "github-attestations"
 
 [tools.github-cli."platforms.windows-x64"]
-checksum = "sha256:c2d6acc935cd2f00e2144d7e036d5cd82e6b6bd5594e8c75aa75ef2a4ed6aac3"
-url = "https://github.com/cli/cli/releases/download/v2.96.0/gh_2.96.0_windows_amd64.zip"
-url_api = "https://api.github.com/repos/cli/cli/releases/assets/464728577"
+checksum = "sha256:35d7fe05c4dd1411ffda1e73dfc7c6f44b75c936ca51fa6595c657fdc0350cec"
+url = "https://github.com/cli/cli/releases/download/v2.97.0/gh_2.97.0_windows_amd64.zip"
+url_api = "https://api.github.com/repos/cli/cli/releases/assets/496108319"
 provenance = "github-attestations"
 
 [[tools."github:neovim/neovim"]]
@@ -271,43 +271,43 @@ url = "https://github.com/neovim/neovim/releases/download/v0.12.0/nvim-win64.zip
 url_api = "https://api.github.com/repos/neovim/neovim/releases/assets/384125181"
 
 [[tools."github:nushell/nushell"]]
-version = "0.113.1"
+version = "0.114.1"
 backend = "github:nushell/nushell"
 
 [tools."github:nushell/nushell"."platforms.linux-arm64"]
-checksum = "sha256:08b94c6fd9c66881616df4c89adc03e8a42a57fdf6876cfd1b16cec7e82348b4"
-url = "https://github.com/nushell/nushell/releases/download/0.113.1/nu-0.113.1-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/433381741"
+checksum = "sha256:39944812ee619736fd50828e66c96b91747c1e189ccddac89c3ac1a02e0614f2"
+url = "https://github.com/nushell/nushell/releases/download/0.114.1/nu-0.114.1-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/473626043"
 
 [tools."github:nushell/nushell"."platforms.linux-arm64-musl"]
-checksum = "sha256:7b973e826760d337e73ac6fb9c53bac15dbe66dba50ec439f02e8eaa1d1c2c77"
-url = "https://github.com/nushell/nushell/releases/download/0.113.1/nu-0.113.1-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/433382016"
+checksum = "sha256:4f9e880e7bbf8ee58f3860ef49f453eb2628965b6f2c880fb03d4775f290b536"
+url = "https://github.com/nushell/nushell/releases/download/0.114.1/nu-0.114.1-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/473626782"
 
 [tools."github:nushell/nushell"."platforms.linux-x64"]
-checksum = "sha256:9008d309aaa35e29ed5d5985306a83e2bf5093e31677d4cd969914552d12b8fb"
-url = "https://github.com/nushell/nushell/releases/download/0.113.1/nu-0.113.1-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/433380313"
+checksum = "sha256:8802b26edcdf1a64477567b5ce909fbae3d72d731c8f0847892ea16c6fa73c53"
+url = "https://github.com/nushell/nushell/releases/download/0.114.1/nu-0.114.1-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/473625369"
 
 [tools."github:nushell/nushell"."platforms.linux-x64-musl"]
-checksum = "sha256:7faea21f8a49edf760c7bb9267f7702827937b19fc7dce412716b1cacbf38ae7"
-url = "https://github.com/nushell/nushell/releases/download/0.113.1/nu-0.113.1-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/433380727"
+checksum = "sha256:ce3a1c5a07c784098b5675224a165e73a45f0f720a8392791d7c3a5b4720255e"
+url = "https://github.com/nushell/nushell/releases/download/0.114.1/nu-0.114.1-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/473625296"
 
 [tools."github:nushell/nushell"."platforms.macos-arm64"]
-checksum = "sha256:458aa21674221b2e8adbd784f9ba8113288b78f3c352465cef37b114ff3dffd5"
-url = "https://github.com/nushell/nushell/releases/download/0.113.1/nu-0.113.1-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/433380531"
+checksum = "sha256:cb0ac9b97b985cd217a952f44438a14d2df2a95504d9bd8bc01ec73e1351b179"
+url = "https://github.com/nushell/nushell/releases/download/0.114.1/nu-0.114.1-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/473629724"
 
 [tools."github:nushell/nushell"."platforms.macos-x64"]
-checksum = "sha256:18ec6448cd8562b4f94ba24bace6164c5d8b8d634c8105751ec45e17d34549b2"
-url = "https://github.com/nushell/nushell/releases/download/0.113.1/nu-0.113.1-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/433383402"
+checksum = "sha256:4659a78545b7f6a303e661fe3bd276a765c64ccde67112d32045be5fe075f206"
+url = "https://github.com/nushell/nushell/releases/download/0.114.1/nu-0.114.1-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/473624186"
 
 [tools."github:nushell/nushell"."platforms.windows-x64"]
-checksum = "sha256:fd3e56dac9f866d2d3fe2fabd6580c14371afdcec9ddda54624a50986d36b3d2"
-url = "https://github.com/nushell/nushell/releases/download/0.113.1/nu-0.113.1-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/433389998"
+checksum = "sha256:71a88cb74f51a9fdd91003273fb1f3361d7b393fb3a03014f43e5f111df9666f"
+url = "https://github.com/nushell/nushell/releases/download/0.114.1/nu-0.114.1-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/473630966"
 
 [[tools."github:peteonrails/voxtype"]]
 version = "0.7.5"
@@ -398,77 +398,77 @@ url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/37044438
 provenance = "github-attestations"
 
 [[tools.herdr]]
-version = "0.7.3"
+version = "0.8.0"
 backend = "aqua:ogulcancelik/herdr"
 
 [tools.herdr."platforms.linux-arm64"]
-checksum = "sha256:ea490094f2c7c39099870857d00c64c628ef7b5eba1967df4258033455ee2cb1"
-url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.3/herdr-linux-aarch64"
-url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/469642055"
+checksum = "sha256:f647ac66468d9efbc642fe534fb284468f0aea60641606fc008dfc0d82a3ca87"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.8.0/herdr-linux-aarch64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/500422627"
 
 [tools.herdr."platforms.linux-arm64-musl"]
-checksum = "sha256:ea490094f2c7c39099870857d00c64c628ef7b5eba1967df4258033455ee2cb1"
-url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.3/herdr-linux-aarch64"
-url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/469642055"
+checksum = "sha256:f647ac66468d9efbc642fe534fb284468f0aea60641606fc008dfc0d82a3ca87"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.8.0/herdr-linux-aarch64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/500422627"
 
 [tools.herdr."platforms.linux-x64"]
-checksum = "sha256:043ef43ecbabda28465dcff1eec3184518150d567b8b8f20cda9c6c88770641d"
-url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.3/herdr-linux-x86_64"
-url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/469642054"
+checksum = "sha256:b872ea7e40fa2cb17e857ac9b62b1bf26db7b403c622f5d2f3f5b35f6e9acd28"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.8.0/herdr-linux-x86_64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/500422625"
 
 [tools.herdr."platforms.linux-x64-musl"]
-checksum = "sha256:043ef43ecbabda28465dcff1eec3184518150d567b8b8f20cda9c6c88770641d"
-url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.3/herdr-linux-x86_64"
-url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/469642054"
+checksum = "sha256:b872ea7e40fa2cb17e857ac9b62b1bf26db7b403c622f5d2f3f5b35f6e9acd28"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.8.0/herdr-linux-x86_64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/500422625"
 
 [tools.herdr."platforms.macos-arm64"]
-checksum = "sha256:b31345392d004ec1f1b2c821e1ad601019fa8385fe1e4c6931321eb58a920773"
-url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.3/herdr-macos-aarch64"
-url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/469642056"
+checksum = "sha256:d53a9f93fccfdfcc55632927bf51002f5add0aa7990bcdf508ffbd84ac658178"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.8.0/herdr-macos-aarch64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/500422629"
 
 [tools.herdr."platforms.macos-x64"]
-checksum = "sha256:9b5f35d283b0877eeda0cf66ba1ef1d95ae40f32e858a04da0041f3a20df027c"
-url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.3/herdr-macos-x86_64"
-url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/469642057"
+checksum = "sha256:77cb5afd6c8fcaaaf3bc28e474ec01c209331ad08094e20d7f8aa9b0bb78d649"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.8.0/herdr-macos-x86_64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/500422626"
 
 [[tools.jj]]
-version = "0.43.0"
+version = "0.44.0"
 backend = "aqua:jj-vcs/jj"
 
 [tools.jj."platforms.linux-arm64"]
-checksum = "sha256:289197b6bec60b4e57d47260624b617716f737eb02cdfd9155791b2576aa5862"
-url = "https://github.com/jj-vcs/jj/releases/download/v0.43.0/jj-v0.43.0-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/463825313"
+checksum = "sha256:60d42fa2a9abaa445eff10cd2087458562aaad5a54b90309e5a3787ecc985ff2"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.44.0/jj-v0.44.0-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/503321893"
 
 [tools.jj."platforms.linux-arm64-musl"]
-checksum = "sha256:289197b6bec60b4e57d47260624b617716f737eb02cdfd9155791b2576aa5862"
-url = "https://github.com/jj-vcs/jj/releases/download/v0.43.0/jj-v0.43.0-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/463825313"
+checksum = "sha256:60d42fa2a9abaa445eff10cd2087458562aaad5a54b90309e5a3787ecc985ff2"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.44.0/jj-v0.44.0-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/503321893"
 
 [tools.jj."platforms.linux-x64"]
-checksum = "sha256:59e5588583ac82b623239929368c65b90735931c0f26b5a16c1f04d5bb97643d"
-url = "https://github.com/jj-vcs/jj/releases/download/v0.43.0/jj-v0.43.0-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/463825498"
+checksum = "sha256:0a07bab4641a55fd2bc2fd1563ba3a3f9a577584086ad74086a1c5b69b3ffce9"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.44.0/jj-v0.44.0-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/503322619"
 
 [tools.jj."platforms.linux-x64-musl"]
-checksum = "sha256:59e5588583ac82b623239929368c65b90735931c0f26b5a16c1f04d5bb97643d"
-url = "https://github.com/jj-vcs/jj/releases/download/v0.43.0/jj-v0.43.0-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/463825498"
+checksum = "sha256:0a07bab4641a55fd2bc2fd1563ba3a3f9a577584086ad74086a1c5b69b3ffce9"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.44.0/jj-v0.44.0-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/503322619"
 
 [tools.jj."platforms.macos-arm64"]
-checksum = "sha256:84336bbe5673a36ccc6395c494021ba632794da078eb8c8c513a60f8e1cc3083"
-url = "https://github.com/jj-vcs/jj/releases/download/v0.43.0/jj-v0.43.0-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/463826329"
+checksum = "sha256:22b92ed109378a9638f0ae55ca7a7bdc9ef26aa60124215a1f04f6808623ba94"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.44.0/jj-v0.44.0-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/503324615"
 
 [tools.jj."platforms.macos-x64"]
-checksum = "sha256:f1a7fec046b816132318c07a9c096680f7aae78b008709c7166a57efd9c579ec"
-url = "https://github.com/jj-vcs/jj/releases/download/v0.43.0/jj-v0.43.0-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/463825063"
+checksum = "sha256:aaec25cbe08e52ba98db0773369c76f248d3a77578e2d4b7b4079aa335ef02a3"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.44.0/jj-v0.44.0-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/503324834"
 
 [tools.jj."platforms.windows-x64"]
-checksum = "sha256:582f63e55310eaa397782fcb528c3feff5b943a4e2db70666d105972a381f80e"
-url = "https://github.com/jj-vcs/jj/releases/download/v0.43.0/jj-v0.43.0-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/463827027"
+checksum = "sha256:a33732415db40e84f43c911b04751cf88aa2c7a5d12ea86bec3ac18f23f463fd"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.44.0/jj-v0.44.0-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/503327752"
 
 [[tools.lsd]]
 version = "1.2.0"
