@@ -1,7 +1,9 @@
-font-family = DepartureMono
+font-family = AtkinsonHyperlegibleMono
 background-opacity = 0.9
 background-blur = true
 window-decoration = false
 shell-integration-features = ssh-env,ssh-terminfo
 
 keybind = f11=toggle_fullscreen
+
+theme = light:Catppuccin Latte,dark:Catppuccin Mocha
