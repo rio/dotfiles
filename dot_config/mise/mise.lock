@@ -42,6 +42,44 @@ checksum = "sha256:0f729b4b6f5f28d395c641eacc2e9ff68d0096b85aa0eec344aa62425144b
 url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323549116"
 
+[[tools.colima]]
+version = "0.10.3"
+backend = "aqua:abiosoft/colima"
+specifiers = [
+    "0.10.3",
+    "latest",
+]
+
+[tools.colima."platforms.linux-arm64"]
+checksum = "sha256:ebb69208007484ac36b8a6ba72a797189b0daa88f8b31bc2b563e82b9c91cb70"
+url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Linux-aarch64"
+url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/438456730"
+
+[tools.colima."platforms.linux-arm64-musl"]
+checksum = "sha256:ebb69208007484ac36b8a6ba72a797189b0daa88f8b31bc2b563e82b9c91cb70"
+url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Linux-aarch64"
+url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/438456730"
+
+[tools.colima."platforms.linux-x64"]
+checksum = "sha256:54ea35f4847815d0a1445dbc2bc3dd6469518a38a9e960449e96b044d248d00d"
+url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Linux-x86_64"
+url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/438456720"
+
+[tools.colima."platforms.linux-x64-musl"]
+checksum = "sha256:54ea35f4847815d0a1445dbc2bc3dd6469518a38a9e960449e96b044d248d00d"
+url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Linux-x86_64"
+url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/438456720"
+
+[tools.colima."platforms.macos-arm64"]
+checksum = "sha256:980ad8bf61a4ca370243f4cb41401a61276dcd2c2502bee7b9b86f9250169f34"
+url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Darwin-arm64"
+url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/438456725"
+
+[tools.colima."platforms.macos-x64"]
+checksum = "sha256:3082737fe8a98afda11cba7d9a20b6e56fe80c6153464beda04bec630758770b"
+url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Darwin-x86_64"
+url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/438456722"
+
 [[tools.difftastic]]
 version = "0.69.0"
 backend = "aqua:Wilfred/difftastic"
@@ -239,6 +277,57 @@ url = "https://github.com/cli/cli/releases/download/v2.97.0/gh_2.97.0_windows_am
 url_api = "https://api.github.com/repos/cli/cli/releases/assets/496108319"
 provenance = "github-attestations"
 
+[[tools."github:get2knowio/deacon"]]
+version = "0.4.0"
+backend = "github:get2knowio/deacon"
+specifiers = [
+    "0.4.0",
+    "latest",
+]
+
+[tools."github:get2knowio/deacon"."platforms.linux-arm64"]
+checksum = "sha256:1f3da0be7de900c7883e01b5bf49a88e59313fc05ea061ad5540fd799a1f72f7"
+url = "https://github.com/get2knowio/deacon/releases/download/v0.4.0/deacon-v0.4.0-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/get2knowio/deacon/releases/assets/516352819"
+provenance = "github-attestations"
+
+[tools."github:get2knowio/deacon"."platforms.linux-arm64-musl"]
+checksum = "sha256:af6ec2a8b3a715dfc61c42d2d22afd3d801a12b4405e010416939218f4294794"
+url = "https://github.com/get2knowio/deacon/releases/download/v0.4.0/deacon-v0.4.0-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/get2knowio/deacon/releases/assets/516353160"
+provenance = "github-attestations"
+
+[tools."github:get2knowio/deacon"."platforms.linux-x64"]
+checksum = "sha256:7a6338cb23b55a3f76daf75c3493930578098035030709701c3025313ef517be"
+url = "https://github.com/get2knowio/deacon/releases/download/v0.4.0/deacon-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/get2knowio/deacon/releases/assets/516352465"
+provenance = "github-attestations"
+
+[tools."github:get2knowio/deacon"."platforms.linux-x64-musl"]
+checksum = "sha256:30c543249f9b099949728c7291bb8c0227ebf7f1122d687a485c8a2b4b57ee8c"
+url = "https://github.com/get2knowio/deacon/releases/download/v0.4.0/deacon-v0.4.0-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/get2knowio/deacon/releases/assets/516352769"
+provenance = "github-attestations"
+
+[tools."github:get2knowio/deacon"."platforms.macos-arm64"]
+checksum = "sha256:06e1ce6869c04222ada37ba3f17d7b56bfbf69d21458bf09366e4e8fee92a395"
+url = "https://github.com/get2knowio/deacon/releases/download/v0.4.0/deacon-v0.4.0-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/get2knowio/deacon/releases/assets/516353704"
+provenance = "github-attestations"
+provenance_verified = true
+
+[tools."github:get2knowio/deacon"."platforms.macos-x64"]
+checksum = "sha256:494ae6ecabdd893fc1729181c02d16f4f9a6e88e532c7df05efb961af7d53033"
+url = "https://github.com/get2knowio/deacon/releases/download/v0.4.0/deacon-v0.4.0-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/get2knowio/deacon/releases/assets/516353402"
+provenance = "github-attestations"
+
+[tools."github:get2knowio/deacon"."platforms.windows-x64"]
+checksum = "sha256:b4038a95366560ee5c85466a1d320969ed335d90127a95bb105a8883808a5283"
+url = "https://github.com/get2knowio/deacon/releases/download/v0.4.0/deacon-v0.4.0-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/get2knowio/deacon/releases/assets/516355941"
+provenance = "github-attestations"
+
 [[tools."github:neovim/neovim"]]
 version = "0.12.0"
 backend = "github:neovim/neovim"
@@ -280,44 +369,87 @@ url = "https://github.com/neovim/neovim/releases/download/v0.12.0/nvim-win64.zip
 url_api = "https://api.github.com/repos/neovim/neovim/releases/assets/384125181"
 
 [[tools."github:nushell/nushell"]]
-version = "0.114.1"
+version = "0.115.1"
 backend = "github:nushell/nushell"
-specifiers = ["0.114.1"]
+specifiers = ["0.115.1"]
 
 [tools."github:nushell/nushell"."platforms.linux-arm64"]
-checksum = "sha256:39944812ee619736fd50828e66c96b91747c1e189ccddac89c3ac1a02e0614f2"
-url = "https://github.com/nushell/nushell/releases/download/0.114.1/nu-0.114.1-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/473626043"
+checksum = "sha256:5c4a5bca0af5b070e903a68fa014cc24e6419d0ac9cec03a2948494b2d310e08"
+url = "https://github.com/nushell/nushell/releases/download/0.115.1/nu-0.115.1-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/526013775"
 
 [tools."github:nushell/nushell"."platforms.linux-arm64-musl"]
-checksum = "sha256:4f9e880e7bbf8ee58f3860ef49f453eb2628965b6f2c880fb03d4775f290b536"
-url = "https://github.com/nushell/nushell/releases/download/0.114.1/nu-0.114.1-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/473626782"
+checksum = "sha256:86a869f44c2abd37f4a4c215af78c8da058812b76fa131476d28e62fc0262a91"
+url = "https://github.com/nushell/nushell/releases/download/0.115.1/nu-0.115.1-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/526013290"
 
 [tools."github:nushell/nushell"."platforms.linux-x64"]
-checksum = "sha256:8802b26edcdf1a64477567b5ce909fbae3d72d731c8f0847892ea16c6fa73c53"
-url = "https://github.com/nushell/nushell/releases/download/0.114.1/nu-0.114.1-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/473625369"
+checksum = "sha256:d11d825241f6504a3617c535fa725a9dd6d009c86d7b19fb3168b47635b9d8b0"
+url = "https://github.com/nushell/nushell/releases/download/0.115.1/nu-0.115.1-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/526012815"
 
 [tools."github:nushell/nushell"."platforms.linux-x64-musl"]
-checksum = "sha256:ce3a1c5a07c784098b5675224a165e73a45f0f720a8392791d7c3a5b4720255e"
-url = "https://github.com/nushell/nushell/releases/download/0.114.1/nu-0.114.1-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/473625296"
+checksum = "sha256:8a9722177ddd421eba927b4baae4ae341a4d1c3434504be7b1b17d998bafdd87"
+url = "https://github.com/nushell/nushell/releases/download/0.115.1/nu-0.115.1-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/526013643"
 
 [tools."github:nushell/nushell"."platforms.macos-arm64"]
-checksum = "sha256:cb0ac9b97b985cd217a952f44438a14d2df2a95504d9bd8bc01ec73e1351b179"
-url = "https://github.com/nushell/nushell/releases/download/0.114.1/nu-0.114.1-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/473629724"
+checksum = "sha256:2e6ed1eb043869ff05b5f2448a8c443e4d3a93557ba4303b21008a0523c96734"
+url = "https://github.com/nushell/nushell/releases/download/0.115.1/nu-0.115.1-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/526010403"
 
 [tools."github:nushell/nushell"."platforms.macos-x64"]
-checksum = "sha256:4659a78545b7f6a303e661fe3bd276a765c64ccde67112d32045be5fe075f206"
-url = "https://github.com/nushell/nushell/releases/download/0.114.1/nu-0.114.1-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/473624186"
+checksum = "sha256:0292f4b92af29cfe5d9c4b2ec06eeb325b705d1d6c19536a8bec2b75859b3485"
+url = "https://github.com/nushell/nushell/releases/download/0.115.1/nu-0.115.1-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/526015418"
 
 [tools."github:nushell/nushell"."platforms.windows-x64"]
-checksum = "sha256:71a88cb74f51a9fdd91003273fb1f3361d7b393fb3a03014f43e5f111df9666f"
-url = "https://github.com/nushell/nushell/releases/download/0.114.1/nu-0.114.1-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/473630966"
+checksum = "sha256:b83009cbc88021f4dc293c49320118886b78363f9a4bb14933d33c8803241f46"
+url = "https://github.com/nushell/nushell/releases/download/0.115.1/nu-0.115.1-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/526030176"
+
+[[tools."github:skevetter/devpod"]]
+version = "0.26.1"
+backend = "github:skevetter/devpod"
+specifiers = [
+    "0.26.1",
+    "latest",
+]
+
+[tools."github:skevetter/devpod"."platforms.linux-arm64"]
+checksum = "sha256:268621da428ca6d470d1812d63c9e41a1681b681861fc984648a57c5725478ee"
+url = "https://github.com/skevetter/devpod/releases/download/v0.26.1/devpod-linux-arm64"
+url_api = "https://api.github.com/repos/skevetter/devpod/releases/assets/461577665"
+
+[tools."github:skevetter/devpod"."platforms.linux-arm64-musl"]
+checksum = "sha256:268621da428ca6d470d1812d63c9e41a1681b681861fc984648a57c5725478ee"
+url = "https://github.com/skevetter/devpod/releases/download/v0.26.1/devpod-linux-arm64"
+url_api = "https://api.github.com/repos/skevetter/devpod/releases/assets/461577665"
+
+[tools."github:skevetter/devpod"."platforms.linux-x64"]
+checksum = "sha256:01bbc2d88090d546e04aa435c63fc5eb95ec49ffb7ab102a67de0d6d12c82d8d"
+url = "https://github.com/skevetter/devpod/releases/download/v0.26.1/devpod-linux-amd64"
+url_api = "https://api.github.com/repos/skevetter/devpod/releases/assets/461577668"
+
+[tools."github:skevetter/devpod"."platforms.linux-x64-musl"]
+checksum = "sha256:01bbc2d88090d546e04aa435c63fc5eb95ec49ffb7ab102a67de0d6d12c82d8d"
+url = "https://github.com/skevetter/devpod/releases/download/v0.26.1/devpod-linux-amd64"
+url_api = "https://api.github.com/repos/skevetter/devpod/releases/assets/461577668"
+
+[tools."github:skevetter/devpod"."platforms.macos-arm64"]
+checksum = "sha256:5a6b65646f62819bdd6822a2abfee792d9c7843f4cb6bc3633377c67c123a72d"
+url = "https://github.com/skevetter/devpod/releases/download/v0.26.1/devpod-darwin-arm64"
+url_api = "https://api.github.com/repos/skevetter/devpod/releases/assets/461577669"
+
+[tools."github:skevetter/devpod"."platforms.macos-x64"]
+checksum = "sha256:b8d963ebff80628c47160c8371fee87f6e0143ed1a81305aca547ff571c0ff10"
+url = "https://github.com/skevetter/devpod/releases/download/v0.26.1/devpod-darwin-amd64"
+url_api = "https://api.github.com/repos/skevetter/devpod/releases/assets/461577670"
+
+[tools."github:skevetter/devpod"."platforms.windows-x64"]
+checksum = "sha256:07814988cb07f2931f78df15a2c011e23a0ce86aa9a8316ddd5838ce5100f28d"
+url = "https://github.com/skevetter/devpod/releases/download/v0.26.1/DevPod_windows_x64.exe"
+url_api = "https://api.github.com/repos/skevetter/devpod/releases/assets/461576058"
 
 [[tools."github:twpayne/chezmoi"]]
 version = "2.72.1"
@@ -446,6 +578,56 @@ url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/503324834"
 checksum = "sha256:a33732415db40e84f43c911b04751cf88aa2c7a5d12ea86bec3ac18f23f463fd"
 url = "https://github.com/jj-vcs/jj/releases/download/v0.44.0/jj-v0.44.0-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/503327752"
+
+[[tools.lima]]
+version = "2.2.0"
+backend = "aqua:lima-vm/lima"
+specifiers = [
+    "2.2.0",
+    "latest",
+]
+
+[tools.lima."platforms.linux-arm64"]
+checksum = "sha256:7c6a09c6844f55f811e9b7b2b60a6070a512c696c8ec752dfdb3c8ed50ed0364"
+url = "https://github.com/lima-vm/lima/releases/download/v2.2.0/lima-2.2.0-Linux-aarch64.tar.gz"
+url_api = "https://api.github.com/repos/lima-vm/lima/releases/assets/484813992"
+provenance = "github-attestations"
+
+[tools.lima."platforms.linux-arm64-musl"]
+checksum = "sha256:7c6a09c6844f55f811e9b7b2b60a6070a512c696c8ec752dfdb3c8ed50ed0364"
+url = "https://github.com/lima-vm/lima/releases/download/v2.2.0/lima-2.2.0-Linux-aarch64.tar.gz"
+url_api = "https://api.github.com/repos/lima-vm/lima/releases/assets/484813992"
+provenance = "github-attestations"
+
+[tools.lima."platforms.linux-x64"]
+checksum = "sha256:a0ea1ccf6b7335a900adb5f8d2b8384457965fecb1ba72f09b4e3e46d12f424a"
+url = "https://github.com/lima-vm/lima/releases/download/v2.2.0/lima-2.2.0-Linux-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/lima-vm/lima/releases/assets/484813993"
+provenance = "github-attestations"
+
+[tools.lima."platforms.linux-x64-musl"]
+checksum = "sha256:a0ea1ccf6b7335a900adb5f8d2b8384457965fecb1ba72f09b4e3e46d12f424a"
+url = "https://github.com/lima-vm/lima/releases/download/v2.2.0/lima-2.2.0-Linux-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/lima-vm/lima/releases/assets/484813993"
+provenance = "github-attestations"
+
+[tools.lima."platforms.macos-arm64"]
+checksum = "sha256:bbdef91774885a0d05f7b048c4eb89ae2bcf3a0c252ae7ca7934e63df76d93c3"
+url = "https://github.com/lima-vm/lima/releases/download/v2.2.0/lima-2.2.0-Darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/lima-vm/lima/releases/assets/484813994"
+provenance = "github-attestations"
+
+[tools.lima."platforms.macos-x64"]
+checksum = "sha256:0d6f99c19f6e4bc3c92730c4c29d929e6927f0cb0a0ba1a84383367135a8ff31"
+url = "https://github.com/lima-vm/lima/releases/download/v2.2.0/lima-2.2.0-Darwin-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/lima-vm/lima/releases/assets/484813996"
+provenance = "github-attestations"
+
+[tools.lima."platforms.windows-x64"]
+checksum = "sha256:e7bf7dd2d2e7ab7ce020631f8f7533665f6e6f9068686d3ffcd0f3c438856ea9"
+url = "https://github.com/lima-vm/lima/releases/download/v2.2.0/lima-2.2.0-Windows-AMD64.zip"
+url_api = "https://api.github.com/repos/lima-vm/lima/releases/assets/484814002"
+provenance = "github-attestations"
 
 [[tools.lsd]]
 version = "1.2.0"
