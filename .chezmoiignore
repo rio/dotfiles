@@ -9,5 +9,6 @@ Libary/Application Support/nushell
 
 {{ if ne .chezmoi.os "linux" -}}
 .config/nushell
+.local/share/nushell
 {{ end }}
 
