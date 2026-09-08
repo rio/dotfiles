@@ -2,5 +2,8 @@ font-family = AtkinsonHyperlegibleMono
 background-opacity = 0.9
 background-blur = true
 shell-integration-features = ssh-env,ssh-terminfo
-
 theme = light:Catppuccin Latte,dark:Catppuccin Mocha
+
+{{ if eq chezmoi.os "linux" -}}
+window-decoration = false
+{{ end -}}
