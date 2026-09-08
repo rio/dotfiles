@@ -319,95 +319,52 @@ checksum = "sha256:71a88cb74f51a9fdd91003273fb1f3361d7b393fb3a03014f43e5f111df96
 url = "https://github.com/nushell/nushell/releases/download/0.114.1/nu-0.114.1-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/473630966"
 
-[[tools."github:peteonrails/voxtype"]]
-version = "0.7.5"
-backend = "github:peteonrails/voxtype"
-specifiers = ["0.7.5"]
-
-[tools."github:peteonrails/voxtype".options]
-asset_pattern = "voxtype-*-linux-x86_64-vulkan"
-
-[tools."github:peteonrails/voxtype"."platforms.linux-arm64"]
-checksum = "sha256:64626d07f3aae2825ddb82ea66878f708c8a820a3fd3ece76d99ff98477f132d"
-url = "https://github.com/peteonrails/voxtype/releases/download/v0.7.5/voxtype-0.7.5-linux-x86_64-vulkan"
-url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/432470312"
-
-[tools."github:peteonrails/voxtype"."platforms.linux-arm64-musl"]
-checksum = "sha256:64626d07f3aae2825ddb82ea66878f708c8a820a3fd3ece76d99ff98477f132d"
-url = "https://github.com/peteonrails/voxtype/releases/download/v0.7.5/voxtype-0.7.5-linux-x86_64-vulkan"
-url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/432470312"
-
-[tools."github:peteonrails/voxtype"."platforms.linux-x64"]
-checksum = "sha256:64626d07f3aae2825ddb82ea66878f708c8a820a3fd3ece76d99ff98477f132d"
-url = "https://github.com/peteonrails/voxtype/releases/download/v0.7.5/voxtype-0.7.5-linux-x86_64-vulkan"
-url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/432470312"
-
-[tools."github:peteonrails/voxtype"."platforms.linux-x64-musl"]
-checksum = "sha256:64626d07f3aae2825ddb82ea66878f708c8a820a3fd3ece76d99ff98477f132d"
-url = "https://github.com/peteonrails/voxtype/releases/download/v0.7.5/voxtype-0.7.5-linux-x86_64-vulkan"
-url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/432470312"
-
-[tools."github:peteonrails/voxtype"."platforms.macos-arm64"]
-checksum = "sha256:64626d07f3aae2825ddb82ea66878f708c8a820a3fd3ece76d99ff98477f132d"
-url = "https://github.com/peteonrails/voxtype/releases/download/v0.7.5/voxtype-0.7.5-linux-x86_64-vulkan"
-url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/432470312"
-
-[tools."github:peteonrails/voxtype"."platforms.macos-x64"]
-checksum = "sha256:64626d07f3aae2825ddb82ea66878f708c8a820a3fd3ece76d99ff98477f132d"
-url = "https://github.com/peteonrails/voxtype/releases/download/v0.7.5/voxtype-0.7.5-linux-x86_64-vulkan"
-url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/432470312"
-
-[tools."github:peteonrails/voxtype"."platforms.windows-x64"]
-checksum = "sha256:64626d07f3aae2825ddb82ea66878f708c8a820a3fd3ece76d99ff98477f132d"
-url = "https://github.com/peteonrails/voxtype/releases/download/v0.7.5/voxtype-0.7.5-linux-x86_64-vulkan"
-url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/432470312"
-
 [[tools."github:twpayne/chezmoi"]]
-version = "2.70.0"
+version = "2.72.1"
 backend = "github:twpayne/chezmoi"
-specifiers = ["2.70.0"]
+specifiers = ["2.72.1"]
 
 [tools."github:twpayne/chezmoi"."platforms.linux-arm64"]
-checksum = "sha256:c65fb55bee4fb2bc14362998e2ce0cf1b1688bce0abfd7dd48cbac6448d6fc75"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.0/chezmoi_2.70.0_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/370444408"
+checksum = "sha256:75508ef41216b6d64f3145986b751729d7f92d09c6bad77d51cf2895ab35a508"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.72.1/chezmoi_2.72.1_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/536653653"
 provenance = "github-attestations"
 
 [tools."github:twpayne/chezmoi"."platforms.linux-arm64-musl"]
-checksum = "sha256:c65fb55bee4fb2bc14362998e2ce0cf1b1688bce0abfd7dd48cbac6448d6fc75"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.0/chezmoi_2.70.0_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/370444408"
+checksum = "sha256:75508ef41216b6d64f3145986b751729d7f92d09c6bad77d51cf2895ab35a508"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.72.1/chezmoi_2.72.1_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/536653653"
 provenance = "github-attestations"
 
 [tools."github:twpayne/chezmoi"."platforms.linux-x64"]
-checksum = "sha256:32dbc87a4db7163d0f8c3156b631e3ee1cc6fed400f43ff467eca4211f2905e7"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.0/chezmoi_2.70.0_linux-glibc_amd64.tar.gz"
-url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/370444442"
+checksum = "sha256:9f97d32caca166e5c92160ec3a9325519809c38963121cef38173142065c981f"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.72.1/chezmoi_2.72.1_linux-glibc_amd64.tar.gz"
+url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/536653696"
 provenance = "github-attestations"
-provenance_verified = true
 
 [tools."github:twpayne/chezmoi"."platforms.linux-x64-musl"]
-checksum = "sha256:bf16a9f373dacca92c8ceb691d63c2ad5eaec1b54c4a62a15adf2f1ef15a6060"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.0/chezmoi_2.70.0_linux-musl_amd64.tar.gz"
-url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/370444443"
+checksum = "sha256:b961e2972d6fcd1002f9b986d4a61dc5da288e96aab226434fd5b20a7de80cf9"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.72.1/chezmoi_2.72.1_linux-musl_amd64.tar.gz"
+url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/536653704"
 provenance = "github-attestations"
 
 [tools."github:twpayne/chezmoi"."platforms.macos-arm64"]
-checksum = "sha256:87142ac0465e9b1cd04a71c06c5164867fded7778c3c098f8efbea3ee9df1ade"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.0/chezmoi_2.70.0_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/370444375"
+checksum = "sha256:938d422091cc001e68fe3fd7efea9b923a36facbf2b8db67063639abbaf72de2"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.72.1/chezmoi_2.72.1_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/536653589"
 provenance = "github-attestations"
+provenance_verified = true
 
 [tools."github:twpayne/chezmoi"."platforms.macos-x64"]
-checksum = "sha256:8d8abb5da0805ce6fa4d387cf3d9615281ad5b26007bf4d469af603ab3c237af"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.0/chezmoi_2.70.0_darwin_amd64.tar.gz"
-url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/370444389"
+checksum = "sha256:bf0f0e048291efe126cb8bc51cf566057b92755cd53ce82c45efa11d2f8f4898"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.72.1/chezmoi_2.72.1_darwin_amd64.tar.gz"
+url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/536653588"
 provenance = "github-attestations"
 
 [tools."github:twpayne/chezmoi"."platforms.windows-x64"]
-checksum = "sha256:bd75e4892ed22d5ab767c06242fc72c23c5848ad5b1aea27fd95aec03c10c777"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.0/chezmoi_2.70.0_windows_amd64.zip"
-url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/370444385"
+checksum = "sha256:75b22917f6baa0a40fec7bf9ad16fd8ea8cf4943f8d8cc1ddb07586d4376bf34"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.72.1/chezmoi_2.72.1_windows_amd64.zip"
+url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/536653691"
 provenance = "github-attestations"
 
 [[tools.herdr]]
