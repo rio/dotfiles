@@ -1,5 +1,5 @@
 #!/bin/bash
-# packages hash: {{ include "dot_config/mise/mise.toml" | sha256sum }}
+# packages hash: {{ include "dot_config/mise/mise.toml.tmpl" | sha256sum }}
 # lockfile hash: {{ include "dot_config/mise/mise.lock" | sha256sum }}
 
 set -euo pipefail

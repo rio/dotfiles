@@ -1,4 +1,4 @@
-min_version = "2025.11.7"
+min_version = "2026.9.2"
 
 [tools]
 bat = "0.26.1"
@@ -7,16 +7,15 @@ doggo = "1.2.0"
 fd = "10.4.2"
 fzf = "0.74.2"
 github-cli = "2.97.0"
-"github{{ .chezmoi.pathListSeparator }}neovim{{ .chezmoi.pathSeparator }}neovim" = "0.12.0"
-"github{{ .chezmoi.pathListSeparator }}nushell{{ .chezmoi.pathSeparator }}nushell" = { version = "0.114.1", exe = "{{ .chezmoi.config.interpreters.nu.command }}" }
-"github{{ .chezmoi.pathListSeparator }}peteonrails{{ .chezmoi.pathSeparator }}voxtype" = { version = "0.7.5", asset_pattern = "voxtype-*-linux-x86_64-vulkan" }
-"github{{ .chezmoi.pathListSeparator }}twpayne{{ .chezmoi.pathSeparator }}chezmoi" = "{{ .chezmoi.version.version }}"
+"github/neovim/neovim" = "0.12.0"
+"github/nushell/nushell" = { version = "0.114.1", exe = "nu" }
+"github/peteonrails/voxtype" = { version = "0.7.5", asset_pattern = "voxtype-*-linux-x86_64-vulkan" }
+"github/twpayne/chezmoi" = "{{ .chezmoi.version.version }}"
 herdr = "0.8.2"
 jj = "0.44.0"
 lsd = "1.2.0"
 node = "24.18.0"
 ripgrep = "15.2.0"
-{{ .chezmoi.config.interpreters.rb.command }} = "4.0.6"
 starship = "1.26.0"
 zellij = "0.44.3"
 
@@ -24,13 +23,14 @@ zellij = "0.44.3"
 experimental = true
 lockfile = true
 pin = true
-minimum_release_{{ .chezmoi.config.age.command }} = "7d"
+minimum_release_age = "7d"
 
 [env]
-'_'.path = ["~{{ .chezmoi.pathSeparator }}.cargo{{ .chezmoi.pathSeparator }}bin"]
-'_'.{{ .chezmoi.config.mode }} = { path = ".envrc" }
+'_'.path = ["~/.cargo/bin"]
+'_'.file = { path = ".envrc" }
 
+{{ if eq .chezmoi.os "darwin" -}}
 [bootstrap.packages]
-"brew-cask{{ .chezmoi.pathListSeparator }}ghostty" = "1.3.1"
-"brew-cask{{ .chezmoi.pathListSeparator }}1password" = "latest"
-"brew{{ .chezmoi.pathListSeparator }}asmvik{{ .chezmoi.pathSeparator }}formulae{{ .chezmoi.pathSeparator }}yabai" = "latest"
+"brew-cask/ghostty" = "1.3.1"
+"brew-cask/1password" = "latest"
+{{end -}}
