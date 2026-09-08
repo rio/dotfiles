@@ -2,3 +2,12 @@
 **/*.zwc
 setup
 README.md
+
+{{ if ne .chezmoi.os "darwin" -}}
+Libary/Application Support/nushell/*
+{{ end }}
+
+{{ if ne .chezmoi.os "linux" -}}
+.config/nushell/*
+{{ end }}
+
