@@ -9,7 +9,9 @@ fzf = "0.74.2"
 github-cli = "2.97.0"
 "github:neovim/neovim" = "0.12.0"
 "github:nushell/nushell" = { version = "0.114.1", exe = "nu" }
+{{ if ne .chezmoi.os "darwin" -}}
 "github:peteonrails/voxtype" = { version = "0.7.5", asset_pattern = "voxtype-*-linux-x86_64-vulkan" }
+{{ end -}}
 "github:twpayne/chezmoi" = "{{ .chezmoi.version.version }}"
 herdr = "0.8.2"
 jj = "0.44.0"
