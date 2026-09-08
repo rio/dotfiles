@@ -9,9 +9,6 @@ fzf = "0.74.2"
 github-cli = "2.97.0"
 "github:neovim/neovim" = "0.12.0"
 "github:nushell/nushell" = { version = "0.114.1", exe = "nu" }
-{{ if ne .chezmoi.os "darwin" -}}
-"github:peteonrails/voxtype" = { version = "0.7.5", asset_pattern = "voxtype-*-linux-x86_64-vulkan" }
-{{ end -}}
 "github:twpayne/chezmoi" = "2.72.1"
 herdr = "0.8.2"
 jj = "0.44.0"
@@ -21,6 +18,15 @@ ripgrep = "15.2.0"
 starship = "1.26.0"
 zellij = "0.44.3"
 
+{{ if eq .chezmoi.os "linux" -}}
+"github:peteonrails/voxtype" = { version = "0.7.5", asset_pattern = "voxtype-*-linux-x86_64-vulkan" }
+{{ end -}}
+
+{{ if eq .chezmoi.os "darwin" -}}
+colima = "0.10.3"
+lima = "2.2.0"
+{{ end -}}
+
 [settings]
 experimental = true
 lockfile = true
@@ -28,11 +34,17 @@ pin = true
 minimum_release_age = "7d"
 
 [env]
-'_'.path = ["~/.cargo/bin"]
+'_'.path = [
+  "~/.cargo/bin",
+  "/opt/homebrew/bin",
+]
 '_'.file = { path = ".envrc" }
 
 {{ if eq .chezmoi.os "darwin" -}}
 [bootstrap.packages]
-"brew-cask:ghostty" = "1.3.1"
+"brew-cask:ghostty" = "latest"
 "brew-cask:1password" = "latest"
+"brew:docker" = "latest"
+"brew:docker-compose" = "latest"
+"brew:docker-buildx" = "latest"
 {{end -}}
