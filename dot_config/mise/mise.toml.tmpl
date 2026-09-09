@@ -20,7 +20,7 @@ starship = "1.26.0"
 zellij = "0.44.3"
 
 {{ if eq .chezmoi.os "linux" -}}
-"github:peteonrails/voxtype" = { version = "0.7.5", asset_pattern = "voxtype-*-linux-x86_64-vulkan" }
+"github:peteonrails/voxtype" = { version = "1.0.1", asset_pattern = "voxtype-*-linux-x86_64-onnx-avx512" }
 {{ end -}}
 
 {{ if eq .chezmoi.os "darwin" -}}

@@ -1,146 +1,65 @@
-# Voxtype Configuration
-#
-# Location: ~/.config/voxtype/config.toml
-# All settings can be overridden via CLI flags
-engine = "whisper"
+engine = "parakeet"
+
+[whisper]
+model = "base.en"
+mode = "local"
+language = "auto"
+translate = false
+flash_attention = false
+on_demand_loading = false
+gpu_isolation = false
+eager_processing = false
+
+[parakeet]
+model = "parakeet-tdt-0.6b-v3-int8"
+on_demand_loading = false
+streaming = false
 
 [hotkey]
-# Key to hold for push-to-talk
-# Common choices: SCROLLLOCK, PAUSE, RIGHTALT, F13-F24
-# Use `evtest` to find key names for your keyboard
-key = "KEY_RIGHTCTRL"
-
-# Optional modifier keys that must also be held
-# Example: modifiers = ["LEFTCTRL", "LEFTALT"]
-modifiers = []
-
-# Activation mode: "push_to_talk" or "toggle"
-# - push_to_talk: Hold hotkey to record, release to transcribe (default)
-# - toggle: Press hotkey once to start recording, press again to stop
+key = "RIGHTCTRL"
 mode = "toggle"
 enabled = true
 
-# Enable built-in hotkey detection (default: true)
-# Set to false when using compositor keybindings (Hyprland, Sway) instead
-# When disabled, use `voxtype record start/stop/toggle` to control recording
-# enabled = true
-
 [audio]
-# Audio input device ("default" uses system default)
-# List devices with: pactl list sources short
 device = "default"
-
-# Sample rate in Hz (whisper expects 16000)
-sample_rate = 16000
-
-# Maximum recording duration in seconds (safety limit)
-max_duration_secs = 1800
+max_duration_secs = 600
+pause_media = false
+duck_media = true
+duck_media_volume_percent = 34
+duck_media_fade_ms = 150
 
 [audio.feedback]
-# Enable audio feedback sounds (beeps when recording starts/stops)
-enabled = true
-#
-# Sound theme: "default", "subtle", "mechanical", or path to custom theme directory
-theme = "subtle"
-#
-# Volume level (0.0 to 1.0)
-volume = 0.1
-
-[parakeet]
-model = "parakeet-tdt-0.6b-v3"
-on_demand_loading = false
-model_type = "tdt"
-streaming = false              #
-
-[whisper]
-# Model to use for transcription
-# Options: tiny, tiny.en, base, base.en, small, small.en, medium, medium.en, large-v3, large-v3-turbo
-# .en models are English-only but faster and more accurate for English
-# large-v3-turbo is faster than large-v3 with minimal accuracy loss (recommended for GPU)
-# Or provide absolute path to a custom .bin model file
-model = "large-v3-turbo"
-
-language = ["en", "nl"]
-
-# Translate non-English speech to English
-translate = false
-
-# Number of CPU threads for inference (omit for auto-detection)
-# threads = 4
-
-# this leads to repeated words. Not needed in my opinion. The trade off is waiting time.
-eager_processing = false
-context_window_optimization = false
-
-# keep model loaded in memory for speed boost
-gpu_isolation = false
-mode = "local"
-flash_attention = false
-on_demand_loading = false
-
-# extend this if words keep getting transcribed wrong.
-initial_prompt = "Technical discussion using command-line tools like mise and awk."
-
-[vad]
-enabled = true      # rejects silence-only audio → kills the decoder-loop repetition
-backend = "whisper"
+enabled = false
+theme = "default"
+volume = 0.699999988079071
 
 [output]
-# Primary output mode: "type" or "clipboard"
-# - type: Simulates keyboard input at cursor position (requires ydotool)
-# - clipboard: Copies text to clipboard (requires wl-copy)
 mode = "type"
-
-# Fall back to clipboard if typing fails
 fallback_to_clipboard = true
-
-# Delay between typed characters in milliseconds
-# 0 = fastest possible, increase if characters are dropped
-type_delay_ms = 0
-
-append_text = " "
-restore_clipboard = true
-restore_clipboard_delay_ms = 200
 auto_submit = false
 shift_enter_newlines = false
 pre_type_delay_ms = 0
 
 [output.notification]
-# Show notification when recording starts (hotkey pressed)
 on_recording_start = false
-
-# Show notification when recording stops (transcription beginning)
 on_recording_stop = false
-
-# Show notification with transcribed text after transcription completes
 on_transcription = false
-show_engine_icon = false
+show_engine_icon = true
 
 [text]
-# Text processing options (word replacements, spoken punctuation)
-#
-# Enable spoken punctuation conversion (e.g., say "period" to get ".")
 spoken_punctuation = true
-
-# removes um uh, etc.
-filter_filler_words = true
-
-# State file for external integrations (Waybar, polybar, etc.)
-# Uncomment to enable. Use "auto" for default location ($XDG_RUNTIME_DIR/voxtype/state)
-# or provide a custom path. The daemon writes state ("idle", "recording", "transcribing")
-# to this file whenever it changes.
-state_file = "auto"
 smart_auto_submit = true
 
-[text.replacements]
-"cube control" = "kubectl"
-"Mies" = "mise"
+[vad]
+enabled = false
+backend = "auto"
+threshold = 0.5
 
 [meeting]
-enabled = true
+enabled = false
 
 [meeting.diarization]
-enabled = true
+enabled = false
 
 [meeting.audio]
 source = "mic"
@@ -148,6 +67,8 @@ source = "mic"
 [osd]
 enabled = true
 frontend = "gtk4"
+style = "default"
+layout = "compact"
 position = "bottom-center"
 width_px = 400
 height_px = 48
