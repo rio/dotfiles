@@ -277,57 +277,6 @@ url = "https://github.com/cli/cli/releases/download/v2.97.0/gh_2.97.0_windows_am
 url_api = "https://api.github.com/repos/cli/cli/releases/assets/496108319"
 provenance = "github-attestations"
 
-[[tools."github:get2knowio/deacon"]]
-version = "0.4.0"
-backend = "github:get2knowio/deacon"
-specifiers = [
-    "0.4.0",
-    "latest",
-]
-
-[tools."github:get2knowio/deacon"."platforms.linux-arm64"]
-checksum = "sha256:1f3da0be7de900c7883e01b5bf49a88e59313fc05ea061ad5540fd799a1f72f7"
-url = "https://github.com/get2knowio/deacon/releases/download/v0.4.0/deacon-v0.4.0-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/get2knowio/deacon/releases/assets/516352819"
-provenance = "github-attestations"
-
-[tools."github:get2knowio/deacon"."platforms.linux-arm64-musl"]
-checksum = "sha256:af6ec2a8b3a715dfc61c42d2d22afd3d801a12b4405e010416939218f4294794"
-url = "https://github.com/get2knowio/deacon/releases/download/v0.4.0/deacon-v0.4.0-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/get2knowio/deacon/releases/assets/516353160"
-provenance = "github-attestations"
-
-[tools."github:get2knowio/deacon"."platforms.linux-x64"]
-checksum = "sha256:7a6338cb23b55a3f76daf75c3493930578098035030709701c3025313ef517be"
-url = "https://github.com/get2knowio/deacon/releases/download/v0.4.0/deacon-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/get2knowio/deacon/releases/assets/516352465"
-provenance = "github-attestations"
-
-[tools."github:get2knowio/deacon"."platforms.linux-x64-musl"]
-checksum = "sha256:30c543249f9b099949728c7291bb8c0227ebf7f1122d687a485c8a2b4b57ee8c"
-url = "https://github.com/get2knowio/deacon/releases/download/v0.4.0/deacon-v0.4.0-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/get2knowio/deacon/releases/assets/516352769"
-provenance = "github-attestations"
-
-[tools."github:get2knowio/deacon"."platforms.macos-arm64"]
-checksum = "sha256:06e1ce6869c04222ada37ba3f17d7b56bfbf69d21458bf09366e4e8fee92a395"
-url = "https://github.com/get2knowio/deacon/releases/download/v0.4.0/deacon-v0.4.0-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/get2knowio/deacon/releases/assets/516353704"
-provenance = "github-attestations"
-provenance_verified = true
-
-[tools."github:get2knowio/deacon"."platforms.macos-x64"]
-checksum = "sha256:494ae6ecabdd893fc1729181c02d16f4f9a6e88e532c7df05efb961af7d53033"
-url = "https://github.com/get2knowio/deacon/releases/download/v0.4.0/deacon-v0.4.0-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/get2knowio/deacon/releases/assets/516353402"
-provenance = "github-attestations"
-
-[tools."github:get2knowio/deacon"."platforms.windows-x64"]
-checksum = "sha256:b4038a95366560ee5c85466a1d320969ed335d90127a95bb105a8883808a5283"
-url = "https://github.com/get2knowio/deacon/releases/download/v0.4.0/deacon-v0.4.0-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/get2knowio/deacon/releases/assets/516355941"
-provenance = "github-attestations"
-
 [[tools."github:neovim/neovim"]]
 version = "0.12.0"
 backend = "github:neovim/neovim"
