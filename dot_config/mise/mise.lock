@@ -42,44 +42,6 @@ checksum = "sha256:0f729b4b6f5f28d395c641eacc2e9ff68d0096b85aa0eec344aa62425144b
 url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323549116"
 
-[[tools.colima]]
-version = "0.10.3"
-backend = "aqua:abiosoft/colima"
-specifiers = [
-    "0.10.3",
-    "latest",
-]
-
-[tools.colima."platforms.linux-arm64"]
-checksum = "sha256:ebb69208007484ac36b8a6ba72a797189b0daa88f8b31bc2b563e82b9c91cb70"
-url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Linux-aarch64"
-url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/438456730"
-
-[tools.colima."platforms.linux-arm64-musl"]
-checksum = "sha256:ebb69208007484ac36b8a6ba72a797189b0daa88f8b31bc2b563e82b9c91cb70"
-url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Linux-aarch64"
-url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/438456730"
-
-[tools.colima."platforms.linux-x64"]
-checksum = "sha256:54ea35f4847815d0a1445dbc2bc3dd6469518a38a9e960449e96b044d248d00d"
-url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Linux-x86_64"
-url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/438456720"
-
-[tools.colima."platforms.linux-x64-musl"]
-checksum = "sha256:54ea35f4847815d0a1445dbc2bc3dd6469518a38a9e960449e96b044d248d00d"
-url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Linux-x86_64"
-url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/438456720"
-
-[tools.colima."platforms.macos-arm64"]
-checksum = "sha256:980ad8bf61a4ca370243f4cb41401a61276dcd2c2502bee7b9b86f9250169f34"
-url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Darwin-arm64"
-url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/438456725"
-
-[tools.colima."platforms.macos-x64"]
-checksum = "sha256:3082737fe8a98afda11cba7d9a20b6e56fe80c6153464beda04bec630758770b"
-url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Darwin-x86_64"
-url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/438456722"
-
 [[tools.difftastic]]
 version = "0.69.0"
 backend = "aqua:Wilfred/difftastic"
@@ -357,6 +319,49 @@ checksum = "sha256:b83009cbc88021f4dc293c49320118886b78363f9a4bb14933d33c8803241
 url = "https://github.com/nushell/nushell/releases/download/0.115.1/nu-0.115.1-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/nushell/nushell/releases/assets/526030176"
 
+[[tools."github:peteonrails/voxtype"]]
+version = "1.0.1"
+backend = "github:peteonrails/voxtype"
+specifiers = ["1.0.1"]
+
+[tools."github:peteonrails/voxtype".options]
+asset_pattern = "voxtype-*-linux-x86_64-onnx-avx512"
+
+[tools."github:peteonrails/voxtype"."platforms.linux-arm64"]
+checksum = "sha256:69a6e6fc1c04a55eeb62cf1eaa5fe81873c70eabffff120ce1a4ff7ef62fd559"
+url = "https://github.com/peteonrails/voxtype/releases/download/v1.0.1/voxtype-1.0.1-linux-x86_64-onnx-avx512"
+url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/538639585"
+
+[tools."github:peteonrails/voxtype"."platforms.linux-arm64-musl"]
+checksum = "sha256:69a6e6fc1c04a55eeb62cf1eaa5fe81873c70eabffff120ce1a4ff7ef62fd559"
+url = "https://github.com/peteonrails/voxtype/releases/download/v1.0.1/voxtype-1.0.1-linux-x86_64-onnx-avx512"
+url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/538639585"
+
+[tools."github:peteonrails/voxtype"."platforms.linux-x64"]
+checksum = "sha256:69a6e6fc1c04a55eeb62cf1eaa5fe81873c70eabffff120ce1a4ff7ef62fd559"
+url = "https://github.com/peteonrails/voxtype/releases/download/v1.0.1/voxtype-1.0.1-linux-x86_64-onnx-avx512"
+url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/538639585"
+
+[tools."github:peteonrails/voxtype"."platforms.linux-x64-musl"]
+checksum = "sha256:69a6e6fc1c04a55eeb62cf1eaa5fe81873c70eabffff120ce1a4ff7ef62fd559"
+url = "https://github.com/peteonrails/voxtype/releases/download/v1.0.1/voxtype-1.0.1-linux-x86_64-onnx-avx512"
+url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/538639585"
+
+[tools."github:peteonrails/voxtype"."platforms.macos-arm64"]
+checksum = "sha256:69a6e6fc1c04a55eeb62cf1eaa5fe81873c70eabffff120ce1a4ff7ef62fd559"
+url = "https://github.com/peteonrails/voxtype/releases/download/v1.0.1/voxtype-1.0.1-linux-x86_64-onnx-avx512"
+url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/538639585"
+
+[tools."github:peteonrails/voxtype"."platforms.macos-x64"]
+checksum = "sha256:69a6e6fc1c04a55eeb62cf1eaa5fe81873c70eabffff120ce1a4ff7ef62fd559"
+url = "https://github.com/peteonrails/voxtype/releases/download/v1.0.1/voxtype-1.0.1-linux-x86_64-onnx-avx512"
+url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/538639585"
+
+[tools."github:peteonrails/voxtype"."platforms.windows-x64"]
+checksum = "sha256:69a6e6fc1c04a55eeb62cf1eaa5fe81873c70eabffff120ce1a4ff7ef62fd559"
+url = "https://github.com/peteonrails/voxtype/releases/download/v1.0.1/voxtype-1.0.1-linux-x86_64-onnx-avx512"
+url_api = "https://api.github.com/repos/peteonrails/voxtype/releases/assets/538639585"
+
 [[tools."github:skevetter/devpod"]]
 version = "0.26.1"
 backend = "github:skevetter/devpod"
@@ -527,56 +532,6 @@ url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/503324834"
 checksum = "sha256:a33732415db40e84f43c911b04751cf88aa2c7a5d12ea86bec3ac18f23f463fd"
 url = "https://github.com/jj-vcs/jj/releases/download/v0.44.0/jj-v0.44.0-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/503327752"
-
-[[tools.lima]]
-version = "2.2.0"
-backend = "aqua:lima-vm/lima"
-specifiers = [
-    "2.2.0",
-    "latest",
-]
-
-[tools.lima."platforms.linux-arm64"]
-checksum = "sha256:7c6a09c6844f55f811e9b7b2b60a6070a512c696c8ec752dfdb3c8ed50ed0364"
-url = "https://github.com/lima-vm/lima/releases/download/v2.2.0/lima-2.2.0-Linux-aarch64.tar.gz"
-url_api = "https://api.github.com/repos/lima-vm/lima/releases/assets/484813992"
-provenance = "github-attestations"
-
-[tools.lima."platforms.linux-arm64-musl"]
-checksum = "sha256:7c6a09c6844f55f811e9b7b2b60a6070a512c696c8ec752dfdb3c8ed50ed0364"
-url = "https://github.com/lima-vm/lima/releases/download/v2.2.0/lima-2.2.0-Linux-aarch64.tar.gz"
-url_api = "https://api.github.com/repos/lima-vm/lima/releases/assets/484813992"
-provenance = "github-attestations"
-
-[tools.lima."platforms.linux-x64"]
-checksum = "sha256:a0ea1ccf6b7335a900adb5f8d2b8384457965fecb1ba72f09b4e3e46d12f424a"
-url = "https://github.com/lima-vm/lima/releases/download/v2.2.0/lima-2.2.0-Linux-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/lima-vm/lima/releases/assets/484813993"
-provenance = "github-attestations"
-
-[tools.lima."platforms.linux-x64-musl"]
-checksum = "sha256:a0ea1ccf6b7335a900adb5f8d2b8384457965fecb1ba72f09b4e3e46d12f424a"
-url = "https://github.com/lima-vm/lima/releases/download/v2.2.0/lima-2.2.0-Linux-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/lima-vm/lima/releases/assets/484813993"
-provenance = "github-attestations"
-
-[tools.lima."platforms.macos-arm64"]
-checksum = "sha256:bbdef91774885a0d05f7b048c4eb89ae2bcf3a0c252ae7ca7934e63df76d93c3"
-url = "https://github.com/lima-vm/lima/releases/download/v2.2.0/lima-2.2.0-Darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/lima-vm/lima/releases/assets/484813994"
-provenance = "github-attestations"
-
-[tools.lima."platforms.macos-x64"]
-checksum = "sha256:0d6f99c19f6e4bc3c92730c4c29d929e6927f0cb0a0ba1a84383367135a8ff31"
-url = "https://github.com/lima-vm/lima/releases/download/v2.2.0/lima-2.2.0-Darwin-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/lima-vm/lima/releases/assets/484813996"
-provenance = "github-attestations"
-
-[tools.lima."platforms.windows-x64"]
-checksum = "sha256:e7bf7dd2d2e7ab7ce020631f8f7533665f6e6f9068686d3ffcd0f3c438856ea9"
-url = "https://github.com/lima-vm/lima/releases/download/v2.2.0/lima-2.2.0-Windows-AMD64.zip"
-url_api = "https://api.github.com/repos/lima-vm/lima/releases/assets/484814002"
-provenance = "github-attestations"
 
 [[tools.lsd]]
 version = "1.2.0"
