@@ -2,25 +2,25 @@ min_version = "2026.8.12"
 
 [tools]
 bat = "0.26.1"
-difftastic = "0.69.0"
-doggo = "1.2.0"
-fd = "10.4.2"
-fzf = "0.74.2"
-github-cli = "2.97.0"
-"github:neovim/neovim" = "0.12.0"
-"github:nushell/nushell" = { version = "0.115.1", exe = "nu" }
-"github:twpayne/chezmoi" = "2.72.1"
-"github:skevetter/devpod" = "0.26.1"
+difftastic = "0.71.0"
+doggo = "1.4.0"
+fd = "10.5.0"
+fzf = "0.74.4"
+github-cli = "2.101.0"
+"github:neovim/neovim" = "0.12.5"
+"github:nushell/nushell" = { version = "0.116.0", exe = "nu" }
+"github:twpayne/chezmoi" = "2.72.2"
+"github:skevetter/devpod" = "0.26.2"
 herdr = "0.9.1"
-jj = "0.44.0"
+jj = "0.45.1"
 lsd = "1.2.0"
-node = "24.18.0"
+node = "26.10.0"
 ripgrep = "15.2.0"
 starship = "1.26.0"
-zellij = "0.44.3"
+zellij = "0.45.1"
 
 {{ if eq .chezmoi.os "linux" -}}
-"github:peteonrails/voxtype" = { version = "1.0.1", asset_pattern = "voxtype-*-linux-x86_64-onnx-avx512" }
+"github:peteonrails/voxtype" = { version = "1.1.0", asset_pattern = "voxtype-*-linux-x86_64-onnx-avx512" }
 {{ end -}}
 
 {{ if eq .chezmoi.os "darwin" -}}
